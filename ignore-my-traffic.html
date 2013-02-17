@@ -1,0 +1,42 @@
+<html>
+<head>
+</head>
+<body>
+
+<p>Questa pagina imposta per questo sito la variable 'internal-traffic' inserendo la seguente 
+riga nel codice di Google Analytics:</p>
+
+<p><code>
+	_gaq.push(['_setCustomVar', 5, 'internal-traffic', 'true', 1]);
+</code></p>
+
+<p>Dove i parametri sono:
+
+<ul>
+<li>Variable slot: 5</li>
+<li>Variable name: internal-traffic</li>
+<li>Variable value: true</li>
+<li>Variable scope: 1 = visitor level (2 for session-level, and 3 for page-level.)</li>
+</ul>
+
+Vedi <a href="http://code.google.com/apis/analytics/docs/gaJS/gaJSApiBasicConfiguration.html#_gat.GA_Tracker_._setCustomVar">documentazione</a>.
+
+</p>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21153020-1']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_setCustomVar', 5, 'internal-traffic', 'true', 1]);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

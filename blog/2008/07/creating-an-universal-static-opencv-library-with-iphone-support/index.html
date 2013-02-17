@@ -1,0 +1,253 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"  lang="it"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"  lang="it"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"  lang="it"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"  lang="it"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+        <meta name="format-detection" content="telephone=no">
+
+        <!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+
+        <meta name="author" content="Daniele Pizzoni">
+        <meta name="description" content="Creating an universal static OpenCV library with iPhone support">
+        <meta name="keywords" content="data.page.meta_keywords %>" />
+
+            <title>Creating an universal static OpenCV library with iPhone support</title>
+
+        <link href="/css/main-17afee39.css" rel="stylesheet" type="text/css" />
+        <link href="/css/highlight-35741444.css" rel="stylesheet" type="text/css" />
+        <link href="/css/print-d5585c86.css" rel="stylesheet" type="text/css" media="print" />
+
+        <script src="/js/vendor/modernizr-2.6.1.min-68fdcc99.js" type="text/javascript"></script>
+        <script src="/js/vendor/respond.min-bb760321.js" type="text/javascript"></script>
+
+        <!-- <link href='/css/print-d5585c86.css' rel='stylesheet' type='text/css' media='print'> -->
+
+        <link href='http://fonts.googleapis.com/css?family=Arvo:400,400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+        
+    </head>
+
+        	<body id="page" />
+
+
+         <div class="masthead-shadow">
+ <div class="container">
+  <header id="masthead">
+
+    <hr/>
+
+    <nav id="menu">
+      <ul>
+        <li class="left"><a href="/">Chi sono</a></li>
+        <li class="left"><a href="/portfolio/">Portfolio</a></li>
+        <li class="right"><a href="/contatti/">Contatti</a></li>
+        <li class="right"><a href="/blog/">Blog</a> | <a href="/faq/">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <div id="masthead-brand">
+      <span class="masthead-logo" id="masthead-logo"><a href="/"><img src="/img/logo-b45c4748.png"/></a></span>
+      <span class="masthead-logo" id="masthead-logo-2x"><a href="/"><img src="/img/logo@2x-d67070a7.png"/></a></span>
+      
+      <span class="menu-button" ><a href="#">
+          <img id="menu-button-2x" src="/img/menu-icon@2x-ce9e5458.png"/>
+          <img id="menu-button" src="/img/menu-icon-770ed078.png"/>
+      </a></span>
+      
+    </div>
+
+    <p id="motto">Daniele Pizzoni<span> &ndash; </span><br/>Artigiano del Software</p>
+
+    <nav id="mobile-menu">
+      <ul>
+        <li class="left"><a href="/">Chi sono</a></li>
+        <li class="left"><a href="/portfolio/">Portfolio</a></li>
+        <li class="right"><a href="/blog/">Blog</a></li>
+        <li class="right"><a href="/faq/">FAQ / Archivi</a></li>
+        <li class="right"><a href="/contatti/">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+</div>
+
+
+            <div class="container" id="main-container" lang="en">
+
+            <div id="main" role="page">
+
+	<h1>Creating an universal static OpenCV library with iPhone support</h1>
+	
+	<p>This post has been updated here. Sorry I have no time to upgrade the iPhone part, I hope someone will share this knowledge ;)</p>
+
+<p>We will create a minimal static universal OpenCV 1.0.0 library with 4 architectures: Intel, PowerPC, x86_64 and Arm for the iPhone. I&rsquo;ve been testing it on Leopard and Snow Leopard but it should work on any Mac OS X version.</p>
+
+<p>First checkout or untar the OpenCV sources in the opencv-1.0.0 directory. Then, on the same level (not inside) create a build directory with 4 subdirectories: ppc, i386, x86_64 and arm. (Download the code from Sourceforge)</p>
+
+<p>Then set the global configure settings:</p>
+<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3</pre></td><td class="code"><pre><span class="gp">$ </span><span class="nb">export </span><span class="nv">CONFFLAGS</span><span class="o">=</span><span class="s2">"--without-imageio --without-python --without-swig 
+--disable-apps --disable-dependency-tracking --without-carbon 
+--without-quicktime --enable-shared=no --without-gtk"</span>
+</pre></td></tr></tbody></table>
+</div>
+
+<p>in the ppc dir:</p>
+<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre><span class="gp">$ </span>../../opencv-1.0.0/configure <span class="k">${</span><span class="nv">CONFFLAGS</span><span class="k">}</span> --target<span class="o">=</span>ppc-apple-darwin9
+<span class="gp">$ </span>make <span class="nv">CXXFLAGS</span><span class="o">=</span><span class="s2">"-arch ppc"</span>
+</pre></td></tr></tbody></table>
+</div>
+
+<p>in the i386 dir:</p>
+<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre><span class="gp">$ </span>../../opencv-1.0.0/configure <span class="k">${</span><span class="nv">CONFFLAGS</span><span class="k">}</span> --target<span class="o">=</span>i386-apple-darwin9
+<span class="gp">$ </span>make <span class="nv">CXXFLAGS</span><span class="o">=</span><span class="s2">"-arch i386"</span>
+</pre></td></tr></tbody></table>
+</div>
+
+<p>in the x86_64 dir:</p>
+<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre><span class="gp">$ </span>../../opencv-1.0.0/configure <span class="k">${</span><span class="nv">CONFFLAGS</span><span class="k">}</span> --target<span class="o">=</span>x86_64-apple-darwin9
+<span class="gp">$ </span>make <span class="nv">CXXFLAGS</span><span class="o">=</span><span class="s2">"-arch x86_64"</span>
+</pre></td></tr></tbody></table>
+</div>
+
+<p>in the arm dir:</p>
+<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2</pre></td><td class="code"><pre><span class="gp">$ </span>../../opencv-1.0.0/configure <span class="k">${</span><span class="nv">CONFFLAGS</span><span class="k">}</span> --host <span class="o">=</span>arm-apple-darwin9 <span class="nv">CXX</span><span class="o">=</span>/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/arm-apple-darwin9-g++-4.2.1 <span class="nv">CXXFLAGS</span><span class="o">=</span><span class="s2">"-arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk"</span> <span class="nv">CXXCPP</span><span class="o">=</span>/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/cpp
+<span class="gp">$ </span>make
+</pre></td></tr></tbody></table>
+</div>
+
+<p>the last one is tough, so let&rsquo;s see the variables one by one:</p>
+<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3</pre></td><td class="code"><pre><span class="nv">CXX</span><span class="o">=</span>/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/arm-apple-darwin9-g++-4.2.1
+<span class="nv">CXXFLAGS</span><span class="o">=</span><span class="s2">"-arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.0.sdk"</span>
+<span class="nv">CXXCPP</span><span class="o">=</span>/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/cpp
+</pre></td></tr></tbody></table>
+</div>
+
+<p>Ok. Now for the universal static libs:</p>
+<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5</pre></td><td class="code"><pre><span class="gp">$ </span>lipo -create i386/cv/src/.libs/libcv.a x86_64/cv/src/.libs/libcv.a ppc/cv/src/.libs/libcv.a armv6/cv/src/.libs/libcv.a -output libcv.a
+<span class="gp">$ </span>lipo -create i386/cxcore/src/.libs/libcxcore.a x86_64/cxcore/src/.libs/libcxcore.a ppc/cxcore/src/.libs/libcxcore.a armv6/cxcore/src/.libs/libcxcore.a -output libcxcore.a
+<span class="gp">$ </span>lipo -create i386/cvaux/src/.libs/libcvaux.a x86_64/cvaux/src/.libs/libcvaux.a ppc/cvaux/src/.libs/libcvaux.a armv6/cvaux/src/.libs/libcvaux.a -output libcvaux.a
+<span class="gp">$ </span>lipo -create i386/ml/src/.libs/libml.a x86_64/ml/src/.libs/libml.a ppc/ml/src/.libs/libml.a armv6/ml/src/.libs/libml.a -output libml.a
+<span class="gp">$ </span>lipo -create i386/otherlibs/highgui/.libs/libhighgui.a x86_64/otherlibs/highgui/.libs/libhighgui.a ppc/otherlibs/highgui/.libs/libhighgui.a armv6/otherlibs/highgui/.libs/libhighgui.a -output libhighgui.a
+</pre></td></tr></tbody></table>
+</div>
+
+<p>That&rsquo;s all. Oh, try</p>
+<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="gp">$ </span>make -j 2
+</pre></td></tr></tbody></table>
+</div>
+
+
+	<footer class="article-footer">
+		 3 Jul 2008 
+		| english
+		| tecniche
+	</footer>
+
+	<nav id="page-nav">
+		<span class="prev">
+			<a href="/blog/2009/06/managing-static-versioned-libraries-in-os-x/">Managing static versioned libraries...</a>
+		</span>
+
+		<span class="next">
+			<a href="/blog/2008/02/how-to-uninstall-mac-os-x-pkg-packages/">How to uninstall Mac...</a>
+		</span>
+	</nav>
+
+
+</div>
+
+
+            <!--[if lt IE 9]>
+
+    <div class="old-bro" style="">
+    	Il tuo <i>browser</i> non permette la visualizzazione ottimale di questo sito.<br>
+	    <a href="http://whatbrowser.org/">Scopri subito come aggiornarlo e perché.</a>
+	</div>
+
+<![endif]-->
+
+
+
+            <footer id="main-footer">
+
+<div id="footer-left">
+	<p>Fatto a mano da:</p>
+	<p>Daniele Pizzoni &mdash; Udine, Italy (EU)</p>
+	<p>P.I. 02632010308</p>
+</div>
+
+<div id="footer-center">
+	<p>Connect:</p>
+	<p><a href="mailto:dan@danielepizzoni.it">email</a></p>
+	<p><a href="http://twitter.com/ildan">twitter</a></p>
+	<p><a href="http://it.linkedin.com/in/danielepizzoni/it">linkedin</a></p>
+	<p><a href="http://stackoverflow.com/users/103529/ildan">stack overflow</a></p>
+
+	
+</div>
+
+<div id="footer-right">
+	<p>More:</p>
+	<p><a href="/archivio-anno">archivio</a> </p>
+	<p><a href="/archivio-tags">tags</a> </p>
+	<p><a href="http://feeds.feedburner.com/danielepizzoni">rss</a></p>
+</div>
+
+<div id="credits">
+	<p>Credits:
+	<a href="http://middlemanapp.com">Middleman</a> 
+	<a href="http://sass-lang.com">Sass</a>
+	<a href="http://compass-style.org">Compass</a>
+	<a href="http://susy.oddbird.net">Susy</a>
+	<a href="http://daneden.me/baseline/">Baseline.js</a>
+	<a href="http://www.google.com/webfonts">Google Web Fonts</a>
+	<a href="http://subtlepatterns.com">Subtle Patterns</a>
+	</p>
+</div>
+</footer>
+
+
+
+            
+        </div>
+
+        
+
+        
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+
+        <script src="/js/plugins-b0a9b306.js" type="text/javascript"></script>
+        <script src="/js/main-bf7a3cf3.js" type="text/javascript"></script>
+
+        <script>
+        var _gaq=[['_setAccount','UA-21153020-1'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+
+    </body>
+</html>

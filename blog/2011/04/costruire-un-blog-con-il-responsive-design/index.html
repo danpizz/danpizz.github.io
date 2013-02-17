@@ -1,0 +1,216 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"  lang="it"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"  lang="it"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"  lang="it"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"  lang="it"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+        <meta name="format-detection" content="telephone=no">
+
+        <!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+
+        <meta name="author" content="Daniele Pizzoni">
+        <meta name="description" content="Costruire un blog con il Responsive Design">
+        <meta name="keywords" content="data.page.meta_keywords %>" />
+
+            <title>Costruire un blog con il Responsive Design</title>
+
+        <link href="/css/main-17afee39.css" rel="stylesheet" type="text/css" />
+        <link href="/css/highlight-35741444.css" rel="stylesheet" type="text/css" />
+        <link href="/css/print-d5585c86.css" rel="stylesheet" type="text/css" media="print" />
+
+        <script src="/js/vendor/modernizr-2.6.1.min-68fdcc99.js" type="text/javascript"></script>
+        <script src="/js/vendor/respond.min-bb760321.js" type="text/javascript"></script>
+
+        <!-- <link href='/css/print-d5585c86.css' rel='stylesheet' type='text/css' media='print'> -->
+
+        <link href='http://fonts.googleapis.com/css?family=Arvo:400,400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+        
+    </head>
+
+        	<body id="page" />
+
+
+         <div class="masthead-shadow">
+ <div class="container">
+  <header id="masthead">
+
+    <hr/>
+
+    <nav id="menu">
+      <ul>
+        <li class="left"><a href="/">Chi sono</a></li>
+        <li class="left"><a href="/portfolio/">Portfolio</a></li>
+        <li class="right"><a href="/contatti/">Contatti</a></li>
+        <li class="right"><a href="/blog/">Blog</a> | <a href="/faq/">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <div id="masthead-brand">
+      <span class="masthead-logo" id="masthead-logo"><a href="/"><img src="/img/logo-b45c4748.png"/></a></span>
+      <span class="masthead-logo" id="masthead-logo-2x"><a href="/"><img src="/img/logo@2x-d67070a7.png"/></a></span>
+      
+      <span class="menu-button" ><a href="#">
+          <img id="menu-button-2x" src="/img/menu-icon@2x-ce9e5458.png"/>
+          <img id="menu-button" src="/img/menu-icon-770ed078.png"/>
+      </a></span>
+      
+    </div>
+
+    <p id="motto">Daniele Pizzoni<span> &ndash; </span><br/>Artigiano del Software</p>
+
+    <nav id="mobile-menu">
+      <ul>
+        <li class="left"><a href="/">Chi sono</a></li>
+        <li class="left"><a href="/portfolio/">Portfolio</a></li>
+        <li class="right"><a href="/blog/">Blog</a></li>
+        <li class="right"><a href="/faq/">FAQ / Archivi</a></li>
+        <li class="right"><a href="/contatti/">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+</div>
+
+
+            <div class="container" id="main-container">
+
+            <div id="main" role="page">
+
+	<h1>Costruire un blog con il Responsive Design</h1>
+	
+	<p><em>Questo articolo è stato aggiornato qui: <a href="/blog/2013/03/web-responsive-design/">Responsive Web Design</a></em></p>
+
+<p>Questo sito è costruito in modo che possa essere letto agevolmente sia sugli schermi belli grossi che stanno sulle nostre scrivanie, sia sugli schermini piccoli dei dispositivi che stanno nelle nostre tasche.</p>
+
+<p><a href="/img/theme-2011-651e9827.png"><img alt="danielepizzoni.it nel 2012&quot;" title="danielepizzoni.it nel 2012" src="/img/theme-2011-thumb-1089d49e.png" /></a></p>
+
+<p>Tradizionalmente le versioni <em>mobile</em> dei siti Internet sono costruite in parallelo a quelle dei siti normali. Ad esempio il giornale La Repubblica si trova all&#39;indirizzo <a href="http://www.repubblica.it"><a href="http://www.repubblica.it">www.repubblica.it</a></a>. Se però accedete al sito con un telefonino c&#39;e un meccanismo che vi manda automaticamente ad un altro sito, quello per i dispositivi tascabili, <a href="http://m.repubblica.it">m.repubblica.it</a>, dove &ldquo;m&rdquo; sta appunto per &ldquo;mobile<em>&rdquo;.</em> Il problema di questo approccio è che duplicando il sito i costi di manutenzione, gli errori ed i problemi in genere&hellip; raddoppiano.</p>
+
+<p>Un metodo più raffinato è quello di mantenere identici contenuti ma di cambiare il modo in cui vengono mostrati sullo schermo. Ad esempio i blog basati sul programma <a href="http://wordpress.org/">Wordpress</a> mostrano di default una &ldquo;facciata&rdquo; diversa per i telefonini.</p>
+
+<p>La tecnologia più recente, quella che ho usato per questo blog, fa piuttosto in modo che la pagina si <em>trasformi automaticamente,</em> adattandosi alle dimensioni in cui viene visualizzata. Per capire cosa intendo basta che provi adesso a restringere o allargare la finestra del browser (o a girare il telefonino).</p>
+
+<p>Cosa succede? Semplicemente il disegno del sito si trasforma in risposta alle mutate dimensioni. Le colonne si restringono e se non ne stanno più due, quella di destra viene spostata in fondo. Le intestazioni e i loghi si rimpiccioliscono, alcuni particolari vengono spostati o nascosti e i font cambiano leggermente di dimensione.</p>
+
+<p>È quello che in inglese viene chiamato Responsive Design. Pare che l&#39;idea sia nata, o meglio, sia stata per la prima volta esposta compiutamente, nel Maggio 2010 sull&#39;articolo <a href="http://www.italianalistapart.com/articoli/17-numero-7-8-giugno-2010/71-web-design-reattivo">Responsive Web Design</a> (link tradotto in italiano). All&#39;inizio del 2011 la rivista Smashing Magazine con <a href="http://www.smashingmagazine.com/2011/01/12/guidelines-for-responsive-web-design/">questo</a> suo articolo ha sancito l&#39;ingresso del Responsive Web Design nel mainstream del Web Design.</p>
+
+<p>In realtà l&#39;idea non è che sia poi così originale o rivoluzionaria; il fatto che si stia diffondendo così tardivamente è dovuto alla incapacità di usare le nuove tecnologie (<a href="http://it.wikipedia.org/wiki/HTML5">HTML5</a> e <a href="http://it.wikipedia.org/wiki/CSS_(informatica)">CSS3</a>) da parte di alcuni browser, in particolare quelli meno recenti di casa Microsoft che, come si sa, sono ancora molto diffusi.</p>
+
+<blockquote>
+<p>Nota: il look di questo sito è stato poi in seguito più volte <a href="/blog/2011/12/restyling-di-danielepizzoni-it">aggiornato</a></p>
+</blockquote>
+
+<p>Se sviluppi applicazioni per iPhone, è importante che il tuo sito funzioni bene sull&#39;iPhone. Allora mi sono dato da fare ed ho costruito questo blog usando questi ingredienti:
+<ul>
+    <li><a href="http://wordpress.org/">Wordpress</a>, il più noto programma Open Source per creare blog</li>
+    <li><a href="http://responsivetwentyten.com/">Responsive Twenty Ten</a>, il tema (l&#39;aspetto) di <a href="http://2010dev.wordpress.com/">default</a> di Wordpress grossolanamente adattato al Responsive Design</li>
+    <li><a href="http://it.html5boilerplate.com/">HTML5 Boilerplate</a>, un concentrato della tecnologia web più recente del simpatico e bravo <a href="http://paulirish.com/">Paul Irish</a></li>
+    <li><a href="http://lessframework.com/">Less Framework</a> un perfetto modello di Responsive Design del giovane finlandese <a href="http://jonikorpi.com/">Joni Korpi</a></li>
+    <li><a href="http://kuler.adobe.com/#themeID/388991">My Aspen Gray</a>, una palette di colori che mi piaceva, trovata su <a href="http://kuler.adobe.com">Kuler</a></li>
+</ul>
+Alla fine del <a href="http://responsivetwentyten.com/">Responsive Twenty Ten</a> non è rimasto nulla, ho finito per riscriverlo usando gli ottimi <a href="http://it.html5boilerplate.com/">HTML5 Boilerplate</a> e <a href="http://lessframework.com/">Less Framework</a>.</p>
+
+<p>(puoi contattarmi per una consulenza <a href="/contatti">qui</a>)</p>
+
+
+	<footer class="article-footer">
+		15 Apr 2011 
+		| web
+	</footer>
+
+	<nav id="page-nav">
+		<span class="prev">
+			<a href="/blog/2011/05/7-passi-falsi-da-evitare-con-il-tuo-consulente-per-applicazioni-iphone/">8 passi falsi da...</a>
+		</span>
+
+		<span class="next">
+			<a href="/blog/2011/04/guglielmo-hotspot/">Guglielmo Hotspot per iPhone</a>
+		</span>
+	</nav>
+
+
+</div>
+
+
+            <!--[if lt IE 9]>
+
+    <div class="old-bro" style="">
+    	Il tuo <i>browser</i> non permette la visualizzazione ottimale di questo sito.<br>
+	    <a href="http://whatbrowser.org/">Scopri subito come aggiornarlo e perché.</a>
+	</div>
+
+<![endif]-->
+
+
+
+            <footer id="main-footer">
+
+<div id="footer-left">
+	<p>Fatto a mano da:</p>
+	<p>Daniele Pizzoni &mdash; Udine, Italy (EU)</p>
+	<p>P.I. 02632010308</p>
+</div>
+
+<div id="footer-center">
+	<p>Connect:</p>
+	<p><a href="mailto:dan@danielepizzoni.it">email</a></p>
+	<p><a href="http://twitter.com/ildan">twitter</a></p>
+	<p><a href="http://it.linkedin.com/in/danielepizzoni/it">linkedin</a></p>
+	<p><a href="http://stackoverflow.com/users/103529/ildan">stack overflow</a></p>
+
+	
+</div>
+
+<div id="footer-right">
+	<p>More:</p>
+	<p><a href="/archivio-anno">archivio</a> </p>
+	<p><a href="/archivio-tags">tags</a> </p>
+	<p><a href="http://feeds.feedburner.com/danielepizzoni">rss</a></p>
+</div>
+
+<div id="credits">
+	<p>Credits:
+	<a href="http://middlemanapp.com">Middleman</a> 
+	<a href="http://sass-lang.com">Sass</a>
+	<a href="http://compass-style.org">Compass</a>
+	<a href="http://susy.oddbird.net">Susy</a>
+	<a href="http://daneden.me/baseline/">Baseline.js</a>
+	<a href="http://www.google.com/webfonts">Google Web Fonts</a>
+	<a href="http://subtlepatterns.com">Subtle Patterns</a>
+	</p>
+</div>
+</footer>
+
+
+
+            
+        </div>
+
+        
+
+        
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+
+        <script src="/js/plugins-b0a9b306.js" type="text/javascript"></script>
+        <script src="/js/main-bf7a3cf3.js" type="text/javascript"></script>
+
+        <script>
+        var _gaq=[['_setAccount','UA-21153020-1'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+
+    </body>
+</html>

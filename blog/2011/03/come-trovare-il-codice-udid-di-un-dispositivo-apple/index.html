@@ -1,0 +1,212 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"  lang="it"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"  lang="it"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"  lang="it"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"  lang="it"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+        <meta name="format-detection" content="telephone=no">
+
+        <!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+
+        <meta name="author" content="Daniele Pizzoni">
+        <meta name="description" content="Come trovare il codice UDID di un dispositivo Apple">
+        <meta name="keywords" content="data.page.meta_keywords %>" />
+
+            <title>Come trovare il codice UDID di un dispositivo Apple</title>
+
+        <link href="/css/main-17afee39.css" rel="stylesheet" type="text/css" />
+        <link href="/css/highlight-35741444.css" rel="stylesheet" type="text/css" />
+        <link href="/css/print-d5585c86.css" rel="stylesheet" type="text/css" media="print" />
+
+        <script src="/js/vendor/modernizr-2.6.1.min-68fdcc99.js" type="text/javascript"></script>
+        <script src="/js/vendor/respond.min-bb760321.js" type="text/javascript"></script>
+
+        <!-- <link href='/css/print-d5585c86.css' rel='stylesheet' type='text/css' media='print'> -->
+
+        <link href='http://fonts.googleapis.com/css?family=Arvo:400,400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+        
+    </head>
+
+        	<body id="page" />
+
+
+         <div class="masthead-shadow">
+ <div class="container">
+  <header id="masthead">
+
+    <hr/>
+
+    <nav id="menu">
+      <ul>
+        <li class="left"><a href="/">Chi sono</a></li>
+        <li class="left"><a href="/portfolio/">Portfolio</a></li>
+        <li class="right"><a href="/contatti/">Contatti</a></li>
+        <li class="right"><a href="/blog/">Blog</a> | <a href="/faq/">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <div id="masthead-brand">
+      <span class="masthead-logo" id="masthead-logo"><a href="/"><img src="/img/logo-b45c4748.png"/></a></span>
+      <span class="masthead-logo" id="masthead-logo-2x"><a href="/"><img src="/img/logo@2x-d67070a7.png"/></a></span>
+      
+      <span class="menu-button" ><a href="#">
+          <img id="menu-button-2x" src="/img/menu-icon@2x-ce9e5458.png"/>
+          <img id="menu-button" src="/img/menu-icon-770ed078.png"/>
+      </a></span>
+      
+    </div>
+
+    <p id="motto">Daniele Pizzoni<span> &ndash; </span><br/>Artigiano del Software</p>
+
+    <nav id="mobile-menu">
+      <ul>
+        <li class="left"><a href="/">Chi sono</a></li>
+        <li class="left"><a href="/portfolio/">Portfolio</a></li>
+        <li class="right"><a href="/blog/">Blog</a></li>
+        <li class="right"><a href="/faq/">FAQ / Archivi</a></li>
+        <li class="right"><a href="/contatti/">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+</div>
+
+
+            <div class="container" id="main-container">
+
+            <div id="main" role="page">
+
+	<h1>Come trovare il codice UDID di un dispositivo Apple</h1>
+	
+	<p>Nel corso dello sviluppo di una applicazione per iOS (iPhone o iPad), il programmatore può spedire ad altre persone delle versioni provvisorie dell&#39;applicazione stessa, in modo che questa possa venir provata e valutata, con un sistema che la Apple chiama <a href="/blog/2012/12/cose-la-ad-hoc-distribution-e-perche-devo-inviare-allo-sviluppatore-il-mio-udid/">Ad Hoc Distribution</a>.</p>
+
+<p>I dispositivi iOS che potranno far funzionare queste versioni di test devono però essere identificati in anticipo comunicando allo sviluppatore l&#39;Identificatore Univoco del Dispositivo (Unique Device Identifier: UDID).</p>
+
+<h2>Trovare l&#39;UDID con una app</h2>
+
+<p>Il metodo più semplice per comunicare questo codice è quello di scaricare una app che mandi una mail allo sviluppatore con il codice stesso. Una delle più immediate è <a href="https://itunes.apple.com/us/app/ad-hoc-helper/id285691333?mt=8">Ad Hoc Helper</a>. Scaricatela, apritela e inserite la mail dello sviluppatore.</p>
+
+<p>In alternativa potete utilizzare il metodo descritto qui sotto.</p>
+
+<h2>Trovare l&#39;UDID con iTunes 7.7 o sucessivi</h2>
+
+<p>Collegare l&#39;iPhone o l&#39;iPad al proprio computer e far partire iTunes.</p>
+
+<p>Andare alla finestra Sommario del dispositivo e cercare il Numero di serie. Attenzione: il Numero di serie numero non è l&#39;UDID.</p>
+
+<p><a href="/img/theme-2011-651e9827.png"><img alt="iTunes screenshot&quot;" title="L'UDID in iTunes 7" src="/img/udid-1-d5f37b89.png" /></a></p>
+
+<p>Infatti il codice UDID appare cliccando sopra il Numero di serie</p>
+
+<p><a href="/img/theme-2011-651e9827.png"><img alt="iTunes screenshot&quot;" title="Clicca per vedere il codice UDID" src="/img/udid-2-5b7d9576.png" /></a></p>
+
+<p>Una volta apparso il codice UDID lo si può copiare con ⌘C o con il menu Modifica&nbsp;&gt;&nbsp;Copia.</p>
+
+<p><a href="/img/theme-2011-651e9827.png"><img alt="iTunes screenshot&quot;" title="Copia con ⌘C" src="/img/udid-3-f8c5f4a6.png" /></a></p>
+
+<p>E quindi incollarlo in una mail con ⌘V o con Modifica&nbsp;&gt;&nbsp;Incolla.</p>
+
+
+	<footer class="article-footer">
+		 1 Mar 2011 
+		| apple
+		| guide
+		| faq
+	</footer>
+
+	<nav id="page-nav">
+		<span class="prev">
+			<a href="/blog/2011/03/cosa-fare-per-avere-una-propria-applicazione-su-itunes-apple/">Come si fa a...</a>
+		</span>
+
+		<span class="next">
+			<a href="/blog/2009/11/creating-an-universal-static-opencv-library-in-snow-leopard/">Creating an universal static...</a>
+		</span>
+	</nav>
+
+
+</div>
+
+
+            <!--[if lt IE 9]>
+
+    <div class="old-bro" style="">
+    	Il tuo <i>browser</i> non permette la visualizzazione ottimale di questo sito.<br>
+	    <a href="http://whatbrowser.org/">Scopri subito come aggiornarlo e perché.</a>
+	</div>
+
+<![endif]-->
+
+
+
+            <footer id="main-footer">
+
+<div id="footer-left">
+	<p>Fatto a mano da:</p>
+	<p>Daniele Pizzoni &mdash; Udine, Italy (EU)</p>
+	<p>P.I. 02632010308</p>
+</div>
+
+<div id="footer-center">
+	<p>Connect:</p>
+	<p><a href="mailto:dan@danielepizzoni.it">email</a></p>
+	<p><a href="http://twitter.com/ildan">twitter</a></p>
+	<p><a href="http://it.linkedin.com/in/danielepizzoni/it">linkedin</a></p>
+	<p><a href="http://stackoverflow.com/users/103529/ildan">stack overflow</a></p>
+
+	
+</div>
+
+<div id="footer-right">
+	<p>More:</p>
+	<p><a href="/archivio-anno">archivio</a> </p>
+	<p><a href="/archivio-tags">tags</a> </p>
+	<p><a href="http://feeds.feedburner.com/danielepizzoni">rss</a></p>
+</div>
+
+<div id="credits">
+	<p>Credits:
+	<a href="http://middlemanapp.com">Middleman</a> 
+	<a href="http://sass-lang.com">Sass</a>
+	<a href="http://compass-style.org">Compass</a>
+	<a href="http://susy.oddbird.net">Susy</a>
+	<a href="http://daneden.me/baseline/">Baseline.js</a>
+	<a href="http://www.google.com/webfonts">Google Web Fonts</a>
+	<a href="http://subtlepatterns.com">Subtle Patterns</a>
+	</p>
+</div>
+</footer>
+
+
+
+            
+        </div>
+
+        
+
+        
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+
+        <script src="/js/plugins-b0a9b306.js" type="text/javascript"></script>
+        <script src="/js/main-bf7a3cf3.js" type="text/javascript"></script>
+
+        <script>
+        var _gaq=[['_setAccount','UA-21153020-1'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+
+    </body>
+</html>

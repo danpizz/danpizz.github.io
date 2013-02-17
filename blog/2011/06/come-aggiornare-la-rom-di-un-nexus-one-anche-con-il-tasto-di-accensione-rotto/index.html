@@ -1,0 +1,291 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"  lang="it"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"  lang="it"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"  lang="it"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"  lang="it"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+        <meta name="format-detection" content="telephone=no">
+
+        <!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+
+        <meta name="author" content="Daniele Pizzoni">
+        <meta name="description" content="Come aggiornare la ROM di un Nexus One (anche con il tasto di accensione rotto)">
+        <meta name="keywords" content="data.page.meta_keywords %>" />
+
+            <title>Come aggiornare la ROM di un Nexus One (anche con il tasto di accensione rotto)</title>
+
+        <link href="/css/main-17afee39.css" rel="stylesheet" type="text/css" />
+        <link href="/css/highlight-35741444.css" rel="stylesheet" type="text/css" />
+        <link href="/css/print-d5585c86.css" rel="stylesheet" type="text/css" media="print" />
+
+        <script src="/js/vendor/modernizr-2.6.1.min-68fdcc99.js" type="text/javascript"></script>
+        <script src="/js/vendor/respond.min-bb760321.js" type="text/javascript"></script>
+
+        <!-- <link href='/css/print-d5585c86.css' rel='stylesheet' type='text/css' media='print'> -->
+
+        <link href='http://fonts.googleapis.com/css?family=Arvo:400,400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+        
+    </head>
+
+        	<body id="page" />
+
+
+         <div class="masthead-shadow">
+ <div class="container">
+  <header id="masthead">
+
+    <hr/>
+
+    <nav id="menu">
+      <ul>
+        <li class="left"><a href="/">Chi sono</a></li>
+        <li class="left"><a href="/portfolio/">Portfolio</a></li>
+        <li class="right"><a href="/contatti/">Contatti</a></li>
+        <li class="right"><a href="/blog/">Blog</a> | <a href="/faq/">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <div id="masthead-brand">
+      <span class="masthead-logo" id="masthead-logo"><a href="/"><img src="/img/logo-b45c4748.png"/></a></span>
+      <span class="masthead-logo" id="masthead-logo-2x"><a href="/"><img src="/img/logo@2x-d67070a7.png"/></a></span>
+      
+      <span class="menu-button" ><a href="#">
+          <img id="menu-button-2x" src="/img/menu-icon@2x-ce9e5458.png"/>
+          <img id="menu-button" src="/img/menu-icon-770ed078.png"/>
+      </a></span>
+      
+    </div>
+
+    <p id="motto">Daniele Pizzoni<span> &ndash; </span><br/>Artigiano del Software</p>
+
+    <nav id="mobile-menu">
+      <ul>
+        <li class="left"><a href="/">Chi sono</a></li>
+        <li class="left"><a href="/portfolio/">Portfolio</a></li>
+        <li class="right"><a href="/blog/">Blog</a></li>
+        <li class="right"><a href="/faq/">FAQ / Archivi</a></li>
+        <li class="right"><a href="/contatti/">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+</div>
+
+
+            <div class="container" id="main-container">
+
+            <div id="main" role="page">
+
+	<h1>Come aggiornare la ROM di un Nexus One (anche con il tasto di accensione rotto)</h1>
+	
+	<p>Quando ho iniziato a sviluppare applicazioni per Android, mi sono informato su quale fosse il telefonino Android di riferimento per i programmatori. Ne avevo bisogno come strumento di lavoro per il testing e lo sviluppo delle applicazioni stesse.</p>
+
+<p>Di <a href="http://it.wikipedia.org/wiki/Nexus_One">Google Nexus One</a> avevo naturalmente già sentito parlare. Il Nexus One, oltre ad avere il marchio Google stampato sul retro, essere piuttosto costoso e abbastanza difficile da trovare in Italia, ha il noioso difetto della frequente rottura del tasto di accensione. Difetto che, nel mio caso, non avrebbe dovuto incidere più di tanto: il telefono si può accendere anche togliendo e rimettendo la batteria.</p>
+
+<p>Ho così acquistato ad un buon prezzo un Nexus One con il tasto di accensione fuori uso. Poi la necessità e curiosità di installarci diverse versioni del sistema operativo mi ha portato alla scoperta&hellip; che il tasto di accensione serve a navigare il menù del <em>bootloader</em>! (@$#!)</p>
+
+<p>Questo articolo (per esperti e smanettoni appassionati) racconta come fare ad aggiornare la ROM del Nexus One (unlocked) con gli strumenti standard e il tasto accensione fuori uso. È un utile riferimento anche per chi ha il tasto funzionante, vista l&#39;enorme, frammentaria e dispersiva mole di informazioni che si trova in rete sull&#39;argomento.&lt;!&ndash;more&ndash;&gt;</p>
+
+<p><strong>Attenzione</strong>: aggiornare la ROM comporta la cancellazione di tutti i dati del telefono!</p>
+
+<h2>Il problema</h2>
+
+<p>Con il tasto accensione rotto non si può attivare il <em>recovery mode</em>, a meno di non avere installato una <a href="http://forum.xda-developers.com/wiki/index.php?title=Nexus_One/Recovery_Images">custom recovery image</a>.</p>
+
+<p>Ci sono due modi per entrare in recovery mode.</p>
+
+<p>Il primo è scegliere l&#39;opzione RECOVERY dal menu del bootloader. Ma con il tasto power rotto è impossibile perché non si può confermare la scelta del menu di boot.</p>
+
+<p>Il secondo è usare dal terminale del computer (con telefono collegato e acceso) il comando <code>adb reboot recovery</code>. Con il tasto accensione rotto questo è possibile solo con una custom recovery image, perché le ROM stock in modalità recovery mostrano un&#39;immagine con l&#39;Androide Verde assieme a un punto esclamativo e da lì bisognerebbe di premere Volume UP + Power Button per entrare nel menu di recovery.</p>
+
+<p>Come se non bastasse, quando si spegne il telefonino il sistema rimpiazza l&#39;immagine di recovery con quella che c&#39;era quando è stato acceso. Di conseguenza un aggiornamento contenente anche un&#39;immagine di recovery applicato su un Nexus One con il tasto Power rotto sostituirà quest&#39;ultima in maniera irreversibile!</p>
+
+<h2>Gli strumenti</h2>
+
+<p>Ci servono due strumenti della <a href="http://developer.android.com/sdk/index.html">SDK Android</a>: <strong><code>adb</code></strong> e <strong><code>fastboot</code></strong>. <code>fastboot</code> però viene distribuito da Google solo come sorgente. L&#39;eseguibile per Linux, Windows e OS X si può scaricare dall&#39;<a href="http://developer.htc.com/adp.html">HTC Developer Center</a>. Per usare <code>adb</code> bisogna abilitare l&#39;opzione</p>
+
+<blockquote>
+<p>Impostazioni &gt; Applicazioni &gt; Sviluppo &gt; Debug USB</p>
+</blockquote>
+
+<h2>Procedimento</h2>
+
+<p>Esistono due tipi di aggiornamento ROM: <em>full image</em> e <em>update</em>.</p>
+
+<p>Una <strong>full image</strong> è un file zip che contiene in genere 4 immagini di filesystem che vanno flashate (sui forum: &ldquo;cucinate&rdquo;) sul telefonino, cancellando completamente i filesystem presenti.</p>
+
+<ul>
+<li>boot.img</li>
+<li>recovery.img</li>
+<li>system.img</li>
+<li>userdata.img</li>
+</ul>
+
+<p>Un <strong>update</strong> è un file zip contenente i file aggiornati e uno script che viene usato per aggiornare il sistema a partire dalla modalità recovery.</p>
+
+<p><em>Per aggiornare il nostro Nexus One con il tasto rotto dobbiamo prima applicare una ROM full, quindi sostituire la recovery con una immagine custom e infine ricordarsi per ogni update di cancellare dall&#39;archivio zip la directory recovery.</em>
+<h2>Applicare una full image</h2>
+Si collega il telefono al computer e lo si accende <em>tenendo premuta la trackball</em>. Si scompatta lo zip e dalla directory che si ottiene e da un terminale del computer si eseguono i comandi:</p>
+<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="code"><pre><span class="gp">$ </span>fastboot erase cache
+<span class="gp">$ </span>fastboot erase userdata
+<span class="gp">$ </span>fastboot flash boot boot.img
+<span class="gp">$ </span>fastboot flash recovery recovery.img
+<span class="gp">$ </span>fastboot flash system system.img
+<span class="gp">$ </span>fastboot flash userdata userdata.img
+<span class="gp">$ </span>fastboot reboot
+</pre></td></tr></tbody></table>
+</div>
+
+<p>Se si vuole preservare una <em>custom recovery</em> installata in precedenza basta saltare il passo corrispondente.</p>
+
+<p>Esiste un secondo sistema per applicare una full ROM. Funziona (credo) solo con ROM originali per via dei controlli sulle firme digitali degli aggiornamenti. Se lo usiamo nel nostro caso perché non avremo più modo di sostituire la recovery image, ma può essere utile per installare pure Stock ROM.</p>
+
+<p>Consiste in chiamare lo zip contenente i file .img con il nome <code>PASSIMG.zip</code>, copiarlo sulla root della SD Card con</p>
+<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="gp">$ </span>adb push signed-passion-img-GRI40.zip /mnt/sdcard/PASSIMG.zip
+</pre></td></tr></tbody></table>
+</div>
+
+<p>e riavviare il telefono (togliendo e rimettendo la batteria) mentre si tiene premuto il tasto Volume Down. Dopo qualche secondo il bootloader installa automaticamente il file.</p>
+
+<h2>Aggiornare con un update</h2>
+
+<p>Per aggiornare con una update bisogna avere la possibilità di fare boot in <em>recovery mode</em>.</p>
+
+<p>Bisogna copiare il file .zip di aggiornamento sulla SD Card, ad esempio:</p>
+<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="gp">$ </span>adb push update-cm-7.0.0-N1-signed.zip /mnt/sdcard
+</pre></td></tr></tbody></table>
+</div>
+
+<p>e poi entrare in recovery mode.</p>
+
+<p>Con il tasto power funzionante si accende il telefono con il tasto Volume Down premuto e si sceglie RECOVERY dal menu.</p>
+
+<p>Con il tasto power rotto si deve eseguire il comando</p>
+<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>adb reboot recovery
+</pre></td></tr></tbody></table>
+</div>
+
+<p>da terminale.</p>
+
+<p>Poi si cancella la cache e gli altri dati e si installa il file tramite il menu <em>Install update from sdcard</em> del recovery mode.</p>
+
+<h2>Le fonti di informazioni</h2>
+
+<p>Questi procedimenti non sono troppo complicati ma non essendoci fonti ufficiali ed organiche diventa faticoso raggiungere le informazioni davvero rilevanti. Le fonti principali su cui mi sono basato sono:
+<ul>
+    <li><a href="http://forum.xda-developers.com/wiki/index.php?title=Nexus_One">Nexus One: Guides, FAQs &amp; Tutorials</a> dal Wiki di <a href="http://www.xda-developers.com/">xda-developers</a></li>
+    <li><a href="http://wiki.cyanogenmod.com/index.php?title=Nexus_One:_Full_Update_Guide">Nexus One: Full Update Guide</a> dal Wiki di <a href="http://www.cyanogenmod.com/">CyanogenMod</a></li>
+    <li>HTC Developer Center: <a href="http://developer.htc.com/adp.html">tools and info</a> and <a href="http://developer.htc.com/">Stock ROMs</a></li>
+    <li><a href="http://android-dls.com/wiki/index.php?title=Android_FAQ">Android FAQ</a> sul Wiki <a href="http://android-dls.com/">android-dls.com</a></li>
+    <li><a href="http://forum.xda-developers.com/showthread.php?t=1012382">[HOW TO] Revert to latest stock ROM (GRI40)</a></li>
+</ul></p>
+
+
+	<footer class="article-footer">
+		 9 Jun 2011 
+		| guide
+		| android
+	</footer>
+
+	<nav id="page-nav">
+		<span class="prev">
+			<a href="/blog/2011/07/guglielmo-hotspot-per-android/">Guglielmo Hotspot per Android</a>
+		</span>
+
+		<span class="next">
+			<a href="/blog/2011/05/7-passi-falsi-da-evitare-con-il-tuo-consulente-per-applicazioni-iphone/">8 passi falsi da...</a>
+		</span>
+	</nav>
+
+
+</div>
+
+
+            <!--[if lt IE 9]>
+
+    <div class="old-bro" style="">
+    	Il tuo <i>browser</i> non permette la visualizzazione ottimale di questo sito.<br>
+	    <a href="http://whatbrowser.org/">Scopri subito come aggiornarlo e perché.</a>
+	</div>
+
+<![endif]-->
+
+
+
+            <footer id="main-footer">
+
+<div id="footer-left">
+	<p>Fatto a mano da:</p>
+	<p>Daniele Pizzoni &mdash; Udine, Italy (EU)</p>
+	<p>P.I. 02632010308</p>
+</div>
+
+<div id="footer-center">
+	<p>Connect:</p>
+	<p><a href="mailto:dan@danielepizzoni.it">email</a></p>
+	<p><a href="http://twitter.com/ildan">twitter</a></p>
+	<p><a href="http://it.linkedin.com/in/danielepizzoni/it">linkedin</a></p>
+	<p><a href="http://stackoverflow.com/users/103529/ildan">stack overflow</a></p>
+
+	
+</div>
+
+<div id="footer-right">
+	<p>More:</p>
+	<p><a href="/archivio-anno">archivio</a> </p>
+	<p><a href="/archivio-tags">tags</a> </p>
+	<p><a href="http://feeds.feedburner.com/danielepizzoni">rss</a></p>
+</div>
+
+<div id="credits">
+	<p>Credits:
+	<a href="http://middlemanapp.com">Middleman</a> 
+	<a href="http://sass-lang.com">Sass</a>
+	<a href="http://compass-style.org">Compass</a>
+	<a href="http://susy.oddbird.net">Susy</a>
+	<a href="http://daneden.me/baseline/">Baseline.js</a>
+	<a href="http://www.google.com/webfonts">Google Web Fonts</a>
+	<a href="http://subtlepatterns.com">Subtle Patterns</a>
+	</p>
+</div>
+</footer>
+
+
+
+            
+        </div>
+
+        
+
+        
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+
+        <script src="/js/plugins-b0a9b306.js" type="text/javascript"></script>
+        <script src="/js/main-bf7a3cf3.js" type="text/javascript"></script>
+
+        <script>
+        var _gaq=[['_setAccount','UA-21153020-1'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+
+    </body>
+</html>
