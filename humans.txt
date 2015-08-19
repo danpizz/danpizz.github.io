@@ -3,7 +3,7 @@
 
 # TEAM
 
-    Boss:Daniele Pizzoni
-    Contact:dan@danielepizzoni.it
+    Boss: Daniele Pizzoni
+    Contact: dan@danielepizzoni.it
     Twitter: @ildan
     From: Udine, Italy (EU)

@@ -5,10 +5,48 @@
   <id>http://danielepizzoni.it/</id>
   <link href="http://danielepizzoni.it/"/>
   <link href="http://danielepizzoni.it/feed.xml" rel="self"/>
-  <updated>2014-03-27T00:00:00+01:00</updated>
+  <updated>2015-07-15T00:00:00+02:00</updated>
   <author>
     <name>Daniele Pizzoni</name>
   </author>
+  <entry>
+    <title>BMeters Hydrolink</title>
+    <link rel="alternate" href="/blog/2015/07/bmeters/"/>
+    <id>/blog/2015/07/bmeters/</id>
+    <published>2015-07-15T00:00:00+02:00</published>
+    <updated>2015-07-15T00:00:00+02:00</updated>
+    <author>
+      <name>Daniele Pizzoni</name>
+    </author>
+    <summary type="html">&lt;p&gt;&lt;a href="https://play.google.com/store/apps/details?id=com.bmeters.hydrolinkmobile"&gt;Hydrolink Mobile&lt;/a&gt; è il tipo di app che preferisco sviluppare. In breve si tratta di una app per rilevare le letture dei contatori acqua, calore e ripartitori di calore &lt;a href="http://www.bmeters.com"&gt;B Meters Srl&lt;/a&gt; dotati di tecnologia &lt;a href="https://en.wikipedia.org/wiki/Meter-Bus"&gt;Wireless M-BUS&lt;/a&gt;. Immaginate un grande condominio...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;&lt;a href="https://play.google.com/store/apps/details?id=com.bmeters.hydrolinkmobile"&gt;Hydrolink Mobile&lt;/a&gt; è il tipo di app che preferisco sviluppare. In breve si tratta di una app per rilevare le letture dei contatori acqua, calore e ripartitori di calore &lt;a href="http://www.bmeters.com"&gt;B Meters Srl&lt;/a&gt; dotati di tecnologia &lt;a href="https://en.wikipedia.org/wiki/Meter-Bus"&gt;Wireless M-BUS&lt;/a&gt;. Immaginate un grande condominio con decine o forse centinaia di contatori acqua da leggere &amp;ldquo;a occhio&amp;rdquo;. Beh, con la tecnologia B Meters e con questa app basta attendere qualche minuto e sullo schermo compriranno le letture di tutti i contatori.&lt;/p&gt;
+
+&lt;p&gt;La app, oltre alla letture, visualizza molti altri dati tecnici e permette l&amp;#39;esportazione degli stessi verso il software desktop di BMeters.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="BMeters Hydrolink Android App screenshot" title="BMeters Hydrolink App" src="/img/hydrolink-442-862a8253.png" /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Radio Onde Furlane</title>
+    <link rel="alternate" href="/blog/2014/08/ondefurlane/"/>
+    <id>/blog/2014/08/ondefurlane/</id>
+    <published>2014-08-01T00:00:00+02:00</published>
+    <updated>2014-08-01T00:00:00+02:00</updated>
+    <author>
+      <name>Daniele Pizzoni</name>
+    </author>
+    <summary type="html">&lt;p&gt;Radio Onde Furlane per iPhone e iPad è disponibile sull’&lt;a href="https://itunes.apple.com/tr/app/radio-onde-furlane/id904918447?mt=8"&gt;Apple App Store&lt;/a&gt;, mentre per i dispositivi Android si può scaricare da &lt;a href="https://play.google.com/store/apps/details?id=eu.ondefurlane.radioapp"&gt;Google Play&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Le due app &lt;a href="/blog/2012/05/applicazioni-ibride-per-iphone-android-blackberry-etc"&gt;&lt;em&gt;native&lt;/em&gt;&lt;/a&gt; mi sono state commissionate dagli amici della &lt;a href="http://www.ondefurlane.eu"&gt;Radio&lt;/a&gt;. Dopo aver sviluppato la parte di &lt;em&gt;streaming&lt;/em&gt;&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Radio Onde Furlane per iPhone e iPad è disponibile sull&amp;rsquo;&lt;a href="https://itunes.apple.com/tr/app/radio-onde-furlane/id904918447?mt=8"&gt;Apple App Store&lt;/a&gt;, mentre per i dispositivi Android si può scaricare da &lt;a href="https://play.google.com/store/apps/details?id=eu.ondefurlane.radioapp"&gt;Google Play&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Le due app &lt;a href="/blog/2012/05/applicazioni-ibride-per-iphone-android-blackberry-etc"&gt;&lt;em&gt;native&lt;/em&gt;&lt;/a&gt; mi sono state commissionate dagli amici della &lt;a href="http://www.ondefurlane.eu"&gt;Radio&lt;/a&gt;. Dopo aver sviluppato la parte di &lt;em&gt;streaming&lt;/em&gt; ne ho lasciato il completamento a &lt;a href="http://www.datamind.biz"&gt;Datamind&lt;/a&gt; che, assieme ad &lt;a href="http://ensoul.it"&gt;Ensoul&lt;/a&gt;, ha completato la parte di visualizzazione.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="Radio Onde Furlane Android App screenshot" title="Radio Onde Furlane Android App" src="/img/radioonde-442-0488fb9b.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Le app permettono di ascoltare la diretta e di visualizzare i contenuti del sito della radio.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Con che licenza fornisco il codice sorgente delle app ai miei clienti?</title>
     <link rel="alternate" href="/blog/2014/03/preventivo/"/>
@@ -32,7 +70,7 @@
 &lt;p&gt;Metto poi al corrente il committente dei seguenti fatti:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;le applicazioni moderne sono entità complesse, costituite accostando componenti software la cui origine è svariata: componenti &lt;a href="http://it.wikipedia.org/wiki/%20Open_source"&gt;open source&lt;/a&gt;, componenti a pagamento, componenti sviluppati in precedenza da me per altri clienti, e componenti sviluppati da me per questa commessa&lt;/p&gt;
+&lt;p&gt;le applicazioni moderne sono entità complesse, costituite accostando componenti software la cui origine è svariata: componenti &lt;a href="http://it.wikipedia.org/wiki/ Open_source"&gt;open source&lt;/a&gt;, componenti a pagamento, componenti sviluppati in precedenza da me per altri clienti, e componenti sviluppati da me per questa commessa&lt;/p&gt;
 
 &lt;p&gt;solitamente gli sviluppatori &lt;em&gt;non forniscono&lt;/em&gt; il codice sorgente dei loro prodotti&lt;/p&gt;
 
@@ -67,14 +105,14 @@
     </author>
     <summary type="html">&lt;p&gt;&lt;a href="https://itunes.apple.com/it/app/lattosio/id803081423?mt=8&amp;amp;uo=4"&gt;Lattosio&lt;/a&gt; è una app che sfrutta il principio del &lt;a href="http://it.wikipedia.org/wiki/Crowdsourcing"&gt;crowdsourcing&lt;/a&gt; per raccogliere dati utili sulla presenza di lattosio nei cibi. &lt;/p&gt;
 
-&lt;p&gt;&lt;a href="http://www.genex.me/glife.php"&gt;G&amp;amp;life&lt;/a&gt;, committente della app, è una Società per Azioni che opera nel settore della nutrigenetica, la genetica applicata alla nutrizione, all&amp;#39;interno dell&amp;#39;&lt;a href="http://www.area.trieste.it/opencms/opencms/area/it/phonebook/insediati_detail.html?id=GLIFE"&gt;Area Science Park&lt;/a&gt; di Trieste; sviluppa e promuove  prodotti e servizi personalizzati in base all&amp;#39;analisi del DNA.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.genex.me/glife.php"&gt;G&amp;amp;life&lt;/a&gt;, committente della app, è una Società per Azioni che opera nel settore della nutrigenetica, la genetica applicata alla nutrizione, all&amp;#39;interno dell&amp;rsquo;&lt;a href="http://www.area.trieste.it/opencms/opencms/area/it/phonebook/insediati_detail.html?id=GLIFE"&gt;Area Science Park&lt;/a&gt; di Trieste; sviluppa e promuove  prodotti e servizi personalizzati in base all&amp;#39;analisi del DNA.&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt="Lattosio iPhone App screenshot" title="Lattosio iPhone App" src="/img/lattosio1-442-3843f8be.png" /&gt;&lt;/p&gt;
 
 &lt;p&gt;</summary>
     <content type="html">&lt;p&gt;&lt;a href="https://itunes.apple.com/it/app/lattosio/id803081423?mt=8&amp;amp;uo=4"&gt;Lattosio&lt;/a&gt; è una app che sfrutta il principio del &lt;a href="http://it.wikipedia.org/wiki/Crowdsourcing"&gt;crowdsourcing&lt;/a&gt; per raccogliere dati utili sulla presenza di lattosio nei cibi. &lt;/p&gt;
 
-&lt;p&gt;&lt;a href="http://www.genex.me/glife.php"&gt;G&amp;amp;life&lt;/a&gt;, committente della app, è una Società per Azioni che opera nel settore della nutrigenetica, la genetica applicata alla nutrizione, all&amp;#39;interno dell&amp;#39;&lt;a href="http://www.area.trieste.it/opencms/opencms/area/it/phonebook/insediati_detail.html?id=GLIFE"&gt;Area Science Park&lt;/a&gt; di Trieste; sviluppa e promuove  prodotti e servizi personalizzati in base all&amp;#39;analisi del DNA.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.genex.me/glife.php"&gt;G&amp;amp;life&lt;/a&gt;, committente della app, è una Società per Azioni che opera nel settore della nutrigenetica, la genetica applicata alla nutrizione, all&amp;#39;interno dell&amp;rsquo;&lt;a href="http://www.area.trieste.it/opencms/opencms/area/it/phonebook/insediati_detail.html?id=GLIFE"&gt;Area Science Park&lt;/a&gt; di Trieste; sviluppa e promuove  prodotti e servizi personalizzati in base all&amp;#39;analisi del DNA.&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt="Lattosio iPhone App screenshot" title="Lattosio iPhone App" src="/img/lattosio1-442-3843f8be.png" /&gt;&lt;/p&gt;
 
@@ -175,66 +213,6 @@
 &lt;li&gt;&lt;p&gt;&lt;a href="http://subtlepatterns.com"&gt;Subtle Patterns&lt;/a&gt; &amp;mdash; &lt;em&gt;a high quality resource for anyone in need of tilable textured patterns, free to use&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href="http://www.google.com/webfonts"&gt;Google Web Fonts&lt;/a&gt; (&lt;a href="http://www.google.com/webfonts/specimen/Arvo"&gt;Arvo&lt;/a&gt; e &lt;a href="http://www.google.com/fonts/specimen/PT+Sans"&gt;PT Sans&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Responsive Web Design</title>
-    <link rel="alternate" href="/blog/2013/03/responsive-web-design/"/>
-    <id>/blog/2013/03/responsive-web-design/</id>
-    <published>2013-03-18T00:00:00+01:00</published>
-    <updated>2013-03-18T00:00:00+01:00</updated>
-    <author>
-      <name>Daniele Pizzoni</name>
-    </author>
-    <summary type="html">&lt;p&gt;Le versioni per i telefonini dei siti Internet sono state inizialmente costruite in parallelo a quelle dei siti normali. Ma ora le tecnologie &lt;a href="http://it.wikipedia.org/wiki/HTML5"&gt;html5&lt;/a&gt; e &lt;a href="http://it.wikipedia.org/wiki/CSS3"&gt;css3&lt;/a&gt; permettono dei trucchi interessanti.&lt;/p&gt;
-
-&lt;p&gt;</summary>
-    <content type="html">&lt;p&gt;Le versioni per i telefonini dei siti Internet sono state inizialmente costruite in parallelo a quelle dei siti normali. Ma ora le tecnologie &lt;a href="http://it.wikipedia.org/wiki/HTML5"&gt;html5&lt;/a&gt; e &lt;a href="http://it.wikipedia.org/wiki/CSS3"&gt;css3&lt;/a&gt; permettono dei trucchi interessanti.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Prendiamo ad esempio il giornale online La Repubblica che si trova all&amp;#39;indirizzo &lt;a href="http://www.repubblica.it"&gt;http://www.repubblica.it.&lt;/a&gt; Se accedi al sito con un telefonino vieni rimandato automaticamente ad un altro sito, &lt;a href="http://m.repubblica.it"&gt;http://m.repubblica.it,&lt;/a&gt; dove &amp;ldquo;m&amp;rdquo; sta per &lt;em&gt;mobile&lt;/em&gt; (parola latina che l&amp;#39;inglese ci sta restituendo analogamente a &lt;em&gt;media&lt;/em&gt;). Purtroppo i costi di manutenzione, gli errori ed i problemi raddoppiano con la duplicazione dei siti: ne devi fare due invece che uno solo.&lt;/p&gt;
-
-&lt;p&gt;Un metodo più raffinato è quello di mantenere identici contenuti cambiando il modo in cui vengono mostrati sullo schermo. Questa tecnica, che ho usato per il mio sito, fa in modo che la pagina si &lt;em&gt;trasformi automaticamente,&lt;/em&gt; adattandosi alle dimensioni in cui viene visualizzata. Per capire cosa intendo basta che provi adesso a restringere o allargare la finestra del browser, o a girare il telefonino, come nel video seguente&lt;/p&gt;
-
-&lt;div class="video-wrapper"&gt;
-    &lt;iframe class="video-ryth" src="http://www.youtube.com/embed/RafHCP4QvQk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Cosa succede? Semplicemente il disegno del sito si trasforma in risposta alle mutate dimensioni, le immagini si restringono e vengono spostate. Le intestazioni e i loghi si rimpiccioliscono, alcuni particolari vengono nascosti e i font cambiano leggermente di dimensione.&lt;/p&gt;
-
-&lt;p&gt;È quello che in inglese viene chiamato Responsive Design e che in italiano ho sentito rendere con &lt;em&gt;impaginazione fluida&lt;/em&gt;. &lt;/p&gt;
-
-&lt;p&gt;Pare che l&amp;#39;idea sia nata, o meglio, sia stata per la prima volta esposta compiutamente, nel Maggio 2010 sull&amp;#39;articolo &lt;a href="http://www.italianalistapart.com/articoli/17-numero-7-8-giugno-2010/71-web-design-reattivo"&gt;Responsive Web Design&lt;/a&gt; (in italiano). All&amp;#39;inizio del 2011 la rivista Smashing Magazine con &lt;a href="http://www.smashingmagazine.com/2011/01/12/guidelines-for-responsive-web-design/"&gt;questo&lt;/a&gt; suo articolo ha sancito l&amp;#39;ingresso del Responsive Web Design nel mainstream del Web Design.&lt;/p&gt;
-
-&lt;p&gt;In realtà l&amp;#39;idea non è che sia poi così originale o rivoluzionaria; il fatto che si stia diffondendo così tardivamente è dovuto alla incapacità di usare le nuove tecnologie (&lt;a href="http://it.wikipedia.org/wiki/HTML5"&gt;HTML5&lt;/a&gt; e &lt;a href="http://it.wikipedia.org/wiki/CSS_(informatica)"&gt;CSS3&lt;/a&gt;) da parte di alcuni browser, in particolare quelli meno recenti di casa Microsoft che, come si sa, sono ancora molto diffusi.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>SposiFVG.com</title>
-    <link rel="alternate" href="/blog/2013/02/sposifvg-com/"/>
-    <id>/blog/2013/02/sposifvg-com/</id>
-    <published>2013-02-12T00:00:00+01:00</published>
-    <updated>2013-02-12T00:00:00+01:00</updated>
-    <author>
-      <name>Daniele Pizzoni</name>
-    </author>
-    <summary type="html">&lt;p&gt;&lt;a href="https://itunes.apple.com/it/app/sposifvg.com/id598569305?mt=8&amp;amp;uo=4"&gt;SposiFVG.com&lt;/a&gt; è la versione mobile per iPhone di &lt;a href="http://www.sposifvg.com/"&gt;sposifvg.com&lt;/a&gt;, sito gestito da &lt;a href="http://www.start2000.it/"&gt;Start 2000 Srl&lt;/a&gt;. È un catalogo di operatori commerciali che operano nei settori connessi che si rivolgono ai futuri sposi.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="SposiFVG.com iPhone App screenshot" title="SposiFVG.com iPhone App" src="/img/sposifvg-f3a2b8f7.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;</summary>
-    <content type="html">&lt;p&gt;&lt;a href="https://itunes.apple.com/it/app/sposifvg.com/id598569305?mt=8&amp;amp;uo=4"&gt;SposiFVG.com&lt;/a&gt; è la versione mobile per iPhone di &lt;a href="http://www.sposifvg.com/"&gt;sposifvg.com&lt;/a&gt;, sito gestito da &lt;a href="http://www.start2000.it/"&gt;Start 2000 Srl&lt;/a&gt;. È un catalogo di operatori commerciali che operano nei settori connessi che si rivolgono ai futuri sposi.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="SposiFVG.com iPhone App screenshot" title="SposiFVG.com iPhone App" src="/img/sposifvg-f3a2b8f7.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Con una grafica semplice e pulita permette la consultazione delle schede operatori che sono iscritti a sposifvg.com. Visualizza sito, indirizzo, telefono, fotografie e posizione degli operatori, permette di inviare facilmente una mail, fare una telefonata, trovare su mappa la posizione degli operatori e visualizzare il percorso stradale dalla posizione dell’utente a quella dell’operatore stesso.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://itunes.apple.com/it/app/sposifvg.com/id598569305?mt=8&amp;amp;uo=4"&gt;&lt;img alt="Disponibile su App Store Badge&amp;quot;" title="Scarica SposiFVG.com dall'App Store" src="/img/Available_on_the_App_Store_Badge_IT_135x40_0727-4539bec5.svg" /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;La app gestisce un database che riflette quello di sposifvg.com e che viene aggiornato automaticamente dalla rete ogni volta sia necessario. La app inoltre raccoglie in forma aggregata e anonima dati sull’utilizzo da parte degli utenti in maniera analoga a un sito web. In questo modo si possono ad esempio capire quali sono le categorie più seguite o quante telefonate o mail sono partite verso ciascun operatore.&lt;/p&gt;
 </content>
   </entry>
 </feed>
