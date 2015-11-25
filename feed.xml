@@ -5,10 +5,33 @@
   <id>http://danielepizzoni.it/</id>
   <link href="http://danielepizzoni.it/"/>
   <link href="http://danielepizzoni.it/feed.xml" rel="self"/>
-  <updated>2015-07-15T00:00:00+02:00</updated>
+  <updated>2015-12-20T00:00:00+01:00</updated>
   <author>
     <name>Daniele Pizzoni</name>
   </author>
+  <entry>
+    <title>ECRES App</title>
+    <link rel="alternate" href="/blog/2015/12/ECRES/"/>
+    <id>/blog/2015/12/ECRES/</id>
+    <published>2015-12-20T00:00:00+01:00</published>
+    <updated>2015-12-20T00:00:00+01:00</updated>
+    <author>
+      <name>Daniele Pizzoni</name>
+    </author>
+    <summary type="html">&lt;p&gt;Da tempo volevo dedicarmi ad una &lt;em&gt;single page webapp&lt;/em&gt;, nome altisonante che indica una applicazione web simile nel funzionamento ad una applicazione desktop. Ne ho avuto la possibilità partecpando a un bando pubblico del Dipartimento di Scienze Mediche...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;Da tempo volevo dedicarmi ad una &lt;em&gt;single page webapp&lt;/em&gt;, nome altisonante che indica una applicazione web simile nel funzionamento ad una applicazione desktop. Ne ho avuto la possibilità partecpando a un bando pubblico del Dipartimento di Scienze Mediche e Biologiche dell&amp;#39;Università di Udine.&lt;/p&gt;
+
+&lt;p&gt;L&amp;#39;applicazione è l&amp;#39;implementazione di un algoritmo, coperto da brevetto, creato dalla Prof.Maria Pia Francescato e dai suoi collaboratori che permette ai pazienti sofferenti di diabete di tipo 1 di regolare l&amp;#39;assunzione di carboidrati prima di un&amp;#39;attività fisica. Altre informazioni si possono trovare qui: &lt;a href="http://qui.uniud.it/notizieEventi/ricerca-e-innovazione/diabete-e-attivita-fisica-progetto-dellateneo-per"&gt;Diabete e attività fisica: progetto per prevenire squilibri glicemici nei pazienti insulino-dipendenti&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;La particolarità dell&amp;#39;applicazione è di essere completamente client-side. Gira sul browser del utente senza trasmettere alcun dato attraverso la rete in modo da non far esporre alcun dato sensibile sulla Rete.&lt;/p&gt;
+
+&lt;p&gt;Tecnologie usate: &lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"&gt;Javascript&lt;/a&gt;, &lt;a href="https://facebook.github.io/react/"&gt;React&lt;/a&gt;, &lt;a href="https://facebook.github.io/immutable-js/"&gt;Immutable.js&lt;/a&gt; e &lt;a href="http://semantic-ui.com"&gt;Semantic UI&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;L&amp;#39;applicazione non è al momento disponibile al pubblico in quanto dimostrazione tecnologica di un brevetto in attesa di commercializzazione.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="ECRES App screenshot" title="ECRES App" src="/img/ecres-442-f4d3f520.jpg" /&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>BMeters Hydrolink</title>
     <link rel="alternate" href="/blog/2015/07/bmeters/"/>
@@ -18,10 +41,18 @@
     <author>
       <name>Daniele Pizzoni</name>
     </author>
-    <summary type="html">&lt;p&gt;&lt;a href="https://play.google.com/store/apps/details?id=com.bmeters.hydrolinkmobile"&gt;Hydrolink Mobile&lt;/a&gt; è il tipo di app che preferisco sviluppare. In breve si tratta di una app per rilevare le letture dei contatori acqua, calore e ripartitori di calore &lt;a href="http://www.bmeters.com"&gt;B Meters Srl&lt;/a&gt; dotati di tecnologia &lt;a href="https://en.wikipedia.org/wiki/Meter-Bus"&gt;Wireless M-BUS&lt;/a&gt;. Immaginate un grande condominio...&lt;/p&gt;</summary>
-    <content type="html">&lt;p&gt;&lt;a href="https://play.google.com/store/apps/details?id=com.bmeters.hydrolinkmobile"&gt;Hydrolink Mobile&lt;/a&gt; è il tipo di app che preferisco sviluppare. In breve si tratta di una app per rilevare le letture dei contatori acqua, calore e ripartitori di calore &lt;a href="http://www.bmeters.com"&gt;B Meters Srl&lt;/a&gt; dotati di tecnologia &lt;a href="https://en.wikipedia.org/wiki/Meter-Bus"&gt;Wireless M-BUS&lt;/a&gt;. Immaginate un grande condominio con decine o forse centinaia di contatori acqua da leggere &amp;ldquo;a occhio&amp;rdquo;. Beh, con la tecnologia B Meters e con questa app basta attendere qualche minuto e sullo schermo compriranno le letture di tutti i contatori.&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;a href="https://play.google.com/store/apps/details?id=com.bmeters.hydrolinkmobile"&gt;Hydrolink Mobile&lt;/a&gt; è il tipo di app che preferisco sviluppare: &lt;em&gt;la app aziendale davvero utile&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;La app, oltre alla letture, visualizza molti altri dati tecnici e permette l&amp;#39;esportazione degli stessi verso il software desktop di BMeters.&lt;/p&gt;
+&lt;p&gt;Mi è stata commissionata da &lt;a href="http://www.bmeters.com"&gt;B Meters Srl&lt;/a&gt; un'azienda della mia regione che produce ed esporta contatori acqua e di calore.&lt;/p&gt;
+
+&lt;p&gt;Si tratta di una app per rilevare...&lt;/p&gt;</summary>
+    <content type="html">&lt;p&gt;&lt;a href="https://play.google.com/store/apps/details?id=com.bmeters.hydrolinkmobile"&gt;Hydrolink Mobile&lt;/a&gt; è il tipo di app che preferisco sviluppare: &lt;em&gt;la app aziendale davvero utile&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mi è stata commissionata da &lt;a href="http://www.bmeters.com"&gt;B Meters Srl&lt;/a&gt; un&amp;#39;azienda della mia regione che produce ed esporta contatori acqua e di calore.&lt;/p&gt;
+
+&lt;p&gt;Si tratta di una app per rilevare le letture dei contatori dotati di tecnologia &lt;a href="https://en.wikipedia.org/wiki/Meter-Bus"&gt;Wireless M-BUS&lt;/a&gt;. La app si interfaccia con un accessorio BMeters via Bluetooth; il dispositivo raccoglie le letture e invia allo smartphone uno stream binario che la app interpreta, seleziona e raccoglie. L&amp;#39;utente della app, di solito un operatore dell&amp;#39;azienda fornitrice l&amp;#39;acqua alle abitazioni, precarica la app con una o più liste di contatori di cui intende raccogliere i dati. Questi potranno essere consultati sulla app o esportati verso un foglio di calcolo come Microsoft Excel.&lt;/p&gt;
+
+&lt;p&gt;Immaginate un grande condominio con decine o forse centinaia di contatori acqua da leggere &amp;ldquo;a occhio&amp;rdquo;. Con la tecnologia B Meters e con questa app basta attendere qualche minuto e sullo schermo compriranno le letture di tutti i contatori.&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt="BMeters Hydrolink Android App screenshot" title="BMeters Hydrolink App" src="/img/hydrolink-442-862a8253.png" /&gt;&lt;/p&gt;
 </content>
@@ -156,63 +187,6 @@
 &lt;p&gt;Viceversa: hai l&amp;#39;idea, un business plan, un budget e stai cercando un esperto per realizzare una app per iPhone o Android? &lt;a href="/contatti/"&gt;Scrivimi!!&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Nota: per questo articolo mi sono ispirato ad alcune parti di: &lt;a href="http://blog.mojotech.com/post/69080941093/sorry-but-your-idea-is-only-worth-1"&gt;Sorry, But Your Idea Is Only Worth $1&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Web di qualità: semplicità, tipografia e responsive design</title>
-    <link rel="alternate" href="/blog/2013/03/web-di-qualita-semplicita-tipografia-responsive-design/"/>
-    <id>/blog/2013/03/web-di-qualita-semplicita-tipografia-responsive-design/</id>
-    <published>2013-03-19T00:00:00+01:00</published>
-    <updated>2013-03-19T00:00:00+01:00</updated>
-    <author>
-      <name>Daniele Pizzoni</name>
-    </author>
-    <summary type="html">&lt;p&gt;Ho creato questo sito seguendo quelli che sono i più recenti &lt;a href="http://thenextweb.com/dd/2012/12/30/10-new-web-design-trends-you-can-expect-to-see-in-2013/"&gt;&lt;em&gt;trend&lt;/em&gt;&lt;/a&gt; qualitativi del web: semplicità, tipografia e responsive design. &lt;/p&gt;
-
-&lt;p&gt;&lt;a href="/img/rhythm-shot-b5fd651a.png"&gt;&lt;img alt="Ritmo tipografico verticale&amp;quot;" title="ritmo!" class="img-full" src="/img/rhythm-shot-b5fd651a.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;L&amp;#39;immagine mostra uno degli aspetti tipografici della composizione del sito: gli elementi sono disposti in maniera uniforme come sulle righe di un quaderno di scuola. Così l&amp;#39;occhio del lettore fa meno fatica a spostarsi sulla pagina perché incontra salti costanti e non il disordinato alternarsi di testo e immagini a cui siamo abituati sul web.&lt;/p&gt;
-
-&lt;p&gt;</summary>
-    <content type="html">&lt;p&gt;Ho creato questo sito seguendo quelli che sono i più recenti &lt;a href="http://thenextweb.com/dd/2012/12/30/10-new-web-design-trends-you-can-expect-to-see-in-2013/"&gt;&lt;em&gt;trend&lt;/em&gt;&lt;/a&gt; qualitativi del web: semplicità, tipografia e responsive design. &lt;/p&gt;
-
-&lt;p&gt;&lt;a href="/img/rhythm-shot-b5fd651a.png"&gt;&lt;img alt="Ritmo tipografico verticale&amp;quot;" title="ritmo!" class="img-full" src="/img/rhythm-shot-b5fd651a.png" /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;L&amp;#39;immagine mostra uno degli aspetti tipografici della composizione del sito: gli elementi sono disposti in maniera uniforme come sulle righe di un quaderno di scuola. Così l&amp;#39;occhio del lettore fa meno fatica a spostarsi sulla pagina perché incontra salti costanti e non il disordinato alternarsi di testo e immagini a cui siamo abituati sul web.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2&gt;Tipografia&lt;/h2&gt;
-
-&lt;p&gt;La qualità sul web non è più solo l&amp;#39;applicazione di strumenti informatici ma ha ormai a che fare con il recupero e l&amp;#39;applicazione al web di centinaia di anni di arte e tecnica della tipografia.&lt;/p&gt;
-
-&lt;p&gt;La tipografia si occupa del sistemare i caratteri tipografici sulla pagina in modo da rendere agevole la lettura. Ciò comprende la scelta del &lt;a href="http://it.wikipedia.org/wiki/Tipo_di_carattere"&gt;tipo o &lt;em&gt;font&lt;/em&gt;&lt;/a&gt;, la dimensione del carattere, la lunghezza della linea e la dimensione dell&amp;#39;interlinea, la spaziatura, la &lt;a href="http://it.wikipedia.org/wiki/Crenatura"&gt;crenatura o kerning&lt;/a&gt;, etc. (&lt;a href="http://www.tunabites.it/anatomia-del-carattere-tipografico.html"&gt;qui troviamo&lt;/a&gt; un&amp;#39;interessante pagina su questi argomenti).&lt;/p&gt;
-
-&lt;p&gt;La tipografia è sia una tecnica, in quanto conoscenza delle norme e dei mezzi tecnologici necessari ad arrivare al risultato, sia un&amp;#39;arte, perché non esistono formule assolute che assicurino il risultati ma ha a che fare con il gusto estetico e con la capacità di capire le necessità di chi legge.&lt;/p&gt;
-
-&lt;p&gt;È solo negli ultimissimi anni che si sono diffusi i &lt;a href="http://it.wikipedia.org/wiki/Browser"&gt;&lt;em&gt;web browser&lt;/em&gt;&lt;/a&gt; in grado di visualizzare font arbitrari e applicare al web con buona precisione i parametri tipografici. Ed è solo negli ultimi mesi che si stanno diffondendo alcuni servizi che offrono font per il web di qualita, sia a pagamento (&lt;a href="http://fonts.com"&gt;Monotype fonts.com,&lt;/a&gt; &lt;a href="https://typekit.com/fonts"&gt;Adobe Typekit&lt;/a&gt;) che in forma gratuita (&lt;a href="http://www.google.com/webfonts"&gt;Google Web Fonts,&lt;/a&gt; &lt;a href="http://html.adobe.com/edge/webfonts/"&gt;Adobe Edge Web Fonts&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;Per questo la tipografia sta avendo impatto sul web solo ora: meglio tardi che mai.&lt;/p&gt;
-
-&lt;h2&gt;Adattabilità &lt;em&gt;mobile&lt;/em&gt;&lt;/h2&gt;
-
-&lt;p&gt;L&amp;#39;altro aspetto importante è quello del &lt;em&gt;Responsive Design.&lt;/em&gt; Si dice così del &lt;em&gt;web design&lt;/em&gt; che si adatta in modo automatico alle ridotte dimensioni dei dispositivi portatili come i telefonini. Se vuoi approfondire questo aspetto puoi leggere il mio articolo &lt;a href="/blog/2013/03/responsive-web-design/"&gt;Responsive Web Design&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2&gt;Strumenti&lt;/h2&gt;
-
-&lt;p&gt;Questo sito è completamente sviluppato con strumenti Open Source liberamente accessibili in rete. &lt;/p&gt;
-
-&lt;p&gt;Se ti interessa qualcosa di simile non devi far altro che &lt;a href="/contatti"&gt;contattarmi.&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="http://middlemanapp.com"&gt;Middleman&lt;/a&gt; &amp;mdash; &lt;em&gt;Middleman is a static site generator using all the shortcuts and tools in modern web development&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="http://sass-lang.com"&gt;Sass&lt;/a&gt; &amp;mdash; &lt;em&gt;Sass is an extension of CSS3, adding nested rules, variables, mixins, selector inheritance, and more&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="http://compass-style.org"&gt;Compass&lt;/a&gt; &amp;mdash; &lt;em&gt;Compass is an open-source CSS Authoring Framework&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="http://susy.oddbird.net"&gt;Susy&lt;/a&gt; &amp;mdash; &lt;em&gt;Responsive grids for Compass&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="http://daneden.me/baseline/"&gt;Baseline.js&lt;/a&gt; &amp;mdash; &lt;em&gt;Baseline.js is a jQuery plugin that helps you to maintain vertical rhythm set by a typographic baseline, even when adding inline images with awkward sizes&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="http://subtlepatterns.com"&gt;Subtle Patterns&lt;/a&gt; &amp;mdash; &lt;em&gt;a high quality resource for anyone in need of tilable textured patterns, free to use&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href="http://www.google.com/webfonts"&gt;Google Web Fonts&lt;/a&gt; (&lt;a href="http://www.google.com/webfonts/specimen/Arvo"&gt;Arvo&lt;/a&gt; e &lt;a href="http://www.google.com/fonts/specimen/PT+Sans"&gt;PT Sans&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </content>
   </entry>
 </feed>
