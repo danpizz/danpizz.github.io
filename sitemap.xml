@@ -4,115 +4,115 @@
 
    <url>
       <loc>http://danielepizzoni.it</loc>
-      <lastmod>2016-02-15</lastmod>
+      <lastmod>2016-02-21</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1.0</priority>
    </url>
 
    <url>
       <loc>http://danielepizzoni.it/archivio-anno/</loc>
-      <lastmod>2016-02-15</lastmod>
+      <lastmod>2016-02-21</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
 
    <url>
       <loc>http://danielepizzoni.it/faq/</loc>
-      <lastmod>2016-02-15</lastmod>
+      <lastmod>2016-02-21</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
 
    <url>
       <loc>http://danielepizzoni.it/contatti/</loc>
-      <lastmod>2016-02-15</lastmod>
+      <lastmod>2016-02-21</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
 
    <url>
       <loc>http://danielepizzoni.it/curriculum-vitae/</loc>
-      <lastmod>2016-02-15</lastmod>
+      <lastmod>2016-02-21</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
 
    <url>
       <loc>http://danielepizzoni.it/portfolio/</loc>
-      <lastmod>2016-02-15</lastmod>
+      <lastmod>2016-02-21</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
    </url>
 
       <url>
          <loc>http://danielepizzoni.it/blog/2015/12/ECRES/</loc>
-         <lastmod>2016-02-15</lastmod>
+         <lastmod>2016-02-21</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2015/07/bmeters/</loc>
-         <lastmod>2016-02-15</lastmod>
+         <lastmod>2016-02-21</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2014/08/ondefurlane/</loc>
-         <lastmod>2016-01-21</lastmod>
+         <lastmod>2015-08-19</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2014/03/preventivo/</loc>
-         <lastmod>2014-03-27</lastmod>
+         <lastmod>2014-06-28</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2014/02/lattosio-app/</loc>
-         <lastmod>2014-03-17</lastmod>
+         <lastmod>2015-08-16</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2013/12/ho-un-idea-geniale-per-una-app-ma-ho-paura-che-me-la-freghino/</loc>
-         <lastmod>2014-01-02</lastmod>
+         <lastmod>2014-03-11</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2013/03/web-di-qualita-semplicita-tipografia-responsive-design/</loc>
-         <lastmod>2013-11-06</lastmod>
+         <lastmod>2013-03-28</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2013/03/responsive-web-design/</loc>
-         <lastmod>2013-03-19</lastmod>
+         <lastmod>2013-03-28</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2013/02/sposifvg-com/</loc>
-         <lastmod>2013-03-18</lastmod>
+         <lastmod>2013-03-28</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2013/01/ho-unidea-geniale-te-la-dico-tu-fai-la-app-la-vendiamo-e-dividiamo-i-proventi-fiftyfifty/</loc>
-         <lastmod>2013-12-30</lastmod>
-         <changefreq>monthly</changefreq>
-         <priority>0.9</priority>
-      </url>
-      <url>
-         <loc>http://danielepizzoni.it/blog/2012/12/cose-la-ad-hoc-distribution-e-perche-devo-inviare-allo-sviluppatore-il-mio-udid/</loc>
          <lastmod>2013-04-10</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
+         <loc>http://danielepizzoni.it/blog/2012/12/cose-la-ad-hoc-distribution-e-perche-devo-inviare-allo-sviluppatore-il-mio-udid/</loc>
+         <lastmod>2013-03-28</lastmod>
+         <changefreq>monthly</changefreq>
+         <priority>0.9</priority>
+      </url>
+      <url>
          <loc>http://danielepizzoni.it/blog/2012/11/letture-hybrid-mobile-apps-applicazioni-mobile-multipiattaforma/</loc>
-         <lastmod>2013-09-23</lastmod>
+         <lastmod>2013-04-18</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
@@ -124,37 +124,37 @@
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2012/05/applicazioni-ibride-per-iphone-android-blackberry-etc/</loc>
-         <lastmod>2013-09-23</lastmod>
+         <lastmod>2013-04-18</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2012/05/save-my-life/</loc>
-         <lastmod>2013-03-19</lastmod>
+         <lastmod>2013-03-28</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2012/04/app-in-realta-aumentata-per-i-punti-fiduciali/</loc>
-         <lastmod>2014-03-10</lastmod>
+         <lastmod>2014-06-28</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2012/04/app-aziendali-per-ipad-e-iphone/</loc>
-         <lastmod>2013-04-10</lastmod>
+         <lastmod>2013-03-28</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2011/12/come-escludere-i-nostri-accessi-dalle-statistiche-di-google-analytics/</loc>
-         <lastmod>2013-11-09</lastmod>
+         <lastmod>2014-03-11</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2011/12/restyling-di-danielepizzoni-it/</loc>
-         <lastmod>2013-03-18</lastmod>
+         <lastmod>2013-03-28</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
@@ -166,25 +166,25 @@
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2011/09/usare-time-machine-e-salvare-i-backup-su-un-server-linux-ubuntu/</loc>
-         <lastmod>2013-11-09</lastmod>
+         <lastmod>2014-03-11</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2011/07/quanto-costa-una-app-iphone-o-ipad/</loc>
-         <lastmod>2014-03-10</lastmod>
+         <lastmod>2014-06-28</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2011/07/guglielmo-hotspot-per-android/</loc>
-         <lastmod>2013-03-18</lastmod>
+         <lastmod>2013-03-28</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2011/06/come-aggiornare-la-rom-di-un-nexus-one-anche-con-il-tasto-di-accensione-rotto/</loc>
-         <lastmod>2013-11-09</lastmod>
+         <lastmod>2014-03-11</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
@@ -196,13 +196,13 @@
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2011/04/costruire-un-blog-con-il-responsive-design/</loc>
-         <lastmod>2013-03-19</lastmod>
+         <lastmod>2013-03-28</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2011/04/guglielmo-hotspot/</loc>
-         <lastmod>2013-03-19</lastmod>
+         <lastmod>2013-03-28</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
@@ -214,7 +214,7 @@
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2011/03/beatdelay/</loc>
-         <lastmod>2013-03-18</lastmod>
+         <lastmod>2013-03-28</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
@@ -226,25 +226,25 @@
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2009/11/creating-an-universal-static-opencv-library-in-snow-leopard/</loc>
-         <lastmod>2013-11-09</lastmod>
+         <lastmod>2014-03-11</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2009/06/managing-static-versioned-libraries-in-os-x/</loc>
-         <lastmod>2013-11-09</lastmod>
+         <lastmod>2014-03-11</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2008/07/creating-an-universal-static-opencv-library-with-iphone-support/</loc>
-         <lastmod>2013-11-09</lastmod>
+         <lastmod>2014-03-11</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
       <url>
          <loc>http://danielepizzoni.it/blog/2008/02/how-to-uninstall-mac-os-x-pkg-packages/</loc>
-         <lastmod>2013-11-09</lastmod>
+         <lastmod>2014-03-11</lastmod>
          <changefreq>monthly</changefreq>
          <priority>0.9</priority>
       </url>
