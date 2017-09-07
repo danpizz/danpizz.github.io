@@ -1,234 +1,203 @@
-
-
-
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"  lang="it"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"  lang="it"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"  lang="it"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"  lang="it"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0;">
-        <meta name="format-detection" content="telephone=no">
+<html lang="it">
 
-        <!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="author" content="Daniele Pizzoni">
-        <meta name="description" content="A cosa serve il codice sorgente di una app?">
-        <meta name="keywords" content="data.page.meta_keywords %>" />
+  <title>A cosa serve il codice sorgente di una app?</title>
+  <meta name="description" content="Ho notato che i miei clienti, aziende o persone che vogliono avere una propria applicazione per iPhone, iPad o Android (le cosiddette app mobile), rispetto a...">
 
-            <title>A cosa serve il codice sorgente di una app?</title>
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://danielepizzoni.it/blog/2011/10/a-cosa-serve-il-codice-sorgente-di-una-app/">
+  <link rel="alternate" type="application/rss+xml" title="Daniele Pizzoni" href="/feed.xml">
+  
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        <link href="/css/main-a2afab2e.css" rel="stylesheet" />
-        <link href="/css/highlight-35741444.css" rel="stylesheet" />
-        <link href="/css/print-d5585c86.css" rel="stylesheet" media="print" />
+  ga('create', 'UA-21153020-1', 'auto');
+  ga('send', 'pageview');
 
-        <script src="/js/vendor/modernizr-2.6.1.min-68fdcc99.js"></script>
-        <script src="/js/vendor/respond.min-bb760321.js"></script>
+</script>
+  
 
-        <!-- <link href='/css/print-d5585c86.css' rel='stylesheet' type='text/css' media='print'> -->
+  
+</head>
 
-        <link href='http://fonts.googleapis.com/css?family=Arvo:400,400italic' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">Daniele Pizzoni</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+            <a class="page-link" href="/blog/">Blog</a>
+            
+          
+            
+            
+            <a class="page-link" href="/contatti/">Contatti</a>
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">A cosa serve il codice sorgente di una app?</h1>
+    <p class="post-meta">
+      <time datetime="2011-10-21T00:00:00+02:00" itemprop="datePublished">
         
-        
-    </head>
-
-        	<body id="page" />
-
-
-         <div class="masthead-shadow">
- <div class="container">
-  <header id="masthead">
-
-    <hr/>
-
-    <nav id="menu">
-      <ul>
-        <li class="left"><a href="/">Chi sono</a></li>
-        <li class="left"><a href="/portfolio/">Portfolio</a></li>
-        <li class="right"><a href="/contatti/">Contatti</a></li>
-        <li class="right"><a href="/blog/">Blog</a> | <a href="/faq/">FAQ</a></li>
-      </ul>
-    </nav>
-
-    <div id="masthead-brand">
-      <span class="masthead-logo" id="masthead-logo"><a href="/"><img src="/img/logo-b45c4748.png"/></a></span>
-      <span class="masthead-logo" id="masthead-logo-2x"><a href="/"><img src="/img/logo@2x-d67070a7.png"/></a></span>
-      
-      <span class="menu-button" ><a href="#">
-          <img id="menu-button-2x" src="/img/menu-icon@2x-ce9e5458.png"/>
-          <img id="menu-button" src="/img/menu-icon-770ed078.png"/>
-      </a></span>
-      
-    </div>
-
-    <p id="motto">Daniele Pizzoni<span> &ndash; </span><br/>Artigiano del Software</p>
-
-    <nav id="mobile-menu">
-      <ul>
-        <li class="left"><a href="/">Chi sono</a></li>
-        <li class="left"><a href="/portfolio/">Portfolio</a></li>
-        <li class="right"><a href="/blog/">Blog</a></li>
-        <li class="right"><a href="/faq/">FAQ / Archivi</a></li>
-        <li class="right"><a href="/contatti/">Contatti</a></li>
-      </ul>
-    </nav>
+        Oct 21, 2011
+      </time>
+      </p>
   </header>
-</div>
-</div>
 
+  <div class="post-content" itemprop="articleBody">
+    <p>Ho notato che i miei clienti, aziende o persone che vogliono avere una propria applicazione per iPhone, iPad o Android (le cosiddette <em>app mobile</em>), rispetto ai <strong>codici sorgenti</strong> si dividono sommariamente in 3 categorie:</p>
 
-            <div class="container" id="main-container">
-
-            <div id="main" role="page">
-
-	<h1>A cosa serve il codice sorgente di una app?</h1>
-	
-	<p>Ho notato che i miei clienti, aziende o persone che vogliono avere una propria applicazione per iPhone, iPad o Android (le cosiddette <em>app mobile</em>), rispetto ai <strong>codici sorgenti</strong> si dividono sommariamente in 3 categorie:
 <ul>
-    <li>quelli che hanno una vaga idea di cosa siano</li>
-    <li>quelli che non si fidano: a volte sapendo di cosa si tratti a volte no, li vogliono assolutamente</li>
-    <li>i saggi: quelli che se gli servono davvero li vogliono. Altrimenti preferiscono uno sconto</li>
+  <li>quelli che hanno una vaga idea di cosa siano&lt;/li&gt;</li>
+  <li>quelli che non si fidano: a volte sapendo di cosa si tratti a volte no, li vogliono assolutamente</li>
+  <li>i saggi: quelli che se gli servono davvero li vogliono. Altrimenti preferiscono uno sconto</li>
 </ul>
-Un articolo di un blog è un modo per poter spiegare alle persone alcune cose su cui evidentemente c&#39;è bisogno di far chiarezza. Cercherò allora di raccontare cosa sono i sorgenti, a cosa possano servire a chi vuole avere una applicazione iOS o Android e perché si cerca di farli pagare come extra al cliente.</p>
+
+<p>Un articolo di un blog è un modo per poter spiegare alle persone alcune cose su cui evidentemente c’è bisogno di far chiarezza. Cercherò allora di raccontare cosa sono i sorgenti, a cosa possano servire a chi vuole avere una applicazione iOS o Android e perché si cerca di farli pagare come extra al cliente.</p>
 
 <!--more Continua... -->
-
 <h4>Cos'è il codice sorgente?</h4>
+<p>Le app sono programmi per computer. I programmi vengono scritti dagli sviluppatori sotto forma di <em><a href="http://www.yellowjug.com/open-source/cosa-sono-software-e-codice-sorgente/">codice sorgente</a></em> Dal codice sorgente viene generato il <a href="http://it.wikipedia.org/wiki/File_eseguibile" target="_blank">programma eseguibile</a> che è quella cosa che ci scarichiamo sul telefonino dall’<a href="http://it.wikipedia.org/wiki/App_Store" target="_blank">Apple App Store</a> o dall’<a href="https://market.android.com/" target="_blank">Android Market</a>. Ovvero il classico programma dei nostri computer da scrivania.</p>
 
-<p>Le app sono programmi per computer. I programmi vengono scritti dagli sviluppatori sotto forma di <em><a href="http://www.yellowjug.com/open-source/cosa-sono-software-e-codice-sorgente/" target="_blank">codice sorgente.</a></em> Dal codice sorgente viene generato il <a href="http://it.wikipedia.org/wiki/File_eseguibile" target="_blank">programma eseguibile</a> che è quella cosa che ci scarichiamo sul telefonino dall&rsquo;<a href="http://it.wikipedia.org/wiki/App_Store" target="_blank">Apple App Store</a> o dall&rsquo;<a href="https://market.android.com/" target="_blank">Android Market</a>. Ovvero il classico programma dei nostri computer da scrivania.</p>
+<p>Ciascun programmatore scrive questi codici in modo differente. I programmatori più bravi sono quelli che scrivono codice <em>facile da mantenere:</em> un codice che è stato scritto con l’intenzione di facilitarne la comprensione da parte di altri programmatori e non solo con quella di produrre un programma efficiente per la macchina.</p>
 
-<p>Ciascun programmatore scrive questi codici in modo differente. I programmatori più bravi sono quelli che scrivono codice <em>facile da mantenere:</em> un codice che è stato scritto con l&#39;intenzione di facilitarne la comprensione da parte di altri programmatori e non solo con quella di produrre un programma efficiente per la macchina.</p>
+<p>Un <a href="http://it.wikipedia.org/wiki/Spaghetti_code" target="_blank">codice scritto male</a> può essere davvero incomprensibile anche alla stessa persona che l’ha scritto. Magari genera un programma che funziona abbastanza bene, ma la correzione di <a href="http://it.wikipedia.org/wiki/Bug">bug</a>, il riutilizzo e la modifica risultano talmente dispendiosi da rendere la sua riscrittura più conveniente.</p>
 
-<p>Un <a href="http://it.wikipedia.org/wiki/Spaghetti_code" target="_blank">codice scritto male</a> può essere davvero incomprensibile anche alla stessa persona che l&#39;ha scritto. Magari genera un programma che funziona abbastanza bene, ma la correzione di <a href="http://it.wikipedia.org/wiki/Bug">bug</a>, il riutilizzo e la modifica risultano talmente dispendiosi da rendere la sua riscrittura più conveniente.</p>
-
-<p>Una caratteristica del codice scritto bene è, invece, che si può riutilizzare. Raramente un programmatore riscrive ciascuna app da zero. In genere prende il codice di una app analoga che ha già scritto, o del codice <a href="http://it.wikipedia.org/wiki/Open_source">open source</a> dalla Rete e lo modifica o lo riadatta. Il risultato è quello di risparmiare un sacco di tempo, di commettere meno errori, di evitare il lavoro noioso e ripetitivo.
+<p>Una caratteristica del codice scritto bene è, invece, che si può riutilizzare. Raramente un programmatore riscrive ciascuna app da zero. In genere prende il codice di una app analoga che ha già scritto, o del codice <a href="http://it.wikipedia.org/wiki/Open_source">open source</a> dalla Rete e lo modifica o lo riadatta. Il risultato è quello di risparmiare un sacco di tempo, di commettere meno errori, di evitare il lavoro noioso e ripetitivo.</p>
 <h4>Come posso avere i codici sorgenti della app che comissiono?</h4>
-Per i sorgenti valgono le norme del diritto d&#39;autore in modo analogo al testo di un articolo di giornale o alla musica di un brano. Il sorgente nasce di proprietà di chi lo scrive e nella maggioranza dei casi non è il software che si vende, ma la <em>licenza d&#39;uso</em> sul programma e/o sui sorgenti.</p>
+<p>Per i sorgenti valgono le norme del diritto d’autore in modo analogo al testo di un articolo di giornale o alla musica di un brano. Il sorgente nasce di proprietà di chi lo scrive e nella maggioranza dei casi non è il software che si vende, ma la <em>licenza d’uso</em> sul programma e/o sui sorgenti.</p>
 
-<p>La cosa è analoga all&#39;acquisto di un CD musicale, un giornale o un libro. In questi casi si acquista il diritto di ascoltare o leggere le parole e non quello di riutilizzarle o modificarle. A meno di non acquistare, a parte, anche i diritti di pubblicazione o riutilizzo.</p>
+<p>La cosa è analoga all’acquisto di un CD musicale, un giornale o un libro. In questi casi si acquista il diritto di ascoltare o leggere le parole e non quello di riutilizzarle o modificarle. A meno di non acquistare, a parte, anche i diritti di pubblicazione o riutilizzo.</p>
 
-<p>Sento una voce: &ldquo;Ma io ti sto chiedendo di <em>scrivere</em> una app, è come se ti chiedessi di <em>scriverlo</em> il libro! Mica sto comperando una cosa già scritta!&rdquo;</p>
+<p>Sento una voce: “Ma io ti sto chiedendo di <em>scrivere</em> una app, è come se ti chiedessi di <em>scriverlo</em> il libro! Mica sto comperando una cosa già scritta!”</p>
 
-<p>Certo. Però se tu commissioni a uno scrittore un libro in esclusiva solo per te (ad esempio per la sceneggiatura di un film che stai producendo), ti costerà molto di più che commissionare la stessa sceneggiatura lasciando all&#39;autore la possibilità di pubblicarsela a suo nome per conto suo, o di riutilizzare la trama in un altro romanzo, o di rivendere la storia a chi ci farà poi un fumetto.</p>
+<p>Certo. Però se tu commissioni a uno scrittore un libro in esclusiva solo per te (ad esempio per la sceneggiatura di un film che stai producendo), ti costerà molto di più che commissionare la stessa sceneggiatura lasciando all’autore la possibilità di pubblicarsela a suo nome per conto suo, o di riutilizzare la trama in un altro romanzo, o di rivendere la storia a chi ci farà poi un fumetto.</p>
 
 <p>Si tratta di trovare la convenienza economica.</p>
 
-<p>I sorgenti possono o rimanere di proprietà dello sviluppatore, o venire ceduti in toto (cessione di tutti i diritti), o venire ceduti in modalità <em>esclusiva</em> o <em>non esclusiva</em>, o sotto altre formule. In particolare la cessione non esclusiva prevede che sia il committente che lo sviluppatore possano entrambi utilizzare i sorgenti.
+<p>I sorgenti possono o rimanere di proprietà dello sviluppatore, o venire ceduti in toto (cessione di tutti i diritti), o venire ceduti in modalità <em>esclusiva</em> o <em>non esclusiva</em>, o sotto altre formule. In particolare la cessione non esclusiva prevede che sia il committente che lo sviluppatore possano entrambi utilizzare i sorgenti.</p>
 <h4>Mi serve il codice sorgente se commissiono una app per iPhone o Android?</h4>
-Abbiamo visto che il possesso dei codici sorgenti di una app serve a poterla modificare, migliorare, ampliare. E a scrivere altre app in modo più efficiente.</p>
+<p>Abbiamo visto che il possesso dei codici sorgenti di una app serve a poterla modificare, migliorare, ampliare. E a scrivere altre app in modo più efficiente.</p>
 
 <p>Chi commissiona una app, ad esempio per iPhone, dovrebbe cercare di rivolgersi a una azienda o a una persona con cui sente di poter avere un rapporto di fiducia.</p>
 
-<p>Spesso capita, invece, che l&#39;interesse per i sorgenti sia più spinto dalla diffidenza e dalla paura di rimanere legato allo sviluppatore che da reali necessità pratiche o economiche. Spesso, in questi casi, l&#39;avere acquistato i diritti sui sorgenti è solo un costo in più. Passare da uno sviluppatore all&#39;altro è sempre un costo e il passaggio non è detto risolva eventuali problemi. Se, poi, i sorgenti sono scritti male, si rischia di dover comunque rincominciare tutto daccapo.</p>
+<p>Spesso capita, invece, che l’interesse per i sorgenti sia più spinto dalla diffidenza e dalla paura di rimanere legato allo sviluppatore che da reali necessità pratiche o economiche. Spesso, in questi casi, l’avere acquistato i diritti sui sorgenti è solo un costo in più. Passare da uno sviluppatore all’altro è sempre un costo e il passaggio non è detto risolva eventuali problemi. Se, poi, i sorgenti sono scritti male, si rischia di dover comunque rincominciare tutto daccapo.</p>
 
-<p>In questi casi lasciare che sia lo sviluppatore ad occuparsi dei sorgenti vuol dire un grattacapo in meno e un costo finale ridotto. L&#39;importante è scegliere lo sviluppatore <a href="/contatti">giusto</a>!</p>
+<p>In questi casi lasciare che sia lo sviluppatore ad occuparsi dei sorgenti vuol dire un grattacapo in meno e un costo finale ridotto. L’importante è scegliere lo sviluppatore <a href="/contatti">giusto</a>!</p>
 
-<p>Può accadere, piuttosto, che un azienda, trovandosi temporaneamente priva di risorse interne, provi a rivolgersi a un <em>freelance</em> per la scrittura di codice che, in seguito, vorrà proseguire da sé. In questi casi è ragionevole che il freelance cerchi di farsi pagare il valore aggiunto dell&#39;outsorcing, della cessione del codice e delle proprie capacità personali. In questi casi si può valutare la licenza in esclusiva su alcune parti e non in esclusiva su altre, anche se, devo dire, ci si sente in genere dire semplicemente &ldquo;vogliamo tutti i sorgenti&rdquo;.</p>
+<p>Può accadere, piuttosto, che un azienda, trovandosi temporaneamente priva di risorse interne, provi a rivolgersi a un <em>freelance</em> per la scrittura di codice che, in seguito, vorrà proseguire da sé. In questi casi è ragionevole che il freelance cerchi di farsi pagare il valore aggiunto dell’outsorcing, della cessione del codice e delle proprie capacità personali. In questi casi si può valutare la licenza in esclusiva su alcune parti e non in esclusiva su altre, anche se, devo dire, ci si sente in genere dire semplicemente “vogliamo tutti i sorgenti”.</p>
 
-<p>Infine ricordiamo che naturalmente c&#39;è anche l&#39;interesse da parte di chi sviluppa di tenere legato a sé il cliente, che dovrà rivolgersi a chi detiene il codice nel momento in cui volesse ampliare la sua app. Ma se il cliente è soddisfatto del lavoro e del prezzo pagato, perché non dovrebbe farlo?</p>
+<p>Infine ricordiamo che naturalmente c’è anche l’interesse da parte di chi sviluppa di tenere legato a sé il cliente, che dovrà rivolgersi a chi detiene il codice nel momento in cui volesse ampliare la sua app. Ma se il cliente è soddisfatto del lavoro e del prezzo pagato, perché non dovrebbe farlo?</p>
 
 <p>Cerchiamo dunque di armarci di buon senso e di trovare degli accordi vantaggiosi per tutti.</p>
 
-<p>Negli USA le grandi corporation stanno spendendo miliardi di dollari in cause reciproche sui brevetti software perché la legislazione è talmente inadeguata da spingerli farsi la guerra a suon di avvocati. Ma a noi non interessa essere clienti degli avvocati&hellip; giusto? :)</p>
+<p>Negli USA le grandi corporation stanno spendendo miliardi di dollari in cause reciproche sui brevetti software perché la legislazione è talmente inadeguata da spingerli farsi la guerra a suon di avvocati. Ma a noi non interessa essere clienti degli avvocati… giusto? :)</p>
+
+  </div>
+
+  
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <!-- <h2 class="footer-heading">Daniele Pizzoni</h2> -->
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <!-- <li>
+            
+              Daniele Pizzoni
+            
+          </li> -->
+          <li>
+            Daniele Pizzoni - P.I. 02632010308
+          </li>
+            
+          <li><a href="mailto:dan@danielepizzoni.it">dan@danielepizzoni.it</a></li>
+            
+          <li>
+            <a href="/cookieprivacypolicy/">Privacy info</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+
+          <li>
+            <a href="https://www.linkedin.com/in/danielepizzoni/"><span class="icon icon--linkedin"><svg viewBox="0 0 16 16" width="16px" height="16px"><path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51v1.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z" fill-rule="nonzero"/></svg>
+</span><span class="username">danielepizzoni</span></a>
+
+          </li>
+
+          <li>
+            <a href="https://stackoverflow.com/users/story/103529"><span class="icon icon--stackoverflow"><svg viewBox="0 0 16 16" width="16px" height="16px"><path d="M12.658 14.577v-4.27h1.423V16H1.23v-5.693h1.42v4.27h10.006zm-8.583-1.423h7.16V11.73h-7.16v1.424zm.173-3.235l6.987 1.46.3-1.38L4.55 8.54l-.302 1.38zm.906-3.37l6.47 3.02.602-1.3-6.47-3.02-.602 1.29zm1.81-3.19l5.478 4.57.906-1.08L7.87 2.28l-.9 1.078zM10.502 0L9.338.863l4.27 5.735 1.164-.862L10.5 0z"/></svg>
+</span><span class="username">ildan</span></a>
+
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Artigiano del Software. Frontend and backend app developer.
+</p>
+      </div>
+    </div>
+
+  </div>
 
 
-	<footer class="article-footer">
-		21 Oct 2011 
-		| guide
-		| faq
-	</footer>
-
-	<nav id="page-nav">
-		<span class="prev">
-			<a href="/blog/2011/12/restyling-di-danielepizzoni-it/">Il nuovo look di...</a>
-		</span>
-
-		<span class="next">
-			<a href="/blog/2011/09/usare-time-machine-e-salvare-i-backup-su-un-server-linux-ubuntu/">Salvare i backup di...</a>
-		</span>
-	</nav>
-
-
-</div>
-
-
-            <!--[if lt IE 9]>
-
-    <div class="old-bro" style="">
-    	Il tuo <i>browser</i> non permette la visualizzazione ottimale di questo sito.<br>
-	    <a href="http://whatbrowser.org/">Scopri subito come aggiornarlo e perché.</a>
-	</div>
-
-<![endif]-->
-
-
-
-            <footer id="main-footer">
-
-<div id="footer-left">
-	<p>Fatto a mano da:</p>
-	<p>Daniele Pizzoni &mdash; Udine, Italy (EU)</p>
-	<p>P.I. 02632010308</p>
-<!--    <p>pec: danielepizzoni@pec.it</p>-->
-</div>
-
-<div id="footer-center">
-	<p>Connect:</p>
-	<p><a href="mailto:dan@danielepizzoni.it">email</a></p>
-	<p><a href="http://it.linkedin.com/in/danielepizzoni/it">linkedin</a></p>
-	<p><a href="http://stackoverflow.com/users/103529/ildan">stack overflow</a></p>
-</div>
-
-<div id="footer-right">
-	<p>More:</p>
-	<p><a href="/archivio-anno">archivio</a> </p>
-    <p><a href="/cookieprivacypolicy">informativa privacy &amp; cookie</a> </p>
-    <p><a href="http://feeds.feedburner.com/danielepizzoni">rss</a></p>
-</div>
-
-<div id="credits">
-	<p>Credits:
-	<a href="http://middlemanapp.com">Middleman</a> 
-	<a href="http://sass-lang.com">Sass</a>
-	<a href="http://compass-style.org">Compass</a>
-	<a href="http://susy.oddbird.net">Susy</a>
-	<a href="http://daneden.me/baseline/">Baseline.js</a>
-	<a href="http://www.google.com/webfonts">Google Web Fonts</a>
-	<a href="http://subtlepatterns.com">Subtle Patterns</a>
-	</p>
-</div>
 </footer>
 
 
+  </body>
 
-            
-        </div>
-
-        
-
-        
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-
-        <script src="/js/plugins-b0a9b306.js"></script>
-        <script src="/js/main-bf7a3cf3.js"></script>
-
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-21153020-1', 'auto');
-          ga('set', 'anonymizeIp', true);
-          ga('send', 'pageview');
-        </script>
-
-
-    </body>
 </html>

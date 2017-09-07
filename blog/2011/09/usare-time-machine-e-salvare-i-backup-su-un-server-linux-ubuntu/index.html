@@ -1,346 +1,318 @@
-
-
-
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"  lang="it"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"  lang="it"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"  lang="it"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"  lang="it"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0;">
-        <meta name="format-detection" content="telephone=no">
+<html lang="it">
 
-        <!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="author" content="Daniele Pizzoni">
-        <meta name="description" content="Salvare i backup di Time Machine su un server Ubuntu Linux">
-        <meta name="keywords" content="data.page.meta_keywords %>" />
+  <title>Salvare i backup di Time Machine su un server Ubuntu Linux</title>
+  <meta name="description" content="“Time Machine funziona con il tuo Mac e un disco rigido esterno o Time Capsule”, dicono sul sito della Apple. In realtà, da OS X Lion in poi, funziona automa...">
 
-            <title>Salvare i backup di Time Machine su un server Ubuntu Linux</title>
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://danielepizzoni.it/blog/2011/09/usare-time-machine-e-salvare-i-backup-su-un-server-linux-ubuntu/">
+  <link rel="alternate" type="application/rss+xml" title="Daniele Pizzoni" href="/feed.xml">
+  
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-        <link href="/css/main-a2afab2e.css" rel="stylesheet" />
-        <link href="/css/highlight-35741444.css" rel="stylesheet" />
-        <link href="/css/print-d5585c86.css" rel="stylesheet" media="print" />
+  ga('create', 'UA-21153020-1', 'auto');
+  ga('send', 'pageview');
 
-        <script src="/js/vendor/modernizr-2.6.1.min-68fdcc99.js"></script>
-        <script src="/js/vendor/respond.min-bb760321.js"></script>
+</script>
+  
 
-        <!-- <link href='/css/print-d5585c86.css' rel='stylesheet' type='text/css' media='print'> -->
+  
+</head>
 
-        <link href='http://fonts.googleapis.com/css?family=Arvo:400,400italic' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 
+  <body>
+
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">Daniele Pizzoni</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+            
+            
+            <a class="page-link" href="/blog/">Blog</a>
+            
+          
+            
+            
+            <a class="page-link" href="/contatti/">Contatti</a>
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Salvare i backup di Time Machine su un server Ubuntu Linux</h1>
+    <p class="post-meta">
+      <time datetime="2011-09-01T00:00:00+02:00" itemprop="datePublished">
         
-        
-    </head>
-
-        	<body id="page" />
-
-
-         <div class="masthead-shadow">
- <div class="container">
-  <header id="masthead">
-
-    <hr/>
-
-    <nav id="menu">
-      <ul>
-        <li class="left"><a href="/">Chi sono</a></li>
-        <li class="left"><a href="/portfolio/">Portfolio</a></li>
-        <li class="right"><a href="/contatti/">Contatti</a></li>
-        <li class="right"><a href="/blog/">Blog</a> | <a href="/faq/">FAQ</a></li>
-      </ul>
-    </nav>
-
-    <div id="masthead-brand">
-      <span class="masthead-logo" id="masthead-logo"><a href="/"><img src="/img/logo-b45c4748.png"/></a></span>
-      <span class="masthead-logo" id="masthead-logo-2x"><a href="/"><img src="/img/logo@2x-d67070a7.png"/></a></span>
-      
-      <span class="menu-button" ><a href="#">
-          <img id="menu-button-2x" src="/img/menu-icon@2x-ce9e5458.png"/>
-          <img id="menu-button" src="/img/menu-icon-770ed078.png"/>
-      </a></span>
-      
-    </div>
-
-    <p id="motto">Daniele Pizzoni<span> &ndash; </span><br/>Artigiano del Software</p>
-
-    <nav id="mobile-menu">
-      <ul>
-        <li class="left"><a href="/">Chi sono</a></li>
-        <li class="left"><a href="/portfolio/">Portfolio</a></li>
-        <li class="right"><a href="/blog/">Blog</a></li>
-        <li class="right"><a href="/faq/">FAQ / Archivi</a></li>
-        <li class="right"><a href="/contatti/">Contatti</a></li>
-      </ul>
-    </nav>
+        Sep 1, 2011
+      </time>
+      </p>
   </header>
-</div>
-</div>
 
+  <div class="post-content" itemprop="articleBody">
+    <p>“Time Machine funziona con il tuo Mac e un disco rigido esterno o Time Capsule”, dicono sul <a href="http://www.apple.com/it/macosx/apps/#timemachine">sito</a> della Apple. In realtà, da OS X Lion in poi, funziona automaticamente anche con un disco condiviso in rete.</p>
 
-            <div class="container" id="main-container">
-
-            <div id="main" role="page">
-
-	<h1>Salvare i backup di Time Machine su un server Ubuntu Linux</h1>
-	
-	<p>&ldquo;Time Machine funziona con il tuo Mac e un disco rigido esterno o Time Capsule&rdquo;, dicono sul <a href="http://www.apple.com/it/macosx/apps/#timemachine">sito</a> della Apple. In realtà, da OS X Lion in poi, funziona automaticamente anche con un disco condiviso in rete.</p>
-
-<p></p>
+<!--more-->
 
 <p>Sì: con quel vecchio PC che hai in cantina, Ubuntu, e un buon hard disk puoi sostituire la costosa Time Capsule con una soluzione fatta in casa. Ma ad una condizione: quella di essere un gran smanettone! ;)</p>
 
-<p>Ma passiamo subito alla pratica: l&#39;idea è di avere un volume <a href="http://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)">LVM</a> da usare per Time Machine. Facciamo finta di avere una macchina di nome <em>server</em>, con un volumegroup LVM di nome <em>vgServer</em>. Tutti i comandi vanno eseguiti con <code>sudo</code>.
+<p>Ma passiamo subito alla pratica: l’idea è di avere un volume <a href="http://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)">LVM</a> da usare per Time Machine. Facciamo finta di avere una macchina di nome <em>server</em>, con un volumegroup LVM di nome <em>vgServer</em>. Tutti i comandi vanno eseguiti con <code>sudo</code>.</p>
 <h2>Creare un volume LVM con la partizione per Time Machine</h2>
-Uno dei vantaggi di usare un server Linux con <a href="http://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)">LVM</a> è che lo spazio disponibile si può aumentare a piacimento aggiungendo altri hard disk, restringendo o allargando i volumi esistenti quando lo spazio si è ridotto.</p>
+<p>Uno dei vantaggi di usare un server Linux con <a href="http://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)">LVM</a> è che lo spazio disponibile si può aumentare a piacimento aggiungendo altri hard disk, restringendo o allargando i volumi esistenti quando lo spazio si è ridotto.</p>
 
 <p>Creiamo ad esempio un nuovo volume di 500Gb di nome <em>timemachine</em> appartenente al volumegroup <em>vgServer</em> con (tutti i comandi devono essere eseguiti come utente root o con <code>sudo</code></p>
-<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>lvcreate -n timemachine -l 500G vgServer
-</pre></td></tr></tbody></table>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>lvcreate -n timemachine -l 500G vgServer
+</code></pre>
 </div>
 
 <p>con un file system di tipo ext4:</p>
-<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>mke2fs -t ext4 /dev/vgServer/timemachine&lt;/code&gt;
-</pre></td></tr></tbody></table>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>mke2fs -t ext4 /dev/vgServer/timemachine&lt;/code&gt;
+</code></pre>
 </div>
 
 <p>Vedi più sotto le istruzioni per ingrandire o restringere qualche partizione.</p>
 
-<h2>montare il volume</h2>
-
+<h2 id="montare-il-volume">montare il volume</h2>
 <p>Ora bisogna fare in modo che la partizione venga montata al boot, aggiungendo questa riga al file <code>/etc/fstab</code>:</p>
-<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>/dev/mapper/vgServer-timemachine /srv/timemachine ext4 defaults,user_xattr
-</pre></td></tr></tbody></table>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>/dev/mapper/vgServer-timemachine /srv/timemachine ext4 defaults,user_xattr
+</code></pre>
 </div>
 
-<p>In questo esempio lo spazio per Time Machine viene montato in <code>/srv/timemachine</code>, ma naturalmente si può scegliere qualsiasi altra posizione. È importante non scordare l&#39;opzione <code>user_xattr</code> che abilita gli attributi estesi sul filesystem.</p>
+<p>In questo esempio lo spazio per Time Machine viene montato in <code>/srv/timemachine</code>, ma naturalmente si può scegliere qualsiasi altra posizione. È importante non scordare l’opzione <code>user_xattr</code> che abilita gli attributi estesi sul filesystem.</p>
 
 <p>Bisogna però anche creare la directory:</p>
-<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>mkdir -p /srv/timemachine
-</pre></td></tr></tbody></table>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>mkdir -p /srv/timemachine
+</code></pre>
 </div>
 
-<p>Attenzione che se oltre a usare Time Machine si vogliono condividere dei file tra più utenti bisogna creare uno usergroup, chiamiamolo <code>share</code>, assegnare a tutti gli utenti il gruppo e settare il bit &ldquo;s&rdquo; sulla directory su cui verrà montato il filesystem:</p>
-<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3</pre></td><td class="code"><pre>addgroup share
+<p>Attenzione che se oltre a usare Time Machine si vogliono condividere dei file tra più utenti bisogna creare uno usergroup, chiamiamolo <code>share</code>, assegnare a tutti gli utenti il gruppo e settare il bit “s” sulla directory su cui verrà montato il filesystem:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>addgroup share
 adduser dan share
 chmod g+s /srv/timemachine
-</pre></td></tr></tbody></table>
+</code></pre>
 </div>
 
 <h2>Raggiunere il server dal Finder: Avahi</h2>
 
 <p>Questa è forse la parte più semplice e che dà le soddisfazioni più immediate. <a href="http://en.wikipedia.org/wiki/Bonjour_(software)">Bonjour</a> è il nome che la Apple ha dato alla sua implementazione del protocollo <a href="http://en.wikipedia.org/wiki/Zeroconf">Zeroconf</a>. Zeroconf è un sistema che permette di rendere visibili le macchine attive sulla rete locale senza dover configurare nulla (il nome in effetti è indovinato).</p>
-<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>apt-get install avahi-daemon
-</pre></td></tr></tbody></table>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>apt-get install avahi-daemon
+</code></pre>
 </div>
 
-<p>Miracolosamente ora da un Mac sulla stessa rete locale della macchina <em>server</em> si può ad esempio usare il comando <code>ssh server.local</code> invece di <code>ssh 192.168.0.1</code>! Viceversa dalla macchina ubuntu <em>server</em> si può raggiungere l&#39;iMac <em>mela</em> con <code>ssh mela.local</code>.</p>
+<p>Miracolosamente ora da un Mac sulla stessa rete locale della macchina <em>server</em> si può ad esempio usare il comando <code>ssh server.local</code> invece di <code>ssh 192.168.0.1</code>! Viceversa dalla macchina ubuntu <em>server</em> si può raggiungere l’iMac <em>mela</em> con <code>ssh mela.local</code>.</p>
 
-<h2>Condividere il disco con i Mac: Netatalk</h2>
+<h2 id="condividere-il-disco-con-i-mac-netatalk">Condividere il disco con i Mac: Netatalk</h2>
 
-<p>Per attivare la condivisione dello spazio disco dedicato a Time Machine bisogna infine installare il programma <a href="http://netatalk.sourceforge.net/">Netatalk</a>. Netatalk è l&#39;equivalente per OS X del il famoso <a href="http://en.wikipedia.org/wiki/Samba_(software)">SAMBA</a>, solo moooolto più semplice da far funzionare. :)</p>
+<p>Per attivare la condivisione dello spazio disco dedicato a Time Machine bisogna infine installare il programma <a href="http://netatalk.sourceforge.net/">Netatalk</a>. Netatalk è l’equivalente per OS X del il famoso <a href="http://en.wikipedia.org/wiki/Samba_(software)">SAMBA</a>, solo moooolto più semplice da far funzionare. :)</p>
 
 <p><strong>Importante</strong>: con OS X Lion è necessario installare la versione 2.2 o sucessiva di Netatalk, vedi più sotto se la tua versione di Ubuntu non è aggiornata (come Ubuntu 11.4).</p>
 
 <p>Installiamo il servizio e fermiamolo subito per poterlo configurare.</p>
-<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2</pre></td><td class="code"><pre>apt-get install netatalk
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>apt-get install netatalk
 service netatalk stop
-</pre></td></tr></tbody></table>
+</code></pre>
 </div>
 
-<h3>configurare Netatalk</h3>
+<h3 id="configurare-netatalk">configurare Netatalk</h3>
 
 <p>Netatalk funziona autenticando i gli utenti della macchina su cui gira. Ovvero: per poter accedere al volume <code>timemachine</code> che stiamo preparando su <em>server</em> con il nome utente <code>dan</code> e la password <code>pwd</code>, è necessario che <em>server</em> abbia un <strong>utente unix</strong> <code>dan/pwd</code>.</p>
 
 <p>La cosa più semplice è avere un utente su <em>server</em> che abbia lo stesso username e password delle macchine OS X dalle quali ti serve di fare il backup. Supponiamo che questo utente sia appunto <code>dan</code>.</p>
 
-<p>Bisogna quindi fare in modo che l&#39;utente <code>dan</code> possa scrivere nella directory <code>/srv/timemachine</code>:</p>
-<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>chown dan /srv/timemachine
-</pre></td></tr></tbody></table>
+<p>Bisogna quindi fare in modo che l’utente <code>dan</code> possa scrivere nella directory <code>/srv/timemachine</code>:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>chown dan /srv/timemachine
+</code></pre>
 </div>
 
 <p>Poi conviene fare una piccola modifica al file <code>/etc/default/netatalk</code> in modo da non trasferire password in chiaro sulla rete locale, aggiungendo (o modificando) la riga:</p>
-<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nv">AFPD_UAMLIST</span><span class="o">=</span><span class="s2">"-U uams_dhx2.so"</span>
-</pre></td></tr></tbody></table>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nv">AFPD_UAMLIST</span><span class="o">=</span><span class="s2">"-U uams_dhx2.so"</span>
+</code></pre>
 </div>
 
 <p>Infine bisogna decidere quali directory condividere. Di default vengono condivise le directory home, noi aggiungeremo questa riga al file <code>/etc/netatalk/AppleVolumes.default</code>:</p>
-<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>/srv/timemachine <span class="s2">"Time Machine"</span> options:tm
-</pre></td></tr></tbody></table>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>/srv/timemachine <span class="s2">"Time Machine"</span> options:tm
+</code></pre>
 </div>
 
-<p>L&#39;opzione tm serve proprio a comunicare a Lion che il volume si può usare per i backup di Time Machine.</p>
+<p>L’opzione tm serve proprio a comunicare a Lion che il volume si può usare per i backup di Time Machine.</p>
 
 <p>Facciamo ora ripartire il servizio:</p>
-<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>service netatalk start
-</pre></td></tr></tbody></table>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>service netatalk start
+</code></pre>
 </div>
 
-<p>Il volume appare quasi immediatamente (non come SAMBA&hellip;) su tutti i Mac collegati alla rete! Lo possiamo subito usare per condividere dei file. Per attivare Time Machine bisogna andare nelle preferenze e selezionare il nuovo disco che apparirà nella lista &ldquo;Seleziona disco&hellip;&rdquo;. Così appena ci si connetterà al volume <em>timemachine</em> con il Finder, Time Machine partirà automaticamente.</p>
+<p>Il volume appare quasi immediatamente (non come SAMBA…) su tutti i Mac collegati alla rete! Lo possiamo subito usare per condividere dei file. Per attivare Time Machine bisogna andare nelle preferenze e selezionare il nuovo disco che apparirà nella lista “Seleziona disco…”. Così appena ci si connetterà al volume <em>timemachine</em> con il Finder, Time Machine partirà automaticamente.</p>
 
-<h2>Casi particolari: ingrandire o restringere una partizione</h2>
+<h2 id="casi-particolari-ingrandire-o-restringere-una-partizione">Casi particolari: ingrandire o restringere una partizione</h2>
 
-<p>Per <strong>restringere</strong> una partizione ed un volume è preferibile che i filesystem non siano montati. L&#39;ideale è fare boot da un <a href="http://www.ubuntu.com/download/ubuntu/download">CD Ubuntu</a>. Si dovrà installare <code>lvm</code> con <code>apt-get</code>. Poi basta ricordarsi di restringere prima la partizione e poi il volume. Niente paura: se c&#39;è qualche problema di dimensionamento <code>e2fsck</code> ci avverte! Per restringere il volume di root:</p>
-<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4</pre></td><td class="code"><pre>e2fsck -f /dev/mapper/vgServer-root
+<p>Per <strong>restringere</strong> una partizione ed un volume è preferibile che i filesystem non siano montati. L’ideale è fare boot da un <a href="http://www.ubuntu.com/download/ubuntu/download">CD Ubuntu</a>. Si dovrà installare <code>lvm</code> con <code>apt-get</code>. Poi basta ricordarsi di restringere prima la partizione e poi il volume. Niente paura: se c’è qualche problema di dimensionamento <code>e2fsck</code> ci avverte! Per restringere il volume di root:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>e2fsck -f /dev/mapper/vgServer-root
 resize2fs -p /dev/mapper/vgServer-root 400G
 lvresize -L400G /dev/vgServer/root
 e2fsck /dev/mapper/vgServer-root
-</pre></td></tr></tbody></table>
+</code></pre>
 </div>
 
 <p>dove <code>/dev/mapper/vgServer-root</code> è il nome del filesystem, mentre <code>/dev/vgServer/root</code> quello del volume da restringere.</p>
 
-<p>Se <code>e2fsck</code> dovesse lamentarsi basta restringere la partizione ancora un po&rsquo; e riprovare.</p>
+<p>Se <code>e2fsck</code> dovesse lamentarsi basta restringere la partizione ancora un po’ e riprovare.</p>
 
 <p>Per, invece, <strong>ingrandire</strong> una partizione di, ad esempio, 100Gb bisogna prima ingrandire il volume che la contiene e poi la partizione stessa:</p>
-<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4</pre></td><td class="code"><pre>e2fsck -f /dev/mapper/vgServer-timemachine
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>e2fsck -f /dev/mapper/vgServer-timemachine
 lvresize -L+100G /dev/vgServer/timemachine
 resize2fs -p /dev/mapper/vgServer-timemachine
 e2fsck /dev/mapper/vgServer-timemachine
-</pre></td></tr></tbody></table>
+</code></pre>
 </div>
 
 <p>in questo caso <code>resize2fs</code> ingrandisce automaticamente la partizione alla massima dimensione possibile.</p>
 
-<h2>Installare Netatalk 2.2 su Ubuntu 11.4</h2>
+<h2 id="installare-netatalk-22-su-ubuntu-114">Installare Netatalk 2.2 su Ubuntu 11.4</h2>
 
-<p>Ubuntu 11.4 Natty Narval confine la versione 2.0 di Netatalk. La 2.2 la si può però scaricare però dal <a href="https://launchpad.net/~stefanor/+archive/ppa">Personal Package Archive di Stefano Rivera</a> che l&#39;ha compilata per noi.</p>
+<p>Ubuntu 11.4 Natty Narval confine la versione 2.0 di Netatalk. La 2.2 la si può però scaricare però dal <a href="https://launchpad.net/~stefanor/+archive/ppa">Personal Package Archive di Stefano Rivera</a> che l’ha compilata per noi.</p>
 
 <p>Bisogna aggiungere un file di nome <code>riverappa.list</code> alla directory <code>/etc/apt/sources.list.d</code>, contenente la seguente riga:</p>
-<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>deb http://ppa.launchpad.net/stefanor/ppa/ubuntu natty main
-</pre></td></tr></tbody></table>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>deb http://ppa.launchpad.net/stefanor/ppa/ubuntu natty main
+</code></pre>
 </div>
 
 <p>oppure in alternativa aggiungere tale riga alla fina del file <code>/etc/apt/sources.list</code>.</p>
 
-<p>Quindi bisogna eseguire il comando che autorizza l&#39;archivio di Stefano Rivera</p>
-<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F1CDC70A 
-</pre></td></tr></tbody></table>
+<p>Quindi bisogna eseguire il comando che autorizza l’archivio di Stefano Rivera</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F1CDC70A
+</code></pre>
 </div>
 
 <p>ed infine</p>
-<div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3</pre></td><td class="code"><pre>apt-get update
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>apt-get update
 apt-get install netatalk
 apt-get install upgrade
-</pre></td></tr></tbody></table>
+</code></pre>
 </div>
 
-<h2>Riferimenti</h2>
-
+<h2 id="riferimenti">Riferimenti</h2>
 <ul>
-    <li><a href="http://ubuntuforums.org/showthread.php?p=11167496">Setting up Ubuntu 10.04 as a server for Mac OS 10.7 (Lion) Time Machine</a></li>
-    <li><a href="http://ubuntuforums.org/showthread.php?t=1808731">Upgrading to netatalk 2.2 Beta</a></li>
-    <li><a href="http://netatalk.sourceforge.net/">Netatalk</a></li>
+	<li><a href="http://ubuntuforums.org/showthread.php?p=11167496">Setting up Ubuntu 10.04 as a server for Mac OS 10.7 (Lion) Time Machine</a></li>
+	<li><a href="http://ubuntuforums.org/showthread.php?t=1808731">Upgrading to netatalk 2.2 Beta</a></li>
+	<li><a href="http://netatalk.sourceforge.net/">Netatalk</a></li>
 </ul>
 
+  </div>
 
-	<footer class="article-footer">
-		 1 Sep 2011 
-		| osx
-		| linux
-	</footer>
+  
+</article>
 
-	<nav id="page-nav">
-		<span class="prev">
-			<a href="/blog/2011/10/a-cosa-serve-il-codice-sorgente-di-una-app/">A cosa serve il...</a>
-		</span>
+      </div>
+    </main>
 
-		<span class="next">
-			<a href="/blog/2011/07/quanto-costa-una-app-iphone-o-ipad/">Quanto costa una app...</a>
-		</span>
-	</nav>
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <!-- <h2 class="footer-heading">Daniele Pizzoni</h2> -->
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <!-- <li>
+            
+              Daniele Pizzoni
+            
+          </li> -->
+          <li>
+            Daniele Pizzoni - P.I. 02632010308
+          </li>
+            
+          <li><a href="mailto:dan@danielepizzoni.it">dan@danielepizzoni.it</a></li>
+            
+          <li>
+            <a href="/cookieprivacypolicy/">Privacy info</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+
+          <li>
+            <a href="https://www.linkedin.com/in/danielepizzoni/"><span class="icon icon--linkedin"><svg viewBox="0 0 16 16" width="16px" height="16px"><path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51v1.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z" fill-rule="nonzero"/></svg>
+</span><span class="username">danielepizzoni</span></a>
+
+          </li>
+
+          <li>
+            <a href="https://stackoverflow.com/users/story/103529"><span class="icon icon--stackoverflow"><svg viewBox="0 0 16 16" width="16px" height="16px"><path d="M12.658 14.577v-4.27h1.423V16H1.23v-5.693h1.42v4.27h10.006zm-8.583-1.423h7.16V11.73h-7.16v1.424zm.173-3.235l6.987 1.46.3-1.38L4.55 8.54l-.302 1.38zm.906-3.37l6.47 3.02.602-1.3-6.47-3.02-.602 1.29zm1.81-3.19l5.478 4.57.906-1.08L7.87 2.28l-.9 1.078zM10.502 0L9.338.863l4.27 5.735 1.164-.862L10.5 0z"/></svg>
+</span><span class="username">ildan</span></a>
+
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Artigiano del Software. Frontend and backend app developer.
+</p>
+      </div>
+    </div>
+
+  </div>
 
 
-</div>
-
-
-            <!--[if lt IE 9]>
-
-    <div class="old-bro" style="">
-    	Il tuo <i>browser</i> non permette la visualizzazione ottimale di questo sito.<br>
-	    <a href="http://whatbrowser.org/">Scopri subito come aggiornarlo e perché.</a>
-	</div>
-
-<![endif]-->
-
-
-
-            <footer id="main-footer">
-
-<div id="footer-left">
-	<p>Fatto a mano da:</p>
-	<p>Daniele Pizzoni &mdash; Udine, Italy (EU)</p>
-	<p>P.I. 02632010308</p>
-<!--    <p>pec: danielepizzoni@pec.it</p>-->
-</div>
-
-<div id="footer-center">
-	<p>Connect:</p>
-	<p><a href="mailto:dan@danielepizzoni.it">email</a></p>
-	<p><a href="http://it.linkedin.com/in/danielepizzoni/it">linkedin</a></p>
-	<p><a href="http://stackoverflow.com/users/103529/ildan">stack overflow</a></p>
-</div>
-
-<div id="footer-right">
-	<p>More:</p>
-	<p><a href="/archivio-anno">archivio</a> </p>
-    <p><a href="/cookieprivacypolicy">informativa privacy &amp; cookie</a> </p>
-    <p><a href="http://feeds.feedburner.com/danielepizzoni">rss</a></p>
-</div>
-
-<div id="credits">
-	<p>Credits:
-	<a href="http://middlemanapp.com">Middleman</a> 
-	<a href="http://sass-lang.com">Sass</a>
-	<a href="http://compass-style.org">Compass</a>
-	<a href="http://susy.oddbird.net">Susy</a>
-	<a href="http://daneden.me/baseline/">Baseline.js</a>
-	<a href="http://www.google.com/webfonts">Google Web Fonts</a>
-	<a href="http://subtlepatterns.com">Subtle Patterns</a>
-	</p>
-</div>
 </footer>
 
 
+  </body>
 
-            
-        </div>
-
-        
-
-        
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-
-        <script src="/js/plugins-b0a9b306.js"></script>
-        <script src="/js/main-bf7a3cf3.js"></script>
-
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-21153020-1', 'auto');
-          ga('set', 'anonymizeIp', true);
-          ga('send', 'pageview');
-        </script>
-
-
-    </body>
 </html>

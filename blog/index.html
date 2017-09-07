@@ -1,313 +1,578 @@
-
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"  lang="it"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"  lang="it"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"  lang="it"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"  lang="it"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0;">
-        <meta name="format-detection" content="telephone=no">
+<html lang="it">
 
-        <!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta name="author" content="Daniele Pizzoni">
-        <meta name="description" content="Ho un'idea geniale! Te la dico, tu fai la app, la vendiamo e dividiamo i proventi!">
-        <meta name="keywords" content="data.page.meta_keywords %>" />
+  <title>Blog</title>
+  <meta name="description" content="Artigiano del Software. Frontend and backend app developer.">
 
-              <title>Daniele Pizzoni &mdash; Blog</title>
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://danielepizzoni.it/blog/">
+  <link rel="alternate" type="application/rss+xml" title="Daniele Pizzoni" href="/feed.xml">
+  
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-21153020-1', 'auto');
+  ga('send', 'pageview');
 
-        <link href="/css/main-a2afab2e.css" rel="stylesheet" />
-        <link href="/css/highlight-35741444.css" rel="stylesheet" />
-        <link href="/css/print-d5585c86.css" rel="stylesheet" media="print" />
+</script>
+  
 
-        <script src="/js/vendor/modernizr-2.6.1.min-68fdcc99.js"></script>
-        <script src="/js/vendor/respond.min-bb760321.js"></script>
-
-        <!-- <link href='/css/print-d5585c86.css' rel='stylesheet' type='text/css' media='print'> -->
-
-        <link href='http://fonts.googleapis.com/css?family=Arvo:400,400italic' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-
-        
-        
-    </head>
-
-        <body id="generic" />
-
-         <div class="masthead-shadow">
- <div class="container">
-  <header id="masthead">
-
-    <hr/>
-
-    <nav id="menu">
-      <ul>
-        <li class="left"><a href="/">Chi sono</a></li>
-        <li class="left"><a href="/portfolio/">Portfolio</a></li>
-        <li class="right"><a href="/contatti/">Contatti</a></li>
-        <li class="right"><a href="/blog/">Blog</a> | <a href="/faq/">FAQ</a></li>
-      </ul>
-    </nav>
-
-    <div id="masthead-brand">
-      <span class="masthead-logo" id="masthead-logo"><a href="/"><img src="/img/logo-b45c4748.png"/></a></span>
-      <span class="masthead-logo" id="masthead-logo-2x"><a href="/"><img src="/img/logo@2x-d67070a7.png"/></a></span>
-      
-      <span class="menu-button" ><a href="#">
-          <img id="menu-button-2x" src="/img/menu-icon@2x-ce9e5458.png"/>
-          <img id="menu-button" src="/img/menu-icon-770ed078.png"/>
-      </a></span>
-      
-    </div>
-
-    <p id="motto">Daniele Pizzoni<span> &ndash; </span><br/>Artigiano del Software</p>
-
-    <nav id="mobile-menu">
-      <ul>
-        <li class="left"><a href="/">Chi sono</a></li>
-        <li class="left"><a href="/portfolio/">Portfolio</a></li>
-        <li class="right"><a href="/blog/">Blog</a></li>
-        <li class="right"><a href="/faq/">FAQ / Archivi</a></li>
-        <li class="right"><a href="/contatti/">Contatti</a></li>
-      </ul>
-    </nav>
-  </header>
-</div>
-</div>
+  
+</head>
 
 
-            <div class="container" id="main-container">
+  <body>
 
+    <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">Daniele Pizzoni</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
             
-<div id="main" role="blog">
+            
+            <a class="page-link" href="/blog/">Blog</a>
+            
+          
+            
+            
+            <a class="page-link" href="/contatti/">Contatti</a>
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
 
-    <article>
-      <h2><a href="/blog/2015/12/ECRES/">ECRES App</a></h2>
 
-        <p>Da tempo volevo dedicarmi ad una <em>single page webapp</em>, nome altisonante che indica una applicazione web simile nel funzionamento ad una applicazione desktop. Ne ho avuto la possibilità partecpando a un bando pubblico del Dipartimento di Scienze Mediche...</p> 
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="home">
 
-      <footer class="article-footer">20 Dec 2015 
-        | portfolio
-        | webapp
-        <span class="readmore"><i><a href="/blog/2015/12/ECRES/">Leggi</a></i></span>  
-      </footer>
-    </article>
-    <article>
-      <h2><a href="/blog/2015/07/bmeters/">BMeters Hydrolink</a></h2>
+  <h1 class="page-heading">Posts</h1>
 
-        <p><a href="https://play.google.com/store/apps/details?id=com.bmeters.hydrolinkmobile">Hydrolink Mobile</a> è il tipo di app che preferisco sviluppare: <em>la app aziendale davvero utile</em>.</p>
+  
 
-<p>Mi è stata commissionata da <a href="http://www.bmeters.com">B Meters Srl</a> un'azienda della mia regione che produce ed esporta contatori acqua e di calore.</p>
 
-<p>Si tratta di una app per rilevare...</p> 
+  <ul class="post-list">
+    
+      <li>
+        
+        <span class="post-meta">Dec 20, 2015</span>
 
-      <footer class="article-footer">15 Jul 2015 
-        | portfolio
-        | android
-        <span class="readmore"><i><a href="/blog/2015/07/bmeters/">Leggi</a></i></span>  
-      </footer>
-    </article>
-    <article>
-      <h2><a href="/blog/2014/08/ondefurlane/">Radio Onde Furlane</a></h2>
+        <h2>
+          <a class="post-link" href="/blog/2015/12/ECRES/index.html">ECRES App</a>
+        </h2>
+        <p>Da tempo volevo dedicarmi ad una <em>single page webapp</em>, nome altisonante che indica una applicazione web simile nel funzionamento ad una applicazione desktop. Ne ho avuto la possibilità partecpando a un bando pubblico del Dipartimento di Scienze Mediche e Biologiche dell’Università di Udine.</p>
 
-        <p>Radio Onde Furlane per iPhone e iPad è disponibile sull’<a href="https://itunes.apple.com/tr/app/radio-onde-furlane/id904918447?mt=8">Apple App Store</a>, mentre per i dispositivi Android si può scaricare da <a href="https://play.google.com/store/apps/details?id=eu.ondefurlane.radioapp">Google Play</a>.</p>
 
-<p>Le due app <a href="/blog/2012/05/applicazioni-ibride-per-iphone-android-blackberry-etc"><em>native</em></a> mi sono state commissionate dagli amici della <a href="http://www.ondefurlane.eu">Radio</a>. Dopo aver sviluppato la parte di <em>streaming</em></p> 
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Jul 15, 2015</span>
 
-      <footer class="article-footer"> 1 Aug 2014 
-        | portfolio
-        | apple
-        | android
-        <span class="readmore"><i><a href="/blog/2014/08/ondefurlane/">Leggi</a></i></span>  
-      </footer>
-    </article>
-    <article>
-      <h2><a href="/blog/2014/03/preventivo/">Con che licenza fornisco il codice sorgente delle app ai miei clienti?</a></h2>
+        <h2>
+          <a class="post-link" href="/blog/2015/07/bmeters/index.html">BMeters Hydrolink</a>
+        </h2>
+        <p><img src="/img/hydrolink-442.png" alt="BMeters Hydrolink Android App screenshot" /></p>
 
+<p><a href="https://play.google.com/store/apps/details?id=com.bmeters.hydrolinkmobile">Hydrolink Mobile</a> è il tipo di app che preferisco sviluppare: <em>la app aziendale davvero utile</em>.</p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Aug 1, 2014</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2014/08/ondefurlane/index.html">Radio Onde Furlane</a>
+        </h2>
+        <p><img src="/img/radioonde-442.png" alt="Radio Onde Furlane Android App screenshot" /></p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Mar 27, 2014</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2014/03/preventivo/index.html">Con che licenza fornisco il codice sorgente delle app ai miei clienti?</a>
+        </h2>
         <p>Nel preventivi e poi nei contratti con cui si dà vita a una commessa inserisco questo testo:</p>
 
 <blockquote>
-<p>L’applicazione viene fornita in formato binario adatto per l’installazione su dispositivi e sistema operativo concordati, accompagnata alla conclusione dei...</p>
-</blockquote> 
+  <p>L’applicazione viene fornita in formato binario adatto per l’installazione su dispositivi e sistema operativo concordati, accompagnata alla conclusione dei lavori, dal codice sorgente completo.</p>
+</blockquote>
 
-      <footer class="article-footer">27 Mar 2014 
-        | faq
-        <span class="readmore"><i><a href="/blog/2014/03/preventivo/">Leggi</a></i></span>  
-      </footer>
-    </article>
-    <article>
-      <h2><a href="/blog/2014/02/lattosio-app/">Lattosio</a></h2>
 
-        <p><a href="https://itunes.apple.com/it/app/lattosio/id803081423?mt=8&amp;uo=4">Lattosio</a> è una app che sfrutta il principio del <a href="http://it.wikipedia.org/wiki/Crowdsourcing">crowdsourcing</a> per raccogliere dati utili sulla presenza di lattosio nei cibi. </p>
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Feb 3, 2014</span>
 
-<p><a href="http://www.genex.me/glife.php">G&amp;life</a>, committente della app, è una Società per Azioni che opera nel settore della nutrigenetica, la genetica applicata alla nutrizione, all&#39;interno dell&rsquo;<a href="http://www.area.trieste.it/opencms/opencms/area/it/phonebook/insediati_detail.html?id=GLIFE">Area Science Park</a> di Trieste; sviluppa e promuove  prodotti e servizi personalizzati in base all&#39;analisi del DNA.</p>
+        <h2>
+          <a class="post-link" href="/blog/2014/02/lattosio-app/index.html">Lattosio</a>
+        </h2>
+        <p><img src="/img/lattosio1-442.png" alt="Lattosio iPhone App screenshot" /></p>
 
-<p><img alt="Lattosio iPhone App screenshot" title="Lattosio iPhone App" src="/img/lattosio1-442-3843f8be.png" /></p>
+<p><a href="https://itunes.apple.com/it/app/lattosio/id803081423?mt=8&amp;uo=4">Lattosio</a> è una app che sfrutta il principio del <a href="http://it.wikipedia.org/wiki/Crowdsourcing">crowdsourcing</a> per raccogliere dati utili sulla presenza di lattosio nei cibi.</p>
 
-<p> 
 
-      <footer class="article-footer"> 3 Feb 2014 
-        | portfolio
-        | apple
-        <span class="readmore"><i><a href="/blog/2014/02/lattosio-app/">Leggi</a></i></span>  
-      </footer>
-    </article>
-    <article>
-      <h2><a href="/blog/2013/12/ho-un-idea-geniale-per-una-app-ma-ho-paura-che-me-la-freghino/">Ho un'idea geniale per una app ma ho paura che me la freghino</a></h2>
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Dec 30, 2013</span>
 
-        <p>Questa dell'idea geniale che ti viene fregata è una cosa che assilla molte persone che mi scrivono, si tratti di app per iPhone, Android o web.</p>
+        <h2>
+          <a class="post-link" href="/blog/2013/12/ho-un-idea-geniale-per-una-app-ma-ho-paura-che-me-la-freghino/index.html">Ho un&#39;idea geniale per una app ma ho paura che me la freghino</a>
+        </h2>
+        <p>Questa dell’idea geniale che ti viene fregata è una cosa che assilla molte persone che mi scrivono a proposito di app per iPhone, Android o web.</p>
 
-<p>La realtà di un mercato saturato in pochi anni insegna che l'idea conta poco, quello che conta è la realizzazione...</p> 
 
-      <footer class="article-footer">30 Dec 2013 
-        | faq
-        <span class="readmore"><i><a href="/blog/2013/12/ho-un-idea-geniale-per-una-app-ma-ho-paura-che-me-la-freghino/">Leggi</a></i></span>  
-      </footer>
-    </article>
-    <article>
-      <h2><a href="/blog/2013/03/web-di-qualita-semplicita-tipografia-responsive-design/">Web di qualità: semplicità, tipografia e responsive design</a></h2>
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Mar 19, 2013</span>
 
-        <p>Ho creato questo sito seguendo quelli che sono i più recenti <a href="http://thenextweb.com/dd/2012/12/30/10-new-web-design-trends-you-can-expect-to-see-in-2013/"><em>trend</em></a> qualitativi del web: semplicità, tipografia e responsive design. </p>
+        <h2>
+          <a class="post-link" href="/blog/2013/03/web-di-qualita-semplicita-tipografia-responsive-design/index.html">Web di qualità: semplicità, tipografia e responsive design</a>
+        </h2>
+        <p>Ho creato questo sito seguendo quelli che sono i più recenti <a href="http://thenextweb.com/dd/2012/12/30/10-new-web-design-trends-you-can-expect-to-see-in-2013/"><em>trend</em></a> qualitativi del web: semplicità, tipografia e responsive design.</p>
 
-<p><a href="/img/rhythm-shot-b5fd651a.png"><img alt="Ritmo tipografico verticale&quot;" title="ritmo!" class="img-full" src="/img/rhythm-shot-b5fd651a.png" /></a></p>
 
-<p>L&#39;immagine mostra uno degli aspetti tipografici della composizione del sito: gli elementi sono disposti in maniera uniforme come sulle righe di un quaderno di scuola. Così l&#39;occhio del lettore fa meno fatica a spostarsi sulla pagina perché incontra salti costanti e non il disordinato alternarsi di testo e immagini a cui siamo abituati sul web.</p>
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Mar 18, 2013</span>
 
-<p> 
-
-      <footer class="article-footer">19 Mar 2013 
-        | web
-        <span class="readmore"><i><a href="/blog/2013/03/web-di-qualita-semplicita-tipografia-responsive-design/">Leggi</a></i></span>  
-      </footer>
-    </article>
-    <article>
-      <h2><a href="/blog/2013/03/responsive-web-design/">Responsive Web Design</a></h2>
-
+        <h2>
+          <a class="post-link" href="/blog/2013/03/responsive-web-design/index.html">Responsive Web Design</a>
+        </h2>
         <p>Le versioni per i telefonini dei siti Internet sono state inizialmente costruite in parallelo a quelle dei siti normali. Ma ora le tecnologie <a href="http://it.wikipedia.org/wiki/HTML5">html5</a> e <a href="http://it.wikipedia.org/wiki/CSS3">css3</a> permettono dei trucchi interessanti.</p>
 
-<p> 
 
-      <footer class="article-footer">18 Mar 2013 
-        | web
-        <span class="readmore"><i><a href="/blog/2013/03/responsive-web-design/">Leggi</a></i></span>  
-      </footer>
-    </article>
-    <article>
-      <h2><a href="/blog/2013/02/sposifvg-com/">SposiFVG.com</a></h2>
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Feb 12, 2013</span>
 
-        <p><a href="https://itunes.apple.com/it/app/sposifvg.com/id598569305?mt=8&amp;uo=4">SposiFVG.com</a> è la versione mobile per iPhone di <a href="http://www.sposifvg.com/">sposifvg.com</a>, sito gestito da <a href="http://www.start2000.it/">Start 2000 Srl</a>. È un catalogo di operatori commerciali che operano nei settori connessi che si rivolgono ai futuri sposi.</p>
+        <h2>
+          <a class="post-link" href="/blog/2013/02/sposifvg-com/index.html">SposiFVG.com</a>
+        </h2>
+        <p><img src="/img/sposifvg.png" alt="SposiFVG.com iPhone App screenshot" /></p>
 
-<p><img alt="SposiFVG.com iPhone App screenshot" title="SposiFVG.com iPhone App" src="/img/sposifvg-f3a2b8f7.png" /></p>
+<p><a href="https://itunes.apple.com/it/app/sposifvg.com/id598569305?mt=8&amp;uo=4">SposiFVG.com</a> è la versione mobile per iPhone di <a href="http://www.sposifvg.com/">sposifvg.com</a>, sito gestito da <a href="http://www.start2000.it/">Start 2000 Srl</a>. È un catalogo di operatori commerciali che operano nei settori connessi che si rivolgono ai futuri sposi.</p>
 
-<p> 
 
-      <footer class="article-footer">12 Feb 2013 
-        | portfolio
-        | apple
-        <span class="readmore"><i><a href="/blog/2013/02/sposifvg-com/">Leggi</a></i></span>  
-      </footer>
-    </article>
-    <article>
-      <h2><a href="/blog/2013/01/ho-unidea-geniale-te-la-dico-tu-fai-la-app-la-vendiamo-e-dividiamo-i-proventi-fiftyfifty/">Ho un'idea geniale! Te la dico, tu fai la app, la vendiamo e dividiamo i proventi!</a></h2>
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Jan 24, 2013</span>
 
+        <h2>
+          <a class="post-link" href="/blog/2013/01/ho-unidea-geniale-te-la-dico-tu-fai-la-app-la-vendiamo-e-dividiamo-i-proventi-fiftyfifty/index.html">Ho un&#39;idea geniale! Te la dico, tu fai la app, la vendiamo e dividiamo i proventi!</a>
+        </h2>
         <p>Perché di solito rifiuto di accettare questa proposta?</p>
 
-<p>Purtroppo l&#39;idea di pagare la commessa a chi realizza l&#39;idea con i proventi delle <em>eventuali</em> vendite ha un serio problema.</p>
-
-<p> 
-
-      <footer class="article-footer">24 Jan 2013 
-        | freelance
-        | faq
-        <span class="readmore"><i><a href="/blog/2013/01/ho-unidea-geniale-te-la-dico-tu-fai-la-app-la-vendiamo-e-dividiamo-i-proventi-fiftyfifty/">Leggi</a></i></span>  
-      </footer>
-    </article>
+<p>Purtroppo l’idea di pagare la commessa a chi realizza l’idea con i proventi delle <em>eventuali</em> vendite ha un serio problema.</p>
 
 
-  <nav id="page-nav">
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Dec 11, 2012</span>
 
-        <span class="next"><a href="/blog/page/2/">Articoli meno recenti</a></span>
-  </nav>
-  
+        <h2>
+          <a class="post-link" href="/blog/2012/12/cose-la-ad-hoc-distribution-e-perche-devo-inviare-allo-sviluppatore-il-mio-udid/index.html">Cos&#39;è la Ad-Hoc Distribution e perché devo inviare allo sviluppatore il mio UDID?</a>
+        </h2>
+        <p>Come è noto le <em>app</em> per iPhone e iPad si scaricano dall’App Store, disponibile sugli schermi di tutti i dispositivi Apple iOS.</p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Nov 28, 2012</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2012/11/letture-hybrid-mobile-apps-applicazioni-mobile-multipiattaforma/index.html">Letture: hybrid mobile apps, applicazioni mobile multipiattaforma</a>
+        </h2>
+        <p>Una lista di articoli interessanti sull’argomento delle applicazioni multipiattaforma (native, html5 + css, PhoneGap, etc.).</p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Nov 21, 2012</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2012/11/cosa-fare-per-iniziare-lo-sviluppo-di-una-app-iphone-o-android/index.html">Cosa fare per iniziare lo sviluppo di una app iPhone o Android</a>
+        </h2>
+        <p>Alla conclusione di un ordine per una applicazione, prima dell’inizio dello sviluppo vero e proprio, è necessario che il cliente faccia alcune cose: iscriversi ad alcuni siti, pagare qualche abbonamento, registrarsi e attivare alcuni account.</p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">May 15, 2012</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2012/05/applicazioni-ibride-per-iphone-android-blackberry-etc/index.html">Applicazioni ibride o multipiattaforma per iPhone, Android, Blackberry.</a>
+        </h2>
+        <p>Più o meno tutti sanno che esistono diversi tipi o <em><a href="http://it.wikipedia.org/wiki/Sistema_operativo_per_dispositivi_mobili">piattaforme</a></em> di smartphone che si differenziano analogamente a come si differenziano i PC dai Mac Apple.</p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">May 11, 2012</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2012/05/save-my-life/index.html">Save My Life</a>
+        </h2>
+        <p><img src="/img/savemylife.png" alt="Save My Life iPad App screenshot" /></p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Apr 20, 2012</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2012/04/app-in-realta-aumentata-per-i-punti-fiduciali/index.html">Leica SmartTAF, app Android in Realtà Aumentata per i Punti Fiduciali</a>
+        </h2>
+        <p><img src="/img/smarttaf-radar.png" alt="Leica SmartTaf visualizzazione radar" /></p>
+
+<p>Questa applicazione per dispositivi Android, è stata ideata e mi è stata commissionata da <a href="http://www.lse-online.it/">LSE Srl</a> di Sacile e viene distribuita con i marchi di <a href="http://www.leica-geosystems.it/">Leica Geosystems</a> e <a href="http://www.geomax-positioning.it/">GeoMax</a>. Si tratta di un gruppo di quattro app, due a pagamento e due grautite, tutte <a href="https://play.google.com/store/search?q=%22smarttaf%22&amp;c=apps">scaricabili</a> da Google Play.</p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Apr 2, 2012</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2012/04/app-aziendali-per-ipad-e-iphone/index.html">App aziendali per iPad e iPhone</a>
+        </h2>
+        <p>In questo articolo cerco di spiegare quali sono le opzioni per un’azienda che voglia <em>distribuire,</em> ovvero mettere a disposizione del pubblico, una applicazione per iPhone o iPad, nell’ottica di valutare il rischio che la pubblicazione sull’App Store venga rifiutata dalla Apple.</p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Dec 28, 2011</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2011/12/come-escludere-i-nostri-accessi-dalle-statistiche-di-google-analytics/index.html">Come escludere le nostre visite dalle statistiche di Google Analytics</a>
+        </h2>
+        <p>Quando si gestisce un sito con un traffico limitato diventa importante filtrare le proprie visite al sito dai risultati delle statistiche di <a href="http://it.wikipedia.org/wiki/Google_Analytics">Google Analytics</a> in modo da non sbilanciare i risultati.</p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Dec 19, 2011</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2011/12/restyling-di-danielepizzoni-it/index.html">Il nuovo look di danielepizzoni.it (2012)</a>
+        </h2>
+        <p>Era da tempo che speravo di trovare del tempo per riuscire a cambiare il look di questo sito.</p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Oct 21, 2011</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2011/10/a-cosa-serve-il-codice-sorgente-di-una-app/index.html">A cosa serve il codice sorgente di una app?</a>
+        </h2>
+        <p>Ho notato che i miei clienti, aziende o persone che vogliono avere una propria applicazione per iPhone, iPad o Android (le cosiddette <em>app mobile</em>), rispetto ai <strong>codici sorgenti</strong> si dividono sommariamente in 3 categorie:</p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Sep 1, 2011</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2011/09/usare-time-machine-e-salvare-i-backup-su-un-server-linux-ubuntu/index.html">Salvare i backup di Time Machine su un server Ubuntu Linux</a>
+        </h2>
+        <p>“Time Machine funziona con il tuo Mac e un disco rigido esterno o Time Capsule”, dicono sul <a href="http://www.apple.com/it/macosx/apps/#timemachine">sito</a> della Apple. In realtà, da OS X Lion in poi, funziona automaticamente anche con un disco condiviso in rete.</p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Jul 16, 2011</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2011/07/quanto-costa-una-app-iphone-o-ipad/index.html">Quanto costa una app iPhone, iPad, Android?</a>
+        </h2>
+        <p><strong>Aggiornamento:</strong> per un calcolo personalizzato indicativo del costo di una app prova <a href="http://howmuchtomakeanapp.com">How Much to Make an App?</a></p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Jul 10, 2011</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2011/07/guglielmo-hotspot-per-android/index.html">Guglielmo Hotspot per Android</a>
+        </h2>
+        <p><img src="/img/guglielmo-android-fix.png" alt="Guglielmo Hotspot per Android, screenshot" /></p>
+
+<p>Questa è la versione Android di Guglielmo Hotspot che <a href="http://www.guglielmo.biz/">Guglielmo Srl</a> ha avuto la fiducia di commissionarmi a seguito dello sviluppo della <a href="/blog/2011/04/guglielmo-hotspot/">versione per iPhone</a>.</p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Jun 9, 2011</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2011/06/come-aggiornare-la-rom-di-un-nexus-one-anche-con-il-tasto-di-accensione-rotto/index.html">Come aggiornare la ROM di un Nexus One (anche con il tasto di accensione rotto)</a>
+        </h2>
+        <p>Quando ho iniziato a sviluppare applicazioni per Android, mi sono informato su quale fosse il telefonino Android di riferimento per i programmatori. Ne avevo bisogno come strumento di lavoro per il testing e lo sviluppo delle applicazioni stesse.</p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">May 16, 2011</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2011/05/7-passi-falsi-da-evitare-con-il-tuo-consulente-per-applicazioni-iphone/index.html">8 passi falsi da evitare con il tuo consulente per applicazioni mobile iPhone o Android</a>
+        </h2>
+        <p>Il mercato delle applicazioni per smartphone (iPhone/iPad e Android) è giovane e fluido.</p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Apr 15, 2011</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2011/04/costruire-un-blog-con-il-responsive-design/index.html">Costruire un blog con il Responsive Design</a>
+        </h2>
+        <p><em>Questo articolo è stato aggiornato qui: <a href="/blog/2013/03/web-responsive-design/">Responsive Web Design</a></em></p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Apr 11, 2011</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2011/04/guglielmo-hotspot/index.html">Guglielmo Hotspot per iPhone</a>
+        </h2>
+        <p><a href="https://itunes.apple.com/it/app/guglielmo-hotspot/id429680729?mt=8&amp;uo=4" title="Guglielmo Hotspot">Guglielmo Hotspot</a> è una applicazione che ho sviluppato per <a href="http://www.guglielmo.biz/" title="Guglielmo Srl">Guglielmo Srl</a>, uno dei maggiori Wi-Fi provider italiani.</p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Mar 25, 2011</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2011/03/cosa-fare-per-avere-una-propria-applicazione-su-itunes-apple/index.html">Come si fa a mettere una nuova applicazione sull&#39;App Store di Apple?</a>
+        </h2>
+        <p>Le applicazioni per iPhone, iPad e iPod Touch sono diverse dai programmi per PC o Mac ai quali siamo abituati. Non si possono scaricare da Internet, copiare e installare come dei normali <em>file:</em> possono essere installate solo da iTunes e lì devono essere messe a disposizione dalla casa madre Apple. Che poi si riserva il diritto di rifiutare le applicazioni che non verificano alcune specifiche <a href="http://developer.apple.com/appstore/guidelines.html">linee guida</a>, utilizza un sistema di <a href="http://it.wikipedia.org/wiki/Firma_digitale">firma digitale</a> per far impedire la duplicazione illegale, assicurare la protezione da virus, etc.</p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Mar 1, 2011</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2011/03/come-trovare-il-codice-udid-di-un-dispositivo-apple/index.html">Come trovare il codice UDID di un dispositivo Apple</a>
+        </h2>
+        <p>Nel corso dello sviluppo di una applicazione per iOS (iPhone o iPad), il programmatore può spedire ad altre persone delle versioni provvisorie dell’applicazione stessa, in modo che questa possa venir provata e valutata, con un sistema che la Apple chiama <a href="/blog/2012/12/cose-la-ad-hoc-distribution-e-perche-devo-inviare-allo-sviluppatore-il-mio-udid/">Ad Hoc Distribution</a>.</p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Mar 1, 2011</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2011/03/beatdelay/index.html">Beat Delay</a>
+        </h2>
+        <p><img src="/img/beatdelay.png" alt="Beat Delay image" /></p>
+
+<p><a href="https://itunes.apple.com/us/app/beat-delay/id417830624?mt=8&amp;uo=4">Beat Delay</a> un’applicazione per i musicisti che vogliono sincronizzare a tempo qualche vecchio delay digitale, di quelli che possono essere regolati sono con l’immissione manuale del valore del ritardo in millisecondi.</p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Nov 10, 2009</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2009/11/creating-an-universal-static-opencv-library-in-snow-leopard/index.html">Creating an universal static OpenCV library in (Snow) Leopard</a>
+        </h2>
+        <p>More that a year ago i wrote a post about creating a fat OpenCV 1.0.0 static lib for OS X 10.5.</p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Jun 22, 2009</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2009/06/managing-static-versioned-libraries-in-os-x/index.html">Managing static versioned libraries in OS X</a>
+        </h2>
+        <p>The Mac OS X offers great tools to developers in order to manage libraries with many versions: <a href="http://developer.apple.com/documentation/macosx/Conceptual/BPFrameworks/Frameworks.html">Frameworks</a>.</p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Jul 3, 2008</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2008/07/creating-an-universal-static-opencv-library-with-iphone-support/index.html">Creating an universal static OpenCV library with iPhone support</a>
+        </h2>
+        <p>This post has been updated here. Sorry I have no time to upgrade the iPhone part, I hope someone will share this knowledge ;)</p>
+
+
+      </li>
+    
+      <li>
+        
+        <span class="post-meta">Feb 5, 2008</span>
+
+        <h2>
+          <a class="post-link" href="/blog/2008/02/how-to-uninstall-mac-os-x-pkg-packages/index.html">How to uninstall Mac OS X .pkg packages</a>
+        </h2>
+        <p>Mac OS X keeps track of applications installed via the .pkg native installer in the /Library/Receipts folder.</p>
+
+
+      </li>
+    
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+
 </div>
 
+      </div>
+    </main>
 
-            <!--[if lt IE 9]>
+    <footer class="site-footer">
 
-    <div class="old-bro" style="">
-    	Il tuo <i>browser</i> non permette la visualizzazione ottimale di questo sito.<br>
-	    <a href="http://whatbrowser.org/">Scopri subito come aggiornarlo e perché.</a>
-	</div>
+  <div class="wrapper">
 
-<![endif]-->
+    <!-- <h2 class="footer-heading">Daniele Pizzoni</h2> -->
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <!-- <li>
+            
+              Daniele Pizzoni
+            
+          </li> -->
+          <li>
+            Daniele Pizzoni - P.I. 02632010308
+          </li>
+            
+          <li><a href="mailto:dan@danielepizzoni.it">dan@danielepizzoni.it</a></li>
+            
+          <li>
+            <a href="/cookieprivacypolicy/">Privacy info</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+
+          <li>
+            <a href="https://www.linkedin.com/in/danielepizzoni/"><span class="icon icon--linkedin"><svg viewBox="0 0 16 16" width="16px" height="16px"><path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51v1.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z" fill-rule="nonzero"/></svg>
+</span><span class="username">danielepizzoni</span></a>
+
+          </li>
+
+          <li>
+            <a href="https://stackoverflow.com/users/story/103529"><span class="icon icon--stackoverflow"><svg viewBox="0 0 16 16" width="16px" height="16px"><path d="M12.658 14.577v-4.27h1.423V16H1.23v-5.693h1.42v4.27h10.006zm-8.583-1.423h7.16V11.73h-7.16v1.424zm.173-3.235l6.987 1.46.3-1.38L4.55 8.54l-.302 1.38zm.906-3.37l6.47 3.02.602-1.3-6.47-3.02-.602 1.29zm1.81-3.19l5.478 4.57.906-1.08L7.87 2.28l-.9 1.078zM10.502 0L9.338.863l4.27 5.735 1.164-.862L10.5 0z"/></svg>
+</span><span class="username">ildan</span></a>
+
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Artigiano del Software. Frontend and backend app developer.
+</p>
+      </div>
+    </div>
+
+  </div>
 
 
-
-            <footer id="main-footer">
-
-<div id="footer-left">
-	<p>Fatto a mano da:</p>
-	<p>Daniele Pizzoni &mdash; Udine, Italy (EU)</p>
-	<p>P.I. 02632010308</p>
-<!--    <p>pec: danielepizzoni@pec.it</p>-->
-</div>
-
-<div id="footer-center">
-	<p>Connect:</p>
-	<p><a href="mailto:dan@danielepizzoni.it">email</a></p>
-	<p><a href="http://it.linkedin.com/in/danielepizzoni/it">linkedin</a></p>
-	<p><a href="http://stackoverflow.com/users/103529/ildan">stack overflow</a></p>
-</div>
-
-<div id="footer-right">
-	<p>More:</p>
-	<p><a href="/archivio-anno">archivio</a> </p>
-    <p><a href="/cookieprivacypolicy">informativa privacy &amp; cookie</a> </p>
-    <p><a href="http://feeds.feedburner.com/danielepizzoni">rss</a></p>
-</div>
-
-<div id="credits">
-	<p>Credits:
-	<a href="http://middlemanapp.com">Middleman</a> 
-	<a href="http://sass-lang.com">Sass</a>
-	<a href="http://compass-style.org">Compass</a>
-	<a href="http://susy.oddbird.net">Susy</a>
-	<a href="http://daneden.me/baseline/">Baseline.js</a>
-	<a href="http://www.google.com/webfonts">Google Web Fonts</a>
-	<a href="http://subtlepatterns.com">Subtle Patterns</a>
-	</p>
-</div>
 </footer>
 
 
+  </body>
 
-            
-        </div>
-
-        
-
-        
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
-
-        <script src="/js/plugins-b0a9b306.js"></script>
-        <script src="/js/main-bf7a3cf3.js"></script>
-
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-21153020-1', 'auto');
-          ga('set', 'anonymizeIp', true);
-          ga('send', 'pageview');
-        </script>
-
-
-    </body>
 </html>

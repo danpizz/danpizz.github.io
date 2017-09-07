@@ -1,192 +1,186 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>danielepizzoni.it</title>
-  <subtitle>Daniele Pizzoni - Artigiano del Software - iPhone &amp; Android Apps</subtitle>
-  <id>http://danielepizzoni.it/</id>
-  <link href="http://danielepizzoni.it/"/>
-  <link href="http://danielepizzoni.it/feed.xml" rel="self"/>
-  <updated>2015-12-20T00:00:00+01:00</updated>
-  <author>
-    <name>Daniele Pizzoni</name>
-  </author>
-  <entry>
-    <title>ECRES App</title>
-    <link rel="alternate" href="/blog/2015/12/ECRES/"/>
-    <id>/blog/2015/12/ECRES/</id>
-    <published>2015-12-20T00:00:00+01:00</published>
-    <updated>2015-12-20T00:00:00+01:00</updated>
-    <author>
-      <name>Daniele Pizzoni</name>
-    </author>
-    <summary type="html">&lt;p&gt;Da tempo volevo dedicarmi ad una &lt;em&gt;single page webapp&lt;/em&gt;, nome altisonante che indica una applicazione web simile nel funzionamento ad una applicazione desktop. Ne ho avuto la possibilità partecpando a un bando pubblico del Dipartimento di Scienze Mediche...&lt;/p&gt;</summary>
-    <content type="html">&lt;p&gt;Da tempo volevo dedicarmi ad una &lt;em&gt;single page webapp&lt;/em&gt;, nome altisonante che indica una applicazione web simile nel funzionamento ad una applicazione desktop. Ne ho avuto la possibilità partecpando a un bando pubblico del Dipartimento di Scienze Mediche e Biologiche dell&amp;#39;Università di Udine.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="it"><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://danielepizzoni.it/feed.xml" rel="self" type="application/atom+xml" /><link href="http://danielepizzoni.it/" rel="alternate" type="text/html" hreflang="it" /><updated>2017-09-07T14:55:31+02:00</updated><id>http://danielepizzoni.it/</id><title type="html">Daniele Pizzoni</title><subtitle>Artigiano del Software. Frontend and backend app developer.
+</subtitle><entry><title type="html">ECRES App</title><link href="http://danielepizzoni.it/blog/2015/12/ECRES/index.html" rel="alternate" type="text/html" title="ECRES App" /><published>2015-12-20T00:00:00+01:00</published><updated>2015-12-20T00:00:00+01:00</updated><id>http://danielepizzoni.it/blog/2015/12/ECRES/ECRES</id><content type="html" xml:base="http://danielepizzoni.it/blog/2015/12/ECRES/index.html">&lt;p&gt;Da tempo volevo dedicarmi ad una &lt;em&gt;single page webapp&lt;/em&gt;, nome altisonante che indica una applicazione web simile nel funzionamento ad una applicazione desktop. Ne ho avuto la possibilità partecpando a un bando pubblico del Dipartimento di Scienze Mediche e Biologiche dell’Università di Udine.&lt;/p&gt;
 
-&lt;p&gt;L&amp;#39;applicazione è l&amp;#39;implementazione di un algoritmo, coperto da brevetto, creato dalla Prof.Maria Pia Francescato e dai suoi collaboratori che permette ai pazienti sofferenti di diabete di tipo 1 di regolare l&amp;#39;assunzione di carboidrati prima di un&amp;#39;attività fisica. Altre informazioni si possono trovare qui: &lt;a href="http://qui.uniud.it/notizieEventi/ricerca-e-innovazione/diabete-e-attivita-fisica-progetto-dellateneo-per"&gt;Diabete e attività fisica: progetto per prevenire squilibri glicemici nei pazienti insulino-dipendenti&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;L’applicazione è l’implementazione di un algoritmo, coperto da brevetto, creato dalla Prof.Maria Pia Francescato e dai suoi collaboratori che permette ai pazienti sofferenti di diabete di tipo 1 di regolare l’assunzione di carboidrati prima di un’attività fisica. Altre informazioni si possono trovare qui: &lt;a href=&quot;http://qui.uniud.it/notizieEventi/ricerca-e-innovazione/diabete-e-attivita-fisica-progetto-dellateneo-per&quot;&gt;Diabete e attività fisica: progetto per prevenire squilibri glicemici nei pazienti insulino-dipendenti&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;La particolarità dell&amp;#39;applicazione è di essere completamente client-side. Gira sul browser del utente senza trasmettere alcun dato attraverso la rete in modo da non far esporre alcun dato sensibile sulla Rete.&lt;/p&gt;
+&lt;p&gt;La particolarità dell’applicazione è di essere completamente client-side. Gira sul browser del utente senza trasmettere alcun dato attraverso la rete in modo da non far esporre alcun dato sensibile sulla Rete.&lt;/p&gt;
 
-&lt;p&gt;Tecnologie usate: &lt;a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"&gt;Javascript&lt;/a&gt;, &lt;a href="https://facebook.github.io/react/"&gt;React&lt;/a&gt;, &lt;a href="https://facebook.github.io/immutable-js/"&gt;Immutable.js&lt;/a&gt; e &lt;a href="http://semantic-ui.com"&gt;Semantic UI&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Tecnologie usate: &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript&quot;&gt;Javascript&lt;/a&gt;, &lt;a href=&quot;https://facebook.github.io/react/&quot;&gt;React&lt;/a&gt;, &lt;a href=&quot;https://facebook.github.io/immutable-js/&quot;&gt;Immutable.js&lt;/a&gt; e &lt;a href=&quot;http://semantic-ui.com&quot;&gt;Semantic UI&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;L&amp;#39;applicazione non è al momento disponibile al pubblico in quanto dimostrazione tecnologica di un brevetto in attesa di commercializzazione.&lt;/p&gt;
+&lt;p&gt;L’applicazione non è al momento disponibile al pubblico in quanto dimostrazione tecnologica di un brevetto in attesa di commercializzazione.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="ECRES App screenshot" title="ECRES App" src="/img/ecres-442-f4d3f520.jpg" /&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>BMeters Hydrolink</title>
-    <link rel="alternate" href="/blog/2015/07/bmeters/"/>
-    <id>/blog/2015/07/bmeters/</id>
-    <published>2015-07-15T00:00:00+02:00</published>
-    <updated>2015-07-15T00:00:00+02:00</updated>
-    <author>
-      <name>Daniele Pizzoni</name>
-    </author>
-    <summary type="html">&lt;p&gt;&lt;a href="https://play.google.com/store/apps/details?id=com.bmeters.hydrolinkmobile"&gt;Hydrolink Mobile&lt;/a&gt; è il tipo di app che preferisco sviluppare: &lt;em&gt;la app aziendale davvero utile&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/ecres-442.jpg&quot; alt=&quot;ECRES App screenshot&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="portfolio" /><category term="webapp" /><summary type="html">Da tempo volevo dedicarmi ad una single page webapp, nome altisonante che indica una applicazione web simile nel funzionamento ad una applicazione desktop. Ne ho avuto la possibilità partecpando a un bando pubblico del Dipartimento di Scienze Mediche e Biologiche dell’Università di Udine.</summary></entry><entry><title type="html">BMeters Hydrolink</title><link href="http://danielepizzoni.it/blog/2015/07/bmeters/index.html" rel="alternate" type="text/html" title="BMeters Hydrolink" /><published>2015-07-15T00:00:00+02:00</published><updated>2015-07-15T00:00:00+02:00</updated><id>http://danielepizzoni.it/blog/2015/07/bmeters/bmeters</id><content type="html" xml:base="http://danielepizzoni.it/blog/2015/07/bmeters/index.html">&lt;p&gt;&lt;img src=&quot;/img/hydrolink-442.png&quot; alt=&quot;BMeters Hydrolink Android App screenshot&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Mi è stata commissionata da &lt;a href="http://www.bmeters.com"&gt;B Meters Srl&lt;/a&gt; un'azienda della mia regione che produce ed esporta contatori acqua e di calore.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.bmeters.hydrolinkmobile&quot;&gt;Hydrolink Mobile&lt;/a&gt; è il tipo di app che preferisco sviluppare: &lt;em&gt;la app aziendale davvero utile&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;Si tratta di una app per rilevare...&lt;/p&gt;</summary>
-    <content type="html">&lt;p&gt;&lt;a href="https://play.google.com/store/apps/details?id=com.bmeters.hydrolinkmobile"&gt;Hydrolink Mobile&lt;/a&gt; è il tipo di app che preferisco sviluppare: &lt;em&gt;la app aziendale davvero utile&lt;/em&gt;.&lt;/p&gt;
+&lt;!--more--&gt;
 
-&lt;p&gt;Mi è stata commissionata da &lt;a href="http://www.bmeters.com"&gt;B Meters Srl&lt;/a&gt; un&amp;#39;azienda della mia regione che produce ed esporta contatori acqua e di calore.&lt;/p&gt;
+&lt;p&gt;Mi è stata commissionata da &lt;a href=&quot;http://www.bmeters.com&quot;&gt;B Meters Srl&lt;/a&gt; un’azienda della mia regione che produce ed esporta contatori acqua e di calore.&lt;/p&gt;
 
-&lt;p&gt;Si tratta di una app per rilevare le letture dei contatori dotati di tecnologia &lt;a href="https://en.wikipedia.org/wiki/Meter-Bus"&gt;Wireless M-BUS&lt;/a&gt;. La app si interfaccia con un accessorio BMeters via Bluetooth; il dispositivo raccoglie le letture e invia allo smartphone uno stream binario che la app interpreta, seleziona e raccoglie. L&amp;#39;utente della app, di solito un operatore dell&amp;#39;azienda fornitrice l&amp;#39;acqua alle abitazioni, precarica la app con una o più liste di contatori di cui intende raccogliere i dati. Questi potranno essere consultati sulla app o esportati verso un foglio di calcolo come Microsoft Excel.&lt;/p&gt;
+&lt;p&gt;Si tratta di una app per rilevare le letture dei contatori dotati di tecnologia &lt;a href=&quot;https://en.wikipedia.org/wiki/Meter-Bus&quot;&gt;Wireless M-BUS&lt;/a&gt;. La app si interfaccia con un accessorio BMeters via Bluetooth; il dispositivo raccoglie le letture e invia allo smartphone uno stream binario che la app interpreta, seleziona e raccoglie. L’utente della app, di solito un operatore dell’azienda fornitrice l’acqua alle abitazioni, precarica la app con una o più liste di contatori di cui intende raccogliere i dati. Questi potranno essere consultati sulla app o esportati verso un foglio di calcolo come Microsoft Excel.&lt;/p&gt;
 
-&lt;p&gt;Immaginate un grande condominio con decine o forse centinaia di contatori acqua da leggere &amp;ldquo;a occhio&amp;rdquo;. Con la tecnologia B Meters e con questa app basta attendere qualche minuto e sullo schermo compriranno le letture di tutti i contatori.&lt;/p&gt;
+&lt;p&gt;Immaginate un grande condominio con decine o forse centinaia di contatori acqua da leggere “a occhio”. Con la tecnologia B Meters e con questa app basta attendere qualche minuto e sullo schermo compriranno le letture di tutti i contatori.&lt;/p&gt;</content><author><name></name></author><category term="portfolio" /><category term="android" /><summary type="html">Hydrolink Mobile è il tipo di app che preferisco sviluppare: la app aziendale davvero utile.</summary></entry><entry><title type="html">Radio Onde Furlane</title><link href="http://danielepizzoni.it/blog/2014/08/ondefurlane/index.html" rel="alternate" type="text/html" title="Radio Onde Furlane" /><published>2014-08-01T00:00:00+02:00</published><updated>2014-08-01T00:00:00+02:00</updated><id>http://danielepizzoni.it/blog/2014/08/ondefurlane/ondefurlane</id><content type="html" xml:base="http://danielepizzoni.it/blog/2014/08/ondefurlane/index.html">&lt;p&gt;&lt;img src=&quot;/img/radioonde-442.png&quot; alt=&quot;Radio Onde Furlane Android App screenshot&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="BMeters Hydrolink Android App screenshot" title="BMeters Hydrolink App" src="/img/hydrolink-442-862a8253.png" /&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Radio Onde Furlane</title>
-    <link rel="alternate" href="/blog/2014/08/ondefurlane/"/>
-    <id>/blog/2014/08/ondefurlane/</id>
-    <published>2014-08-01T00:00:00+02:00</published>
-    <updated>2014-08-01T00:00:00+02:00</updated>
-    <author>
-      <name>Daniele Pizzoni</name>
-    </author>
-    <summary type="html">&lt;p&gt;Radio Onde Furlane per iPhone e iPad è disponibile sull’&lt;a href="https://itunes.apple.com/tr/app/radio-onde-furlane/id904918447?mt=8"&gt;Apple App Store&lt;/a&gt;, mentre per i dispositivi Android si può scaricare da &lt;a href="https://play.google.com/store/apps/details?id=eu.ondefurlane.radioapp"&gt;Google Play&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Radio Onde Furlane per iPhone e iPad è disponibile sull’&lt;a href=&quot;https://itunes.apple.com/tr/app/radio-onde-furlane/id904918447?mt=8&quot;&gt;Apple App Store&lt;/a&gt;, mentre per i dispositivi Android si può scaricare da &lt;a href=&quot;https://play.google.com/store/apps/details?id=eu.ondefurlane.radioapp&quot;&gt;Google Play&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Le due app &lt;a href="/blog/2012/05/applicazioni-ibride-per-iphone-android-blackberry-etc"&gt;&lt;em&gt;native&lt;/em&gt;&lt;/a&gt; mi sono state commissionate dagli amici della &lt;a href="http://www.ondefurlane.eu"&gt;Radio&lt;/a&gt;. Dopo aver sviluppato la parte di &lt;em&gt;streaming&lt;/em&gt;&lt;/p&gt;</summary>
-    <content type="html">&lt;p&gt;Radio Onde Furlane per iPhone e iPad è disponibile sull&amp;rsquo;&lt;a href="https://itunes.apple.com/tr/app/radio-onde-furlane/id904918447?mt=8"&gt;Apple App Store&lt;/a&gt;, mentre per i dispositivi Android si può scaricare da &lt;a href="https://play.google.com/store/apps/details?id=eu.ondefurlane.radioapp"&gt;Google Play&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Le due app &lt;a href=&quot;/blog/2012/05/applicazioni-ibride-per-iphone-android-blackberry-etc&quot;&gt;&lt;em&gt;native&lt;/em&gt;&lt;/a&gt; mi sono state commissionate dagli amici della &lt;a href=&quot;http://www.ondefurlane.eu&quot;&gt;Radio&lt;/a&gt;. Dopo aver sviluppato la parte di &lt;em&gt;streaming&lt;/em&gt; ne ho lasciato il completamento a &lt;a href=&quot;http://www.datamind.biz&quot;&gt;Datamind&lt;/a&gt; che, assieme ad &lt;a href=&quot;http://ensoul.it&quot;&gt;Ensoul&lt;/a&gt;, ha completato la parte di visualizzazione.&lt;/p&gt;
 
-&lt;p&gt;Le due app &lt;a href="/blog/2012/05/applicazioni-ibride-per-iphone-android-blackberry-etc"&gt;&lt;em&gt;native&lt;/em&gt;&lt;/a&gt; mi sono state commissionate dagli amici della &lt;a href="http://www.ondefurlane.eu"&gt;Radio&lt;/a&gt;. Dopo aver sviluppato la parte di &lt;em&gt;streaming&lt;/em&gt; ne ho lasciato il completamento a &lt;a href="http://www.datamind.biz"&gt;Datamind&lt;/a&gt; che, assieme ad &lt;a href="http://ensoul.it"&gt;Ensoul&lt;/a&gt;, ha completato la parte di visualizzazione.&lt;/p&gt;
-
-&lt;p&gt;&lt;img alt="Radio Onde Furlane Android App screenshot" title="Radio Onde Furlane Android App" src="/img/radioonde-442-0488fb9b.png" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Le app permettono di ascoltare la diretta e di visualizzare i contenuti del sito della radio.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Con che licenza fornisco il codice sorgente delle app ai miei clienti?</title>
-    <link rel="alternate" href="/blog/2014/03/preventivo/"/>
-    <id>/blog/2014/03/preventivo/</id>
-    <published>2014-03-27T00:00:00+01:00</published>
-    <updated>2014-03-27T00:00:00+01:00</updated>
-    <author>
-      <name>Daniele Pizzoni</name>
-    </author>
-    <summary type="html">&lt;p&gt;Nel preventivi e poi nei contratti con cui si dà vita a una commessa inserisco questo testo:&lt;/p&gt;
+&lt;p&gt;Le app permettono di ascoltare la diretta e di visualizzare i contenuti del sito della radio.&lt;/p&gt;</content><author><name></name></author><category term="portfolio" /><category term="apple" /><category term="android" /><summary type="html"></summary></entry><entry><title type="html">Con che licenza fornisco il codice sorgente delle app ai miei clienti?</title><link href="http://danielepizzoni.it/blog/2014/03/preventivo/index.html" rel="alternate" type="text/html" title="Con che licenza fornisco il codice sorgente delle app ai miei clienti?" /><published>2014-03-27T00:00:00+01:00</published><updated>2014-03-27T00:00:00+01:00</updated><id>http://danielepizzoni.it/blog/2014/03/preventivo/preventivo</id><content type="html" xml:base="http://danielepizzoni.it/blog/2014/03/preventivo/index.html">&lt;p&gt;Nel preventivi e poi nei contratti con cui si dà vita a una commessa inserisco questo testo:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;L’applicazione viene fornita in formato binario adatto per l’installazione su dispositivi e sistema operativo concordati, accompagnata alla conclusione dei...&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
-    <content type="html">&lt;p&gt;Nel preventivi e poi nei contratti con cui si dà vita a una commessa inserisco questo testo:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;L’applicazione viene fornita in formato binario adatto per l’installazione su dispositivi e sistema operativo concordati, accompagnata alla conclusione dei lavori, dal codice sorgente completo.&lt;/p&gt;
+  &lt;p&gt;L’applicazione viene fornita in formato binario adatto per l’installazione su dispositivi e sistema operativo concordati, accompagnata alla conclusione dei lavori, dal codice sorgente completo.&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;!--more--&gt;
 
 &lt;p&gt;Metto poi al corrente il committente dei seguenti fatti:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;le applicazioni moderne sono entità complesse, costituite accostando componenti software la cui origine è svariata: componenti &lt;a href="http://it.wikipedia.org/wiki/ Open_source"&gt;open source&lt;/a&gt;, componenti a pagamento, componenti sviluppati in precedenza da me per altri clienti, e componenti sviluppati da me per questa commessa&lt;/p&gt;
+  &lt;p&gt;le applicazioni moderne sono entità complesse, costituite accostando componenti software la cui origine è svariata: componenti &lt;a href=&quot;http://it.wikipedia.org/wiki/ Open_source&quot;&gt;open source&lt;/a&gt;, componenti a pagamento, componenti sviluppati in precedenza da me per altri clienti, e componenti sviluppati da me per questa commessa&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;solitamente gli sviluppatori &lt;em&gt;non forniscono&lt;/em&gt; il codice sorgente dei loro prodotti&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;solitamente gli sviluppatori &lt;em&gt;non forniscono&lt;/em&gt; il codice sorgente dei loro prodotti&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;la legislazione in materia vigente nel nostro paese è datata, complessa, confusa. Basti dire che il pilastro ne è la &lt;a href="http://www.interlex.it/testi/l41_633.htm"&gt;Legge sul Diritto d’Autore 633/1941&lt;/a&gt;, varata durante il Regno di Vittorio Emanuele III e la Presidenza del Consiglio di Benito Mussolini.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;la legislazione in materia vigente nel nostro paese è datata, complessa, confusa. Basti dire che il pilastro ne è la &lt;a href=&quot;http://www.interlex.it/testi/l41_633.htm&quot;&gt;Legge sul Diritto d’Autore 633/1941&lt;/a&gt;, varata durante il Regno di Vittorio Emanuele III e la Presidenza del Consiglio di Benito Mussolini.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Ad ogni modo ci tengo che i miei clienti sappiano che:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;La presente offerta comprende il codice sorgente e tutto il necessario a ricreare l’applicazione funzionante nelle sue diverse versioni.&lt;/p&gt;
+  &lt;p&gt;La presente offerta comprende il codice sorgente e tutto il necessario a ricreare l’applicazione funzionante nelle sue diverse versioni.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Quindi, piuttosto di fare come fanno tutti, ovvero far finta che i sorgenti non esistano o, chi può, affidarsi a un team di avvocati, faccio appello ad alcuni criteri di buon senso:&lt;/p&gt;
 
 &lt;blockquote&gt;
-&lt;p&gt;il fornitore si impegna, a meno di accordi diversi, a non utilizzare il codice sviluppato per il committente per creare prodotti simili in concorrenza o per aziende o enti concorrenti del committente stesso&lt;/p&gt;
-
-&lt;p&gt;il committente accetta la non esclusività sui diritti di modifica e ridistribuzione del codice fornito. Parti del codice potranno, quindi, venire utilizzate dal fornitore per altre commesse ad altri clienti.&lt;/p&gt;
+  &lt;p&gt;il fornitore si impegna, a meno di accordi diversi, a non utilizzare il codice sviluppato per il committente per creare prodotti simili in concorrenza o per aziende o enti concorrenti del committente stesso&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;In termini tecnici si tratta di una licenza non esclusiva. In pratica è una cosa, credo, ragionevole.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Lattosio</title>
-    <link rel="alternate" href="/blog/2014/02/lattosio-app/"/>
-    <id>/blog/2014/02/lattosio-app/</id>
-    <published>2014-02-03T00:00:00+01:00</published>
-    <updated>2014-02-03T00:00:00+01:00</updated>
-    <author>
-      <name>Daniele Pizzoni</name>
-    </author>
-    <summary type="html">&lt;p&gt;&lt;a href="https://itunes.apple.com/it/app/lattosio/id803081423?mt=8&amp;amp;uo=4"&gt;Lattosio&lt;/a&gt; è una app che sfrutta il principio del &lt;a href="http://it.wikipedia.org/wiki/Crowdsourcing"&gt;crowdsourcing&lt;/a&gt; per raccogliere dati utili sulla presenza di lattosio nei cibi. &lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;il committente accetta la non esclusività sui diritti di modifica e ridistribuzione del codice fornito. Parti del codice potranno, quindi, venire utilizzate dal fornitore per altre commesse ad altri clienti.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;&lt;a href="http://www.genex.me/glife.php"&gt;G&amp;amp;life&lt;/a&gt;, committente della app, è una Società per Azioni che opera nel settore della nutrigenetica, la genetica applicata alla nutrizione, all&amp;#39;interno dell&amp;rsquo;&lt;a href="http://www.area.trieste.it/opencms/opencms/area/it/phonebook/insediati_detail.html?id=GLIFE"&gt;Area Science Park&lt;/a&gt; di Trieste; sviluppa e promuove  prodotti e servizi personalizzati in base all&amp;#39;analisi del DNA.&lt;/p&gt;
+&lt;p&gt;In termini tecnici si tratta di una licenza non esclusiva. In pratica è una cosa, credo, ragionevole.&lt;/p&gt;</content><author><name></name></author><category term="faq" /><summary type="html">Nel preventivi e poi nei contratti con cui si dà vita a una commessa inserisco questo testo: L’applicazione viene fornita in formato binario adatto per l’installazione su dispositivi e sistema operativo concordati, accompagnata alla conclusione dei lavori, dal codice sorgente completo.</summary></entry><entry><title type="html">Lattosio</title><link href="http://danielepizzoni.it/blog/2014/02/lattosio-app/index.html" rel="alternate" type="text/html" title="Lattosio" /><published>2014-02-03T00:00:00+01:00</published><updated>2014-02-03T00:00:00+01:00</updated><id>http://danielepizzoni.it/blog/2014/02/lattosio-app/lattosio-app</id><content type="html" xml:base="http://danielepizzoni.it/blog/2014/02/lattosio-app/index.html">&lt;p&gt;&lt;img src=&quot;/img/lattosio1-442.png&quot; alt=&quot;Lattosio iPhone App screenshot&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Lattosio iPhone App screenshot" title="Lattosio iPhone App" src="/img/lattosio1-442-3843f8be.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/it/app/lattosio/id803081423?mt=8&amp;amp;uo=4&quot;&gt;Lattosio&lt;/a&gt; è una app che sfrutta il principio del &lt;a href=&quot;http://it.wikipedia.org/wiki/Crowdsourcing&quot;&gt;crowdsourcing&lt;/a&gt; per raccogliere dati utili sulla presenza di lattosio nei cibi.&lt;/p&gt;
 
-&lt;p&gt;</summary>
-    <content type="html">&lt;p&gt;&lt;a href="https://itunes.apple.com/it/app/lattosio/id803081423?mt=8&amp;amp;uo=4"&gt;Lattosio&lt;/a&gt; è una app che sfrutta il principio del &lt;a href="http://it.wikipedia.org/wiki/Crowdsourcing"&gt;crowdsourcing&lt;/a&gt; per raccogliere dati utili sulla presenza di lattosio nei cibi. &lt;/p&gt;
+&lt;!--more--&gt;
 
-&lt;p&gt;&lt;a href="http://www.genex.me/glife.php"&gt;G&amp;amp;life&lt;/a&gt;, committente della app, è una Società per Azioni che opera nel settore della nutrigenetica, la genetica applicata alla nutrizione, all&amp;#39;interno dell&amp;rsquo;&lt;a href="http://www.area.trieste.it/opencms/opencms/area/it/phonebook/insediati_detail.html?id=GLIFE"&gt;Area Science Park&lt;/a&gt; di Trieste; sviluppa e promuove  prodotti e servizi personalizzati in base all&amp;#39;analisi del DNA.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.genex.me/glife.php&quot;&gt;G&amp;amp;life&lt;/a&gt;, committente della app, è una Società per Azioni che opera nel settore della nutrigenetica, la genetica applicata alla nutrizione, all’interno dell’&lt;a href=&quot;http://www.area.trieste.it/opencms/opencms/area/it/phonebook/insediati_detail.html?id=GLIFE&quot;&gt;Area Science Park&lt;/a&gt; di Trieste; sviluppa e promuove  prodotti e servizi personalizzati in base all’analisi del DNA.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt="Lattosio iPhone App screenshot" title="Lattosio iPhone App" src="/img/lattosio1-442-3843f8be.png" /&gt;&lt;/p&gt;
+&lt;p&gt;La app legge i codici a barre presente sulle confezioni dei cibi, consulta un database e fornisce una opinione sulla presenza di lattosio in ciascun cibo. Se il dato non è presente nel database si offre all’utente la possibilità di dare la propria opinione: il lattosio è presente o no in questo cibo? Le opinioni degli utenti contribuiscono ad arricchire e aggiornare il database.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Mi sono occupato sia della programmazione della app che dello sviluppo della parte &lt;em&gt;server&lt;/em&gt; che ospita e mette a disposizione l’accesso al database da parte delle app installate da tutti gli utenti. La app periodicamente scarica le informazioni relative a tutti i prodotti noti al database funzionando, quindi, anche offline. Quando c’è disponibilità di Rete la app invia i risultati delle “votazioni” degli utenti contribuendo ad aggiornare il database. Un algoritmo prende in considerazione vari parametri per validare i voti, in modo che siano espressi da diverse persone e ragionevolmente uniformi.&lt;/p&gt;</content><author><name></name></author><category term="portfolio" /><category term="apple" /><summary type="html">Lattosio è una app che sfrutta il principio del crowdsourcing per raccogliere dati utili sulla presenza di lattosio nei cibi.</summary></entry><entry><title type="html">Ho un’idea geniale per una app ma ho paura che me la freghino</title><link href="http://danielepizzoni.it/blog/2013/12/ho-un-idea-geniale-per-una-app-ma-ho-paura-che-me-la-freghino/index.html" rel="alternate" type="text/html" title="Ho un'idea geniale per una app ma ho paura che me la freghino" /><published>2013-12-30T00:00:00+01:00</published><updated>2013-12-30T00:00:00+01:00</updated><id>http://danielepizzoni.it/blog/2013/12/ho-un-idea-geniale-per-una-app-ma-ho-paura-che-me-la-freghino/ho-un-idea-geniale-per-una-app-ma-ho-paura-che-me-la-freghino</id><content type="html" xml:base="http://danielepizzoni.it/blog/2013/12/ho-un-idea-geniale-per-una-app-ma-ho-paura-che-me-la-freghino/index.html">&lt;p&gt;Questa dell’idea geniale che ti viene fregata è una cosa che assilla molte persone che mi scrivono a proposito di app per iPhone, Android o web.&lt;/p&gt;
 
-&lt;p&gt;La app legge i codici a barre presente sulle confezioni dei cibi, consulta un database e fornisce una opinione sulla presenza di lattosio in ciascun cibo. Se il dato non è presente nel database si offre all&amp;#39;utente la possibilità di dare la propria opinione: il lattosio è presente o no in questo cibo? Le opinioni degli utenti contribuiscono ad arricchire e aggiornare il database.&lt;/p&gt;
+&lt;p&gt;La realtà di un mercato che in pochi anni si è già saturato insegna che quello che conta è la realizzazione dell’idea.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href="https://itunes.apple.com/it/app/lattosio/id803081423?mt=8&amp;amp;uo=4"&gt;&lt;img alt="Disponibile su App Store Badge&amp;quot;" title="Scarica SposiFVG.com dall'App Store" src="/img/Available_on_the_App_Store_Badge_IT_135x40_0727-4539bec5.svg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Non siamo più nel 2007 quando l’offerta di app era nulla e la domanda infinita. Ci sono 1 milione di app nell’App Store Apple, perché milioni di persone si sono per anni spremute le meningi nel perseguire il sogno della ricchezza facile con una app. Ma se le idee sono infinite, quelle utili e realizzabili con facilità no: il sogno ormai è poco più che un mito.&lt;/p&gt;
 
-&lt;p&gt;Mi sono occupato sia della programmazione della app che dello sviluppo della parte &lt;em&gt;server&lt;/em&gt; che ospita e mette a disposizione l&amp;#39;accesso al database da parte delle app installate da tutti gli utenti. La app periodicamente scarica le informazioni relative a tutti i prodotti noti al database funzionando, quindi, anche offline. Quando c&amp;#39;è disponibilità di Rete la app invia i risultati delle &amp;ldquo;votazioni&amp;rdquo; degli utenti contribuendo ad aggiornare il database. Un algoritmo prende in considerazione vari parametri per validare i voti, in modo che siano espressi da diverse persone e ragionevolmente uniformi.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Ho un'idea geniale per una app ma ho paura che me la freghino</title>
-    <link rel="alternate" href="/blog/2013/12/ho-un-idea-geniale-per-una-app-ma-ho-paura-che-me-la-freghino/"/>
-    <id>/blog/2013/12/ho-un-idea-geniale-per-una-app-ma-ho-paura-che-me-la-freghino/</id>
-    <published>2013-12-30T00:00:00+01:00</published>
-    <updated>2013-12-30T00:00:00+01:00</updated>
-    <author>
-      <name>Daniele Pizzoni</name>
-    </author>
-    <summary type="html">&lt;p&gt;Questa dell'idea geniale che ti viene fregata è una cosa che assilla molte persone che mi scrivono, si tratti di app per iPhone, Android o web.&lt;/p&gt;
+&lt;p&gt;La Apple non ha stavinto con l’iPhone perché se l’è inventato: c’erano già gli smartphone. Ne hanno fatto un &lt;em&gt;migliore&lt;/em&gt;. Prima di Google c’erano già &lt;a href=&quot;http://yahoo.com&quot;&gt;Yahoo&lt;/a&gt; e &lt;a href=&quot;http://en.wikipedia.org/wiki/AltaVista&quot;&gt;Altavista&lt;/a&gt;, ma Google ha vinto creando un motore di ricerca migliore e inventandosi un sistema raffinato per tirarne fuori dei soldi (&lt;a href=&quot;http://adwords.google.com&quot;&gt;adwords&lt;/a&gt;).&lt;/p&gt;
 
-&lt;p&gt;La realtà di un mercato saturato in pochi anni insegna che l'idea conta poco, quello che conta è la realizzazione...&lt;/p&gt;</summary>
-    <content type="html">&lt;p&gt;Questa dell&amp;#39;idea geniale che ti viene fregata è una cosa che assilla molte persone che mi scrivono, si tratti di app per iPhone, Android o web.&lt;/p&gt;
+&lt;p&gt;L’errore che facciamo spesso è confondere il valore con il valore potenziale. Le idee hanno il valore potenziale, ma benché questo sia estremamente importante, necessario per vendere l’idea sul mercato, attrarre investitori, creare un team di lavoro efficace, non è un valore reale, tangibile e monetizzabile con &lt;a href=&quot;/blog/2013/01/ho-unidea-geniale-te-la-dico-tu-fai-la-app-la-vendiamo-e-dividiamo-i-proventi-fiftyfifty/&quot;&gt;facilità e senza rischi&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;La realtà di un mercato saturato in pochi anni insegna che l&amp;#39;idea conta poco, quello che conta è la realizzazione.&lt;/p&gt;
+&lt;p&gt;Avere un’idea per una app nel 2014 significa essere in concorrenza con &lt;a href=&quot;https://www.google.com/?q=earth+population#q=earth+population&quot;&gt;tutti coloro&lt;/a&gt; che hanno la stessa idea sul pianeta. Per non parlare con quelli, agguerritissimi, che cloneranno la tua app il giorno dopo che esce sul mercato.&lt;/p&gt;
 
-&lt;p&gt;Non siamo più nel 2007 quando l&amp;#39;offerta di app era nulla e la domanda infinita. Ci sono 1 milione di app nell&amp;#39;App Store Apple, perché milioni di persone si sono per anni spremute le meningi nel perseguire il sogno della ricchezza facile con una app. Ma se le idee sono infinite, quelle utili e realizzabili con facilità no: il sogno ormai è poco più che un mito.&lt;/p&gt;
+&lt;p&gt;Per farcela devi realizzare l’idea &lt;em&gt;prima e meglio&lt;/em&gt; degli altri, devi creare un team di persone determinate a realizzare l’idea, sfruttando probabilmente un capitale finanziato da qualcuno che investe su persone come te allo scopo di realizzare un profitto futuro. Esistono delle &lt;a href=&quot;https://www.google.it/?q=incubatori+impresa+pubblici#q=incubatori+impresa&quot;&gt;strutture pubbliche e private&lt;/a&gt; destinate a facilitare questo percorso.&lt;/p&gt;
 
-&lt;p&gt;La Apple non ha stavinto con l&amp;#39;iPhone perché se l&amp;#39;è inventato: c&amp;#39;erano già gli smartphone. Ne hanno fatto un &lt;em&gt;migliore&lt;/em&gt;. Prima di Google c&amp;#39;erano già &lt;a href="http://yahoo.com"&gt;Yahoo&lt;/a&gt; e &lt;a href="http://en.wikipedia.org/wiki/AltaVista"&gt;Altavista&lt;/a&gt;, ma Google ha vinto creando un motore di ricerca migliore e inventandosi un sistema raffinato per tirarne fuori dei soldi (&lt;a href="http://adwords.google.com"&gt;adwords&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Insomma: non ti rivolgere a me se hai un’idea geniale &lt;strong&gt;nuda, cruda e senza cash&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;L&amp;#39;errore che facciamo spesso è confondere il valore con il valore potenziale. Le idee hanno il valore potenziale, ma benché questo sia estremamente importante, necessario per vendere l&amp;#39;idea sul mercato, attrarre investitori, creare un team di lavoro efficace, non è un valore reale, tangibile e monetizzabile con &lt;a href="/blog/2013/01/ho-unidea-geniale-te-la-dico-tu-fai-la-app-la-vendiamo-e-dividiamo-i-proventi-fiftyfifty/"&gt;facilità e senza rischi&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Viceversa: hai l’idea, un business plan, un budget e stai cercando un esperto per realizzare una app per iPhone o Android? &lt;a href=&quot;/contatti/&quot;&gt;Scrivimi!!&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;Avere un&amp;#39;idea per una app nel 2014 significa essere in concorrenza con &lt;a href="https://www.google.com/?q=earth+population#q=earth+population"&gt;tutti coloro&lt;/a&gt; che hanno la stessa idea sul pianeta. Per non parlare con quelli, agguerritissimi, che cloneranno la tua app il giorno dopo che esce sul mercato. &lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Nota: per questo articolo mi sono ispirato ad alcune parti di: &lt;a href=&quot;http://blog.mojotech.com/post/69080941093/sorry-but-your-idea-is-only-worth-1&quot;&gt;Sorry, But Your Idea Is Only Worth $1&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><category term="faq" /><summary type="html">Questa dell’idea geniale che ti viene fregata è una cosa che assilla molte persone che mi scrivono a proposito di app per iPhone, Android o web.</summary></entry><entry><title type="html">Web di qualità: semplicità, tipografia e responsive design</title><link href="http://danielepizzoni.it/blog/2013/03/web-di-qualita-semplicita-tipografia-responsive-design/index.html" rel="alternate" type="text/html" title="Web di qualità: semplicità, tipografia e responsive design" /><published>2013-03-19T00:00:00+01:00</published><updated>2013-03-19T00:00:00+01:00</updated><id>http://danielepizzoni.it/blog/2013/03/web-di-qualita-semplicita-tipografia-responsive-design/web-di-qualita-semplicita-tipografia-responsive-design</id><content type="html" xml:base="http://danielepizzoni.it/blog/2013/03/web-di-qualita-semplicita-tipografia-responsive-design/index.html">&lt;p&gt;Ho creato questo sito seguendo quelli che sono i più recenti &lt;a href=&quot;http://thenextweb.com/dd/2012/12/30/10-new-web-design-trends-you-can-expect-to-see-in-2013/&quot;&gt;&lt;em&gt;trend&lt;/em&gt;&lt;/a&gt; qualitativi del web: semplicità, tipografia e responsive design.&lt;/p&gt;
 
-&lt;p&gt;Per farcela devi realizzare l&amp;#39;idea &lt;em&gt;prima e meglio&lt;/em&gt; degli altri, devi creare un team di persone determinate a realizzare l&amp;#39;idea, sfruttando probabilmente un capitale finanziato da qualcuno che investe su persone come te allo scopo di realizzare un profitto futuro. Esistono delle &lt;a href="https://www.google.it/?q=incubatori+impresa+pubblici#q=incubatori+impresa"&gt;strutture pubbliche e private&lt;/a&gt; destinate a facilitare questo percorso.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/rhythm-shot.png&quot; alt=&quot;Ritmo tipografico verticale&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Insomma: non ti rivolgere a me se hai un&amp;#39;idea geniale &lt;strong&gt;nuda, cruda e senza cash&lt;/strong&gt;. &lt;/p&gt;
+&lt;p&gt;L’immagine mostra uno degli aspetti tipografici della composizione del sito: gli elementi sono disposti in maniera uniforme come sulle righe di un quaderno di scuola. Così l’occhio del lettore fa meno fatica a spostarsi sulla pagina perché incontra salti costanti e non il disordinato alternarsi di testo e immagini a cui siamo abituati sul web.&lt;/p&gt;
 
-&lt;p&gt;Viceversa: hai l&amp;#39;idea, un business plan, un budget e stai cercando un esperto per realizzare una app per iPhone o Android? &lt;a href="/contatti/"&gt;Scrivimi!!&lt;/a&gt;&lt;/p&gt;
+&lt;!--more--&gt;
 
-&lt;p&gt;&lt;em&gt;Nota: per questo articolo mi sono ispirato ad alcune parti di: &lt;a href="http://blog.mojotech.com/post/69080941093/sorry-but-your-idea-is-only-worth-1"&gt;Sorry, But Your Idea Is Only Worth $1&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-</content>
-  </entry>
-</feed>
+&lt;h2 id=&quot;tipografia&quot;&gt;Tipografia&lt;/h2&gt;
+
+&lt;p&gt;La qualità sul web non è più solo l’applicazione di strumenti informatici ma ha ormai a che fare con il recupero e l’applicazione al web di centinaia di anni di arte e tecnica della tipografia.&lt;/p&gt;
+
+&lt;p&gt;La tipografia si occupa del sistemare i caratteri tipografici sulla pagina in modo da rendere agevole la lettura. Ciò comprende la scelta del &lt;a href=&quot;http://it.wikipedia.org/wiki/Tipo_di_carattere&quot;&gt;tipo o &lt;em&gt;font&lt;/em&gt;&lt;/a&gt;, la dimensione del carattere, la lunghezza della linea e la dimensione dell’interlinea, la spaziatura, la &lt;a href=&quot;http://it.wikipedia.org/wiki/Crenatura&quot;&gt;crenatura o kerning&lt;/a&gt;, etc. (&lt;a href=&quot;http://www.tunabites.it/anatomia-del-carattere-tipografico.html&quot;&gt;qui troviamo&lt;/a&gt; un’interessante pagina su questi argomenti).&lt;/p&gt;
+
+&lt;p&gt;La tipografia è sia una tecnica, in quanto conoscenza delle norme e dei mezzi tecnologici necessari ad arrivare al risultato, sia un’arte, perché non esistono formule assolute che assicurino il risultati ma ha a che fare con il gusto estetico e con la capacità di capire le necessità di chi legge.&lt;/p&gt;
+
+&lt;p&gt;È solo negli ultimissimi anni che si sono diffusi i &lt;a href=&quot;http://it.wikipedia.org/wiki/Browser&quot;&gt;&lt;em&gt;web browser&lt;/em&gt;&lt;/a&gt; in grado di visualizzare font arbitrari e applicare al web con buona precisione i parametri tipografici. Ed è solo negli ultimi mesi che si stanno diffondendo alcuni servizi che offrono font per il web di qualita, sia a pagamento (&lt;a href=&quot;http://fonts.com&quot;&gt;Monotype fonts.com,&lt;/a&gt; &lt;a href=&quot;https://typekit.com/fonts&quot;&gt;Adobe Typekit&lt;/a&gt;) che in forma gratuita (&lt;a href=&quot;http://www.google.com/webfonts&quot;&gt;Google Web Fonts,&lt;/a&gt; &lt;a href=&quot;http://html.adobe.com/edge/webfonts/&quot;&gt;Adobe Edge Web Fonts&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Per questo la tipografia sta avendo impatto sul web solo ora: meglio tardi che mai.&lt;/p&gt;
+
+&lt;h2 id=&quot;adattabilità-mobile&quot;&gt;Adattabilità &lt;em&gt;mobile&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;L’altro aspetto importante è quello del &lt;em&gt;Responsive Design.&lt;/em&gt; Si dice così del &lt;em&gt;web design&lt;/em&gt; che si adatta in modo automatico alle ridotte dimensioni dei dispositivi portatili come i telefonini. Se vuoi approfondire questo aspetto puoi leggere il mio articolo &lt;a href=&quot;/blog/2013/03/responsive-web-design/&quot;&gt;Responsive Web Design&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;strumenti&quot;&gt;Strumenti&lt;/h2&gt;
+
+&lt;p&gt;Questo sito è completamente sviluppato con strumenti Open Source liberamente accessibili in rete.&lt;/p&gt;
+
+&lt;p&gt;Se ti interessa qualcosa di simile non devi far altro che &lt;a href=&quot;/contatti&quot;&gt;contattarmi.&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://middlemanapp.com&quot;&gt;Middleman&lt;/a&gt; — &lt;em&gt;Middleman is a static site generator using all the shortcuts and tools in modern web development&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://sass-lang.com&quot;&gt;Sass&lt;/a&gt; — &lt;em&gt;Sass is an extension of CSS3, adding nested rules, variables, mixins, selector inheritance, and more&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://compass-style.org&quot;&gt;Compass&lt;/a&gt; — &lt;em&gt;Compass is an open-source CSS Authoring Framework&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://susy.oddbird.net&quot;&gt;Susy&lt;/a&gt; — &lt;em&gt;Responsive grids for Compass&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://daneden.me/baseline/&quot;&gt;Baseline.js&lt;/a&gt; — &lt;em&gt;Baseline.js is a jQuery plugin that helps you to maintain vertical rhythm set by a typographic baseline, even when adding inline images with awkward sizes&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://subtlepatterns.com&quot;&gt;Subtle Patterns&lt;/a&gt; — &lt;em&gt;a high quality resource for anyone in need of tilable textured patterns, free to use&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://www.google.com/webfonts&quot;&gt;Google Web Fonts&lt;/a&gt; (&lt;a href=&quot;http://www.google.com/webfonts/specimen/Arvo&quot;&gt;Arvo&lt;/a&gt; e &lt;a href=&quot;http://www.google.com/fonts/specimen/PT+Sans&quot;&gt;PT Sans&lt;/a&gt;)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="web" /><summary type="html">Ho creato questo sito seguendo quelli che sono i più recenti trend qualitativi del web: semplicità, tipografia e responsive design.</summary></entry><entry><title type="html">Responsive Web Design</title><link href="http://danielepizzoni.it/blog/2013/03/responsive-web-design/index.html" rel="alternate" type="text/html" title="Responsive Web Design" /><published>2013-03-18T00:00:00+01:00</published><updated>2013-03-18T00:00:00+01:00</updated><id>http://danielepizzoni.it/blog/2013/03/responsive-web-design/responsive-web-design</id><content type="html" xml:base="http://danielepizzoni.it/blog/2013/03/responsive-web-design/index.html">&lt;p&gt;Le versioni per i telefonini dei siti Internet sono state inizialmente costruite in parallelo a quelle dei siti normali. Ma ora le tecnologie &lt;a href=&quot;http://it.wikipedia.org/wiki/HTML5&quot;&gt;html5&lt;/a&gt; e &lt;a href=&quot;http://it.wikipedia.org/wiki/CSS3&quot;&gt;css3&lt;/a&gt; permettono dei trucchi interessanti.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Prendiamo ad esempio il giornale online La Repubblica che si trova all’indirizzo &lt;a href=&quot;http://www.repubblica.it&quot;&gt;http://www.repubblica.it.&lt;/a&gt; Se accedi al sito con un telefonino vieni rimandato automaticamente ad un altro sito, &lt;a href=&quot;http://m.repubblica.it&quot;&gt;http://m.repubblica.it,&lt;/a&gt; dove “m” sta per &lt;em&gt;mobile&lt;/em&gt; (parola latina che l’inglese ci sta restituendo analogamente a &lt;em&gt;media&lt;/em&gt;). Purtroppo i costi di manutenzione, gli errori ed i problemi raddoppiano con la duplicazione dei siti: ne devi fare due invece che uno solo.&lt;/p&gt;
+
+&lt;p&gt;Un metodo più raffinato è quello di mantenere identici contenuti cambiando il modo in cui vengono mostrati sullo schermo. Questa tecnica, che ho usato per il mio sito, fa in modo che la pagina si &lt;em&gt;trasformi automaticamente,&lt;/em&gt; adattandosi alle dimensioni in cui viene visualizzata. Per capire cosa intendo basta che provi adesso a restringere o allargare la finestra del browser, o a girare il telefonino, come nel video seguente&lt;/p&gt;
+
+&lt;div class=&quot;video-wrapper&quot;&gt;
+	&lt;iframe class=&quot;video-ryth&quot; src=&quot;http://www.youtube.com/embed/RafHCP4QvQk&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Cosa succede? Semplicemente il disegno del sito si trasforma in risposta alle mutate dimensioni, le immagini si restringono e vengono spostate. Le intestazioni e i loghi si rimpiccioliscono, alcuni particolari vengono nascosti e i font cambiano leggermente di dimensione.&lt;/p&gt;
+
+&lt;p&gt;È quello che in inglese viene chiamato Responsive Design e che in italiano ho sentito rendere con &lt;em&gt;impaginazione fluida&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Pare che l’idea sia nata, o meglio, sia stata per la prima volta esposta compiutamente, nel Maggio 2010 sull’articolo &lt;a href=&quot;http://www.italianalistapart.com/articoli/17-numero-7-8-giugno-2010/71-web-design-reattivo&quot;&gt;Responsive Web Design&lt;/a&gt; (in italiano). All’inizio del 2011 la rivista Smashing Magazine con &lt;a href=&quot;http://www.smashingmagazine.com/2011/01/12/guidelines-for-responsive-web-design/&quot;&gt;questo&lt;/a&gt; suo articolo ha sancito l’ingresso del Responsive Web Design nel mainstream del Web Design.&lt;/p&gt;
+
+&lt;p&gt;In realtà l’idea non è che sia poi così originale o rivoluzionaria; il fatto che si stia diffondendo così tardivamente è dovuto alla incapacità di usare le nuove tecnologie (&lt;a href=&quot;http://it.wikipedia.org/wiki/HTML5&quot;&gt;HTML5&lt;/a&gt; e &lt;a href=&quot;http://it.wikipedia.org/wiki/CSS_(informatica)&quot;&gt;CSS3&lt;/a&gt;) da parte di alcuni browser, in particolare quelli meno recenti di casa Microsoft che, come si sa, sono ancora molto diffusi.&lt;/p&gt;</content><author><name></name></author><category term="web" /><summary type="html">Le versioni per i telefonini dei siti Internet sono state inizialmente costruite in parallelo a quelle dei siti normali. Ma ora le tecnologie html5 e css3 permettono dei trucchi interessanti.</summary></entry><entry><title type="html">SposiFVG.com</title><link href="http://danielepizzoni.it/blog/2013/02/sposifvg-com/index.html" rel="alternate" type="text/html" title="SposiFVG.com" /><published>2013-02-12T00:00:00+01:00</published><updated>2013-02-12T00:00:00+01:00</updated><id>http://danielepizzoni.it/blog/2013/02/sposifvg-com/sposifvg-com</id><content type="html" xml:base="http://danielepizzoni.it/blog/2013/02/sposifvg-com/index.html">&lt;p&gt;&lt;img src=&quot;/img/sposifvg.png&quot; alt=&quot;SposiFVG.com iPhone App screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://itunes.apple.com/it/app/sposifvg.com/id598569305?mt=8&amp;amp;uo=4&quot;&gt;SposiFVG.com&lt;/a&gt; è la versione mobile per iPhone di &lt;a href=&quot;http://www.sposifvg.com/&quot;&gt;sposifvg.com&lt;/a&gt;, sito gestito da &lt;a href=&quot;http://www.start2000.it/&quot;&gt;Start 2000 Srl&lt;/a&gt;. È un catalogo di operatori commerciali che operano nei settori connessi che si rivolgono ai futuri sposi.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Con una grafica semplice e pulita permette la consultazione delle schede operatori che sono iscritti a sposifvg.com. Visualizza sito, indirizzo, telefono, fotografie e posizione degli operatori, permette di inviare facilmente una mail, fare una telefonata, trovare su mappa la posizione degli operatori e visualizzare il percorso stradale dalla posizione dell’utente a quella dell’operatore stesso.&lt;/p&gt;
+
+&lt;p&gt;La app gestisce un database che riflette quello di sposifvg.com e che viene aggiornato automaticamente dalla rete ogni volta sia necessario. La app inoltre raccoglie in forma aggregata e anonima dati sull’utilizzo da parte degli utenti in maniera analoga a un sito web. In questo modo si possono ad esempio capire quali sono le categorie più seguite o quante telefonate o mail sono partite verso ciascun operatore.&lt;/p&gt;</content><author><name></name></author><category term="portfolio" /><category term="apple" /><summary type="html">SposiFVG.com è la versione mobile per iPhone di sposifvg.com, sito gestito da Start 2000 Srl. È un catalogo di operatori commerciali che operano nei settori connessi che si rivolgono ai futuri sposi.</summary></entry><entry><title type="html">Ho un’idea geniale! Te la dico, tu fai la app, la vendiamo e dividiamo i proventi!</title><link href="http://danielepizzoni.it/blog/2013/01/ho-unidea-geniale-te-la-dico-tu-fai-la-app-la-vendiamo-e-dividiamo-i-proventi-fiftyfifty/index.html" rel="alternate" type="text/html" title="Ho un'idea geniale! Te la dico, tu fai la app, la vendiamo e dividiamo i proventi!" /><published>2013-01-24T00:00:00+01:00</published><updated>2013-01-24T00:00:00+01:00</updated><id>http://danielepizzoni.it/blog/2013/01/ho-unidea-geniale-te-la-dico-tu-fai-la-app-la-vendiamo-e-dividiamo-i-proventi-fiftyfifty/ho-unidea-geniale-te-la-dico-tu-fai-la-app-la-vendiamo-e-dividiamo-i-proventi-fiftyfifty</id><content type="html" xml:base="http://danielepizzoni.it/blog/2013/01/ho-unidea-geniale-te-la-dico-tu-fai-la-app-la-vendiamo-e-dividiamo-i-proventi-fiftyfifty/index.html">&lt;p&gt;Perché di solito rifiuto di accettare questa proposta?&lt;/p&gt;
+
+&lt;p&gt;Purtroppo l’idea di pagare la commessa a chi realizza l’idea con i proventi delle &lt;em&gt;eventuali&lt;/em&gt; vendite ha un serio problema.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Se l’idea funziona magari diventiamo entrambi ricchi… ma se non funziona le perdite sono tutte da una parte sola: la mia. Non viene naturale pensare che l’idea non sia così buona, se chi la concepisce è disposto a investirci così poco?&lt;/p&gt;
+
+&lt;p&gt;Se io fossi convinto di avere un’idea davvero buona, investirei i miei risparmi e mi darei da fare. Mi cercherei uno sponsor, un finanziatore, mi rivolgerei ad un &lt;a href=&quot;http://www.h-farmventures.com/&quot;&gt;incubatore&lt;/a&gt; per mettere in piedi un’azienda e sviluppare la mia idea.&lt;/p&gt;
+
+&lt;p&gt;In più siamo nel 2013, il mercato si è stabilizzato e le app sono ormai un prodotto come gli altri. Per lanciare un prodotto di successo hai bisogno di investire dei soldi.&lt;/p&gt;
+
+&lt;p&gt;Certo, per un breve periodo, appena lanciato l’iPhone, alcuni sono riusciti ad avere successo con le app e investimenti relativamente bassi. Come ad esempio lo sviluppatore di &lt;a href=&quot;https://itunes.apple.com/en/app/aroundme/id290051590?mt=8&quot;&gt;Around Me&lt;/a&gt;, un italiano. Ma, ad oggi, è un’illusione che l’idea giusta da sola possa permetterti di fare i soldi.&lt;/p&gt;
+
+&lt;p&gt;Io il mia idea ce l’ho già. Fare il freelance, fare app, aprire un sito per poter parlare ai clienti e dar loro la fiducia necessaria a commissionarmi un lavoro. È questa la mia idea, il mio lavoro, il mio investimento.&lt;/p&gt;</content><author><name></name></author><category term="freelance" /><category term="faq" /><summary type="html">Perché di solito rifiuto di accettare questa proposta? Purtroppo l’idea di pagare la commessa a chi realizza l’idea con i proventi delle eventuali vendite ha un serio problema.</summary></entry></feed>
